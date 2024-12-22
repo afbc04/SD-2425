@@ -1,3 +1,6 @@
+import java.io.*;
+import java.net.*;
+import java.util.Scanner;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -10,7 +13,6 @@ public class Client {
         String servidor_ip;
 
         try {
-
             servidor_ip = args[0];
             porta = Integer.parseInt(args[1]);
         }
@@ -19,19 +21,54 @@ public class Client {
             return;
         }
 
-        try {
+        try (Socket socket = new Socket(servidor_ip, porta)) {
+            System.out.println("Conectado ao servidor.");
 
-            Socket s= new Socket(InetAddress.getByName(servidor_ip),porta);
+            try (DataInputStream entrada = new DataInputStream(socket.getInputStream());
+                 DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
+                 Scanner obj = new Scanner(System.in)) {
+                 
+                System.out.println("Digite mensagens para enviar ao servidor (digite 'sair' para encerrar):");
 
+                // Thread de leitura para ler dados enviados do servidor
+                Thread leituraServidor = new Thread(() -> {
+                    try {
+                        String mensagemRecebida;
+                        while ((mensagemRecebida = entrada.readUTF()) != null) {
+                            System.out.println("Servidor: " + mensagemRecebida);
 
+                            if (mensagemRecebida.equalsIgnoreCase("sair")) {
+                                System.out.println("Conexão encerrada pelo servidor.");
+                                break;
+                            }
+                        }
+                    } catch (IOException e) {
+                        System.err.println("Conexão encerrada: " + e.getMessage());
+                    }
+                });
 
+                leituraServidor.start();
+
+                // Thread principal (de escrita) para enviar dados para o servidor
+                String mensagem;
+                while ((mensagem = obj.nextLine()) != null) {
+                    saida.writeUTF(mensagem);
+                    saida.flush();
+
+                    if (mensagem.equalsIgnoreCase("sair")) {
+                        System.out.println("Encerrando cliente...");
+                        break;
+                    }
+                }
+
+            leituraServidor.join(); // Aguarda pela thread de leitura finalizar
+            } catch (InterruptedException e) {
+                System.err.println("Erro ao comunicar com o servidor: " + e.getMessage());
+            }
+
+            System.out.println("Conexão com o servidor encerrada.");
+        } catch (IOException e) {
+            System.err.println("Erro no cliente: " + e.getMessage());
         }
-        catch (IOException e) {
-            System.err.println("Erro no socket: " + e.getMessage());
-            e.printStackTrace();
-        }
-
     }
-
-
 }
