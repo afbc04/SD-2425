@@ -28,7 +28,7 @@ public class Client {
                  DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
                  Scanner obj = new Scanner(System.in)) {
                  
-                System.out.println("Digite mensagens para enviar ao servidor (digite 'sair' para encerrar):");
+                 System.out.println("Digite mensagens para enviar ao servidor (digite 'sair' para encerrar):");
 
                 // Thread de leitura para ler dados enviados do servidor
                 Thread leituraServidor = new Thread(() -> {

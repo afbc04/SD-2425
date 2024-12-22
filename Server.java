@@ -14,6 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Server {
 
     private static final int S = 3;
+    static int sessoesAtivas = 0;
 
     static final Queue<Socket> clientesWaiting = new LinkedList<>();
     static final Lock l = new ReentrantLock(); // lock global
@@ -46,14 +47,19 @@ public class Server {
 
                  l.lock();
                  try {
-                   clientesWaiting.add(socket); // adicionar o socket à fila
-                   cond.signalAll(); // acordar alguma thread indicando que foi adicionado um socket
+                    while(sessoesAtivas >= S) {
+                        cond.await(); // fica em espera até algum socket ser libertado
+                    }
+                    sessoesAtivas++;
+
+                    clientesWaiting.add(socket); // adicionar o socket à fila
+                    cond.signalAll(); // acordar alguma thread indicando que foi adicionado um socket
+                } catch (InterruptedException e){ 
+                    e.printStackTrace();
                 } finally {
                     l.unlock();
                 }
-           }
-
-               
+           }   
         } catch (IOException e) {
             System.err.println("Erro ao comunicar com o cliente: " + e.getMessage());
         }
@@ -68,7 +74,7 @@ class Gabinete extends Thread {
         Socket s = null;
     
         while (true) {
-            Server.l.lock();  // Aquisição do lock
+            Server.l.lock(); 
             try {
                 // Aguarda até que haja um cliente na fila
                 while (Server.clientesWaiting.isEmpty()) {
@@ -78,20 +84,19 @@ class Gabinete extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
-                Server.l.unlock();  // Libera o lock
+                Server.l.unlock(); 
             }
     
             if (s != null) {
                 try (
                     DataInputStream entrada = new DataInputStream(s.getInputStream());
                     DataOutputStream saida = new DataOutputStream(s.getOutputStream())) {
-                    
+                    Scanner obj = new Scanner(System.in);
                     String mensagemRecebida;
     
                     // Criar uma thread para enviar mensagens ao cliente
                     Thread enviarMensagens = new Thread(() -> {
                         try {
-                            Scanner obj = new Scanner(System.in);
                             String mensagem;
                             while ((mensagem = obj.nextLine()) != null) {
                                 saida.writeUTF(mensagem);
@@ -124,11 +129,18 @@ class Gabinete extends Thread {
     
                 } catch (IOException | InterruptedException e) {
                     System.err.println("Erro ao comunicar com o cliente: " + e.getMessage());
-                } finally {
+                } finally { // serve para fechar arquivos/sockets ou libertar recursos
                     try {
                         s.close(); // Fechar o socket após a comunicação
                     } catch (IOException e) {
                         System.err.println("Erro ao fechar socket: " + e.getMessage());
+                    }
+                    Server.l.lock();
+                    try {
+                        Server.sessoesAtivas--;
+                        Server.cond.signalAll(); // acorda outras threads indicando que algum socket ficou livre
+                    } finally {
+                        Server.l.unlock();
                     }
                 }
                 System.out.println("Conexão com o cliente encerrada.");
