@@ -23,12 +23,20 @@ public class Mensagem {
     private String keyCond = null;
     private byte[] valueCond = null;
 
+    private boolean[] camposValidos;
     private int tipo;
     private static String[] tipoString = {"register","login","put","get","multiPut","multiGet","getWhen"};
 
     //Construtor básico
     private Mensagem(int tipo) {
         this.tipo = tipo;
+        
+        int N = 8;
+        this.camposValidos = new boolean[N];
+
+        for (int i=0 ; i < N ; i++)
+            this.camposValidos[i] = false;
+
     } 
 
     // #########################
@@ -43,36 +51,120 @@ public class Mensagem {
         return tipoString[this.tipo-1];
     }
 
-    public String getNome() {
+    public String getNome() throws InvalidMessageException {
+
+        if (this.camposValidos[0] == false)
+            throw new InvalidMessageException();
+
         return this.Nome;
+
     }
 
-    public String getPassword() {
+    public String getPassword() throws InvalidMessageException {
+
+        if (this.camposValidos[1] == false)
+            throw new InvalidMessageException();
+
         return this.Password;
+
     }
 
-    public String getKey() {
+    public String getKey() throws InvalidMessageException {
+
+        if (this.camposValidos[2] == false)
+            throw new InvalidMessageException();
+            
         return this.key;
+
     }
 
-    public byte[] getValue() {
+    public byte[] getValue() throws InvalidMessageException {
+
+        if (this.camposValidos[3] == false)
+            throw new InvalidMessageException();
+
         return this.value;
+
     }
 
-    public Map<String,byte[]> getValues() {
+    public Map<String,byte[]> getValues() throws InvalidMessageException {
+
+        if (this.camposValidos[4] == false)
+            throw new InvalidMessageException();
+
         return this.values;
+
     }
 
-    public Set<String> getKeys() {
+    public Set<String> getKeys() throws InvalidMessageException {
+
+        if (this.camposValidos[5] == false)
+            throw new InvalidMessageException();
+
         return this.keys;
+
     }
 
-    public String getKeyCond() {
+    public String getKeyCond() throws InvalidMessageException {
+
+        if (this.camposValidos[6] == false)
+            throw new InvalidMessageException();
+
         return this.keyCond;
+
     }
 
-    public byte[] getValueCond() {
+    public byte[] getValueCond() throws InvalidMessageException {
+
+        if (this.camposValidos[7] == false)
+            throw new InvalidMessageException();
+
         return this.valueCond;
+
+    }
+
+    // #########################
+    //         SETTERS
+    // #########################
+
+    private void setNome(String nome) {
+        this.Nome = nome;
+        this.camposValidos[0] = true;
+    }
+
+    private void setPassword(String password) {
+        this.Password = password;
+        this.camposValidos[1] = true;
+    }
+
+    private void setKey(String key) {
+        this.key = key;
+        this.camposValidos[2] = true;
+    }
+
+    private void setValue(byte[] value) {
+        this.value = value != null ? value.clone() : null;
+        this.camposValidos[3] = true;
+    }
+
+    private void setValues(Map<String,byte[]> values) {
+        this.values = values;
+        this.camposValidos[4] = true;
+    }
+
+    private void setKeys(Set<String> keys) {
+        this.keys = keys;
+        this.camposValidos[5] = true;
+    }
+
+    private void setKeyCond(String keyCond) {
+        this.keyCond = keyCond;
+        this.camposValidos[6] = true;
+    }
+
+    private void setValueCond(byte[] valueCond) {
+        this.valueCond = valueCond != null ? valueCond.clone() : null;
+        this.camposValidos[7] = true;
     }
 
     // #########################
@@ -83,8 +175,8 @@ public class Mensagem {
     public static Mensagem registo(String nome, String password) {
 
         Mensagem s = new Mensagem(1);
-        s.Nome = nome;
-        s.Password = password;
+        s.setNome(nome);
+        s.setPassword(password);
 
         return s;
 
@@ -94,8 +186,8 @@ public class Mensagem {
     public static Mensagem autenticacao(String nome, String password) {
 
         Mensagem s = new Mensagem(2);
-        s.Nome = nome;
-        s.Password = password;
+        s.setNome(nome);
+        s.setPassword(password);
 
         return s;
 
@@ -105,10 +197,8 @@ public class Mensagem {
     public static Mensagem put(String key, byte[] value) {
 
         Mensagem s = new Mensagem(3);
-        s.key = key;
-
-        if (value !=null)
-            s.value = value.clone();
+        s.setKey(key);
+        s.setValue(value);
 
         return s;
 
@@ -118,7 +208,7 @@ public class Mensagem {
     public static Mensagem get(String key) {
 
         Mensagem s = new Mensagem(4);
-        s.key = key;
+        s.setKey(key);
 
         return s;
 
@@ -142,7 +232,7 @@ public class Mensagem {
 
         }
 
-        s.values = copia;
+        s.setValues(copia);
 
         return s;
 
@@ -152,7 +242,7 @@ public class Mensagem {
     public static Mensagem multiGet(Set<String> keys) {
 
         Mensagem s = new Mensagem(6);
-        s.keys = new HashSet<String>(keys);
+        s.setKeys(new HashSet<String>(keys));
 
         return s;
 
@@ -162,11 +252,9 @@ public class Mensagem {
     public static Mensagem getWhen(String key, String keyCond, byte[] valueCond) {
 
         Mensagem s = new Mensagem(7);
-        s.key = key;
-        s.keyCond = keyCond;
-        
-        if (valueCond != null)
-            s.valueCond = valueCond.clone();
+        s.setKey(keyCond);
+        s.setKeyCond(keyCond);
+        s.setValueCond(valueCond);
 
         return s;
 
@@ -288,32 +376,36 @@ public class Mensagem {
             //Registo | Autenticação
             case 1:
             case 2:
-                m.Nome = in.readUTF();
-                m.Password = in.readUTF();
+                m.setNome(in.readUTF());
+                m.setPassword(in.readUTF());
             break;
 
             //Put
             case 3:
-                m.key = in.readUTF();
+                m.setKey(in.readUTF());
 
                 int value_length = in.readInt();
 
                 if (value_length > 0) {
-                    m.value = new byte[value_length];
-                    in.read(m.value);
+                    byte[] b = new byte[value_length];
+                    in.read(b);
+                    m.setValue(b);
+                }
+                else {
+                    m.setValue(null);
                 }
 
             break;
 
             //Get
             case 4:
-                m.key = in.readUTF();
+                m.setKey(in.readUTF());
             break;
 
             //MultiPut
             case 5:
                 
-                m.values = new HashMap<String,byte[]>();
+                Map<String,byte[]> values = new HashMap<String,byte[]>();
 
                 int values_length = in.readInt();
 
@@ -328,39 +420,44 @@ public class Mensagem {
                         in.read(b);
                     }
 
-                    m.values.put(s,b);
+                    values.put(s,b);
 
                 }
+
+                m.setValues(values);
 
             break;
 
             //MultiGet
             case 6:
                 
-                m.keys = new HashSet<String>();
+                Set<String> keys = new HashSet<String>();
 
                 int keys_length = in.readInt();
 
                 for (int i=0 ; i < keys_length ; i++) {
-
-                    String s = in.readUTF();
-                    m.keys.add(s);
-
+                    keys.add(in.readUTF());
                 }
+
+                m.setKeys(keys);
 
             break;
 
             //getWhen
             case 7:
                 
-                m.key = in.readUTF();
-                m.keyCond = in.readUTF();
+                m.setKey(in.readUTF());
+                m.setKeyCond(in.readUTF());
 
                 int valueCond_length = in.readInt();
 
                 if (valueCond_length > 0) {
-                    m.valueCond = new byte[valueCond_length];
-                    in.read(m.valueCond);
+                    byte[] b = new byte[valueCond_length];
+                    in.read(b);
+                    m.setValueCond(b);
+                }
+                else {
+                    m.setValueCond(null);
                 }
 
             break;
