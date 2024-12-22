@@ -10,15 +10,19 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import Serializacao.Mensagem;
+import Serializacao.Resposta;
+
 
 public class Server {
 
     private static final int S = 3;
-    static int sessoesAtivas = 0;
 
     static final Queue<Socket> clientesWaiting = new LinkedList<>();
+    static final Queue<Mensagem> mensagens = new LinkedList<>();
     static final Lock l = new ReentrantLock(); // lock global
-    static final Condition cond = l.newCondition();
+    static final Condition condGab = l.newCondition(); // para os Gabinetes
+    static final Condition condTask = l.newCondition(); // para os TaskHandlers
     public static void main(String args[]) {
 
         int porta;
@@ -47,15 +51,8 @@ public class Server {
 
                  l.lock();
                  try {
-                    while(sessoesAtivas >= S) {
-                        cond.await(); // fica em espera até algum socket ser libertado
-                    }
-                    sessoesAtivas++;
-
                     clientesWaiting.add(socket); // adicionar o socket à fila
-                    cond.signalAll(); // acordar alguma thread indicando que foi adicionado um socket
-                } catch (InterruptedException e){ 
-                    e.printStackTrace();
+                    condGab.signal(); // acordar alguma thread indicando que foi adicionado um socket
                 } finally {
                     l.unlock();
                 }
@@ -78,7 +75,7 @@ class Gabinete extends Thread {
             try {
                 // Aguarda até que haja um cliente na fila
                 while (Server.clientesWaiting.isEmpty()) {
-                    Server.cond.await(); // Aguardar até que haja um cliente na fila
+                    Server.condGab.await(); // Aguardar até que haja um cliente na fila
                 }
                 s = Server.clientesWaiting.poll(); // Retira um socket da fila
             } catch (InterruptedException e) {
@@ -91,38 +88,45 @@ class Gabinete extends Thread {
                 try (
                     DataInputStream entrada = new DataInputStream(s.getInputStream());
                     DataOutputStream saida = new DataOutputStream(s.getOutputStream())) {
-                    Scanner obj = new Scanner(System.in);
-                    String mensagemRecebida;
-    
+                   // Scanner obj = new Scanner(System.in);
+                    
+                        
                     // Criar uma thread para enviar mensagens ao cliente
+                    /*
+                     Substituir pelo objeto resposta e depos serializar
+                     */
                     Thread enviarMensagens = new Thread(() -> {
                         try {
-                            String mensagem;
-                            while ((mensagem = obj.nextLine()) != null) {
-                                saida.writeUTF(mensagem);
-                                saida.flush();
-    
-                                if (mensagem.equalsIgnoreCase("sair")) {
+                            Resposta resposta = null;
+                            resposta.serializar(saida);
+                                /*
+                                    if (resposta.equalsIgnoreCase("sair")) {
                                     System.out.println("Encerrando servidor...");
                                     obj.close();
                                     break;
-                                }
-                            }
+                                } */
                         } catch (IOException e) {
                             System.err.println("Erro ao enviar mensagem: " + e.getMessage());
                         }
                     });
     
                     enviarMensagens.start();
-    
-                    // Ler mensagens do cliente
-                    while ((mensagemRecebida = entrada.readUTF()) != null) {
-                        System.out.println("Cliente: " + mensagemRecebida);
-    
-                        if (mensagemRecebida.equalsIgnoreCase("sair")) {
+
+                    //Ler as mensagens recebidas
+                    Mensagem mRecebida;
+                    while ((mRecebida = Mensagem.deserializar(entrada)) != null) {
+                        System.out.println("Cliente: " + mRecebida);
+                        Server.l.lock();
+                        try {
+                        Server.mensagens.add(mRecebida);
+                        Server.condTask.signal();
+                        } finally {
+                            Server.l.unlock();
+                        }
+                      /* if (mRecebida.equalsIgnoreCase("sair")) {
                             System.out.println("A encerrar conexão...");
                             break;
-                        }
+                        } */
                     }
     
                     enviarMensagens.join(); // Aguarda a thread de envio finalizar
@@ -134,13 +138,6 @@ class Gabinete extends Thread {
                         s.close(); // Fechar o socket após a comunicação
                     } catch (IOException e) {
                         System.err.println("Erro ao fechar socket: " + e.getMessage());
-                    }
-                    Server.l.lock();
-                    try {
-                        Server.sessoesAtivas--;
-                        Server.cond.signalAll(); // acorda outras threads indicando que algum socket ficou livre
-                    } finally {
-                        Server.l.unlock();
                     }
                 }
                 System.out.println("Conexão com o cliente encerrada.");
