@@ -1,9 +1,9 @@
 LIBS = 
-SRC = Client/*.java Server/*.java *.java
+SRC = */*.java *.java
 
 # Compilar todas as classes
 main:
-	javac -cp $(LIBS):. $(SRC)
+	javac $(LIBS) $(SRC)
 
 # Limpar arquivos compilados
 clean:

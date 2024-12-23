@@ -1,6 +1,8 @@
 package Serializacao;
 
-public class InvalidMessageException extends Exception {
+import java.io.IOException;
+
+public class InvalidMessageException extends IOException {
     
     public InvalidMessageException() {
         
