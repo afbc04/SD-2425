@@ -5,12 +5,15 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+import Serializacao.InvalidMessageException;
 import Serializacao.Mensagem;
 import Serializacao.Resposta;
+
 
 public class Gabinete extends Thread {
   
     private Servidor server;
+    private Cliente cliente;
 
     public Gabinete(Servidor server) {
         this.server = server;
@@ -46,14 +49,30 @@ public class Gabinete extends Thread {
                      */
                     Thread enviarMensagens = new Thread(() -> {
                         try {
-                            Resposta resposta = null;
-                            resposta.serializar(saida);
+                            if (cliente != null) {
+                                cliente.l.lock();
+                                try {
+                                    while(!cliente.has_Respostas()) {
+                                        cliente.cond.await();
+                                    }
+                                    Resposta resposta = cliente.remove_Resposta();
+                                    resposta.serializar(saida);
                                 /*
                                     if (resposta.equalsIgnoreCase("sair")) {
                                     System.out.println("Encerrando servidor...");
                                     obj.close();
                                     break;
                                 } */
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                } finally {
+                                    cliente.l.unlock();
+                                }
+                            }
+                            else {
+                                System.err.println("Erro.");
+                                return;
+                            }
                         } catch (IOException e) {
                             System.err.println("Erro ao enviar mensagem: " + e.getMessage());
                         }
@@ -64,6 +83,36 @@ public class Gabinete extends Thread {
                     //Ler as mensagens recebidas
                     Mensagem mRecebida;
                     while ((mRecebida = Mensagem.deserializar(entrada)) != null) {
+
+                        if (mRecebida.getTipo() == 2) {
+                            try{
+                                String nome = mRecebida.getNome();
+                                String passe = mRecebida.getPassword();
+
+                                Cliente cli = null; 
+                                cli = server.clientes.getCliente(nome, passe);
+
+                                if (cli != null) {
+                                    cliente = cli;
+                                }
+                                else {
+                                    System.err.println("Falha na autenticação para: " + nome);
+                                    s.close();
+                                    return;
+                                }
+
+                            } catch(InvalidMessageException i) {
+                                System.err.println("Mensagem inválida recebida. A encerrar conexão...");
+                                i.printStackTrace();
+                                try {
+                                    s.close();
+                                } catch (IOException ex) {
+                                    ex.printStackTrace();
+                                }
+                                return;
+                            }
+                        }
+
                         System.out.println("Cliente: " + mRecebida);
                         server.l.lock();
                         try {
