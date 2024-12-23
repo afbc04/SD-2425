@@ -1,4 +1,4 @@
-package Client;
+package Server;
 
 public class ClienteCredenciais {
     private String name;
