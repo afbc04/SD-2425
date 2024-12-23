@@ -14,7 +14,7 @@ public class GestorClientes {
         this.ids = 1;
     }
     
-    public boolean adicionarCliente(String nome, String password){
+    public Cliente adicionarCliente(String nome, String password){
         this.clientes_l.lock();
         try{
 
@@ -26,11 +26,11 @@ public class GestorClientes {
                 c = new Cliente(cc, ids);
                 this.ids++;
                 this.clientes.put(cc,c);
-                return true;
+                return c;
             }
             //Cliente já existia
             else {
-                return false;
+                return null;
             }
 
         } finally{
