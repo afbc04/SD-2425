@@ -2,6 +2,7 @@ package Server;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -9,6 +10,7 @@ import Serializacao.Resposta;
 
 public class Cliente {
     public Lock l;
+    public Condition cond;
     private final Integer id;
     private Queue<Resposta> respostas;
     private ClienteCredenciais credenciais;
@@ -19,6 +21,7 @@ public class Cliente {
 
         this.id = id;
         this.l = new ReentrantLock();
+        this.cond = l.newCondition();
         this.respostas = new LinkedList<>();
         this.credenciais = credenciais;
     }
@@ -29,30 +32,16 @@ public class Cliente {
 
 
     public void insert_Resposta(Resposta resposta){
-        l.lock();
-        try{
-            respostas.add(resposta);
-        } finally{
-            l.unlock();
-        }
+        respostas.add(resposta);
+        this.cond.signal();
     }
 
     public Resposta remove_Resposta(){
-        l.lock();
-        try{
-            return respostas.poll(); //poll() - retorna e remove a cabeça da queue
-        } finally{
-            l.unlock();
-        }
+        return respostas.poll(); //poll() - retorna e remove a cabeça da queue
     }
 
     public boolean has_Respostas(){
-        l.lock();
-        try{
-            return !respostas.isEmpty();
-        } finally{
-            l.unlock();
-        }
+        return !respostas.isEmpty();
     }
 
 
