@@ -113,6 +113,35 @@ public class Gabinete extends Thread {
                             }
                         }
 
+                        if (mRecebida.getTipo() == 1) {
+                            try{
+                                String nome = mRecebida.getNome();
+                                String passe = mRecebida.getPassword();
+                                
+                                Cliente cli = server.clientes.adicionarCliente(nome, passe);
+
+                                if (cli != null) {
+                                    cliente = cli;
+                                }
+
+                                else {
+                                    System.err.println("Falha no registo para: " + nome);
+                                    s.close();
+                                    return;
+                                }
+                            } catch (InvalidMessageException i) {
+                                System.err.println("Mensagem inválida recebida. A encerrar conexão...");
+                                i.printStackTrace();
+                                try {
+                                    s.close();
+                                } catch (IOException ex) {
+                                    ex.printStackTrace();
+                                }
+                                return;
+                            }
+                          
+                        }
+
                         System.out.println("Cliente: " + mRecebida);
                         server.l.lock();
                         try {
