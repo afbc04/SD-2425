@@ -1,18 +1,7 @@
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
-import Serializacao.Mensagem;
-import Serializacao.Resposta;
-import Server.Armazem;
 import Server.Servidor;
 import Server.Gabinete;
 

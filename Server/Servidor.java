@@ -19,7 +19,8 @@ public class Servidor {
     public final Condition condGab = l.newCondition(); // para os Gabinetes
     public final Condition condTask = l.newCondition(); // para os TaskHandlers
 
-    public static Armazem armazem = new Armazem();
+    public Armazem armazem = new Armazem();
+    public GestorClientes clientes = new GestorClientes();
 
     public Servidor() {
 

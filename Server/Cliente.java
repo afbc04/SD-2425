@@ -1,4 +1,4 @@
-package Client;
+package Server;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -8,15 +8,16 @@ import java.util.concurrent.locks.ReentrantLock;
 import Serializacao.Resposta;
 
 public class Cliente {
-    private Lock l;
-    //private Integer id;
+    public Lock l;
+    private final Integer id;
     private Queue<Resposta> respostas;
     private ClienteCredenciais credenciais;
 
 
-    public Cliente(ClienteCredenciais credenciais){
+    public Cliente(ClienteCredenciais credenciais, Integer id){
         if(credenciais == null) throw new IllegalArgumentException("As credenciais do cliente não podem ser nulas");
 
+        this.id = id;
         this.l = new ReentrantLock();
         this.respostas = new LinkedList<>();
         this.credenciais = credenciais;
