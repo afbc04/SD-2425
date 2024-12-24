@@ -107,7 +107,9 @@ public class Gabinete extends Thread {
                         Substituir pelo objeto resposta e depos serializar
                         */
                         Thread enviarMensagens = new Thread(() -> {
+
                             try {
+                                while (true) {
                                 cliente.l.lock();
                                 try {
                                     while(!cliente.has_Respostas()) {
@@ -126,10 +128,12 @@ public class Gabinete extends Thread {
                                 } finally {
                                     cliente.l.unlock();
                                 }
+                                }
                             }
                             catch (IOException e) {
                                 System.err.println("Erro ao enviar mensagem: " + e.getMessage());
                             }
+                            
                         });
                     
                         enviarMensagens.start();
@@ -141,7 +145,7 @@ public class Gabinete extends Thread {
                             System.out.println("Cliente: " + mRecebida);
                             server.l.lock();
                             try {
-                                server.mensagens.add(mRecebida);
+                                server.mensagens.add(new Task(this.cliente, mRecebida));
                                 server.condTask.signal();
                             } finally {
                                 server.l.unlock();

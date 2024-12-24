@@ -30,6 +30,29 @@ public class Client {
                 System.out.println("Exemplos:");
                 System.out.println("REGISTER <username> <password>");
                 System.out.println("LOGIN <username> <password>");
+                System.out.println("SAIR");
+
+                String input_aux = scanner.nextLine().trim();
+                String[] tokens_aux = input_aux.split(" ");
+                String command_aux = tokens_aux[0].toUpperCase();
+
+                try {
+                    switch (command_aux) {
+                        case "REGISTER":
+                            handleRegister(tokens_aux, saida, entrada);
+                            break;
+                        case "LOGIN":
+                            handleLogin(tokens_aux, saida, entrada);
+                            break;
+                        default:
+                            return;
+                    }
+                } catch (IllegalArgumentException e) {
+                    System.out.println("Erro: " + e.getMessage());
+                }
+
+                System.out.println("Digite comandos no formato apropriado:");
+                System.out.println("Exemplos:");
                 System.out.println("PUT <key> <value>");
                 System.out.println("GET <key>");
                 System.out.println("MULTIPUT <key1> <value1> <key2> <value2> ...");
@@ -44,12 +67,6 @@ public class Client {
 
                     try {
                         switch (command) {
-                            case "REGISTER":
-                                handleRegister(tokens, saida, entrada);
-                                break;
-                            case "LOGIN":
-                                handleLogin(tokens, saida, entrada);
-                                break;
                             case "PUT":
                                 handlePut(tokens, saida, entrada);
                                 break;

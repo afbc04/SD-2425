@@ -3,6 +3,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 import Server.Servidor;
+import Server.TaskHandler;
 import Server.Gabinete;
 
 
@@ -31,6 +32,12 @@ public class Server {
              for(int i = 0; i < server.S; i++) {
                 gabinetes[i] = new Gabinete(server); // criar o gabinete
                 gabinetes[i].start(); // inciar a thread (executa o método run)
+             }
+
+             Thread[] taskHandlers = new Thread[server.N]; // threadpool
+             for(int i = 0; i < server.N; i++) {
+                taskHandlers[i] = new TaskHandler(server); // criar o gabinete
+                taskHandlers[i].start(); // inciar a thread (executa o método run)
              }
 
              while(true) {

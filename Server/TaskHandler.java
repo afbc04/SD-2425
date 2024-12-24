@@ -17,7 +17,7 @@ public class TaskHandler extends Thread{
     public void run(){
         
         while(true){
-            Mensagem task = null;
+            Task task = null;
 
             server.l.lock();
             try{
@@ -31,15 +31,19 @@ public class TaskHandler extends Thread{
             }
 
             if(task!=null){
-                Resposta resposta = processaMensagem(task);
-                
+
+                Resposta resposta = processaMensagem(task.mensagem);
                 server.l.lock();
                 try{
                     //verifica qual é o cliente e insere lhe a resposta
-                    server.clientes.getCliente(task.getNome(), task.getPassword()).insert_Resposta(resposta);
+                    Cliente c = task.cliente;
+                    try {
+                        c.l.lock();
+                        c.insert_Resposta(resposta);
+                    } finally {
+                        c.l.unlock();
+                    }
 
-                } catch(InvalidMessageException e){
-                    e.getStackTrace();
                 } finally{
                     server.l.unlock();
                 }
