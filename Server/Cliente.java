@@ -12,18 +12,24 @@ public class Cliente {
     public Lock l;
     public Condition cond;
     private final Integer id;
+    private String password;
     private Queue<Resposta> respostas;
     private ClienteCredenciais credenciais;
 
 
-    public Cliente(ClienteCredenciais credenciais, Integer id){
-        if(credenciais == null) throw new IllegalArgumentException("As credenciais do cliente não podem ser nulas");
+    public Cliente(String password, Integer id){
+        //if(credenciais == null) throw new IllegalArgumentException("As credenciais do cliente não podem ser nulas");
 
         this.id = id;
+        this.password = password;
         this.l = new ReentrantLock();
         this.cond = l.newCondition();
         this.respostas = new LinkedList<>();
-        this.credenciais = credenciais;
+        //this.credenciais = credenciais;
+    }
+
+    public boolean samePassword(String password) {
+        return this.password.equals(password);
     }
 
     public ClienteCredenciais getCredenciais() {

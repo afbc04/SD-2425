@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class GestorClientes {
     private Lock clientes_l = new ReentrantLock();
-    private Map<ClienteCredenciais,Cliente> clientes = new HashMap<>();
+    private Map<String,Cliente> clientes = new HashMap<>();
     private Integer ids;
 
     public GestorClientes() {
@@ -18,14 +18,14 @@ public class GestorClientes {
         this.clientes_l.lock();
         try{
 
-            ClienteCredenciais cc = new ClienteCredenciais(nome, password);
-            Cliente c = this.clientes.get(cc);
+            //ClienteCredenciais cc = new ClienteCredenciais(nome, password);
+            Cliente c = this.clientes.get(nome);
             
             //Cliente não existe
             if (c == null) {
-                c = new Cliente(cc, ids);
+                c = new Cliente(password, ids);
                 this.ids++;
-                this.clientes.put(cc,c);
+                this.clientes.put(nome,c);
                 return c;
             }
             //Cliente já existia
@@ -53,8 +53,22 @@ public class GestorClientes {
         clientes_l.lock();
         try{
 
-            ClienteCredenciais cc = new ClienteCredenciais(nome, password);
-            return this.clientes.get(cc);
+            Cliente c = this.clientes.get(nome);
+
+            if (c != null) {
+
+                c.l.lock();
+                if (c.samePassword(password) == false) {
+                    c.l.unlock();
+                    c = null;
+                }
+                else {
+                    c.l.unlock();
+                }
+                
+            }
+
+            return c;
             
         } finally{
             clientes_l.unlock();
