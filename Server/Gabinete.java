@@ -23,6 +23,7 @@ public class Gabinete extends Thread {
         Socket s = null;
     
         while (true) {
+
             server.l.lock(); 
             try {
                 // Aguarda até que haja um cliente na fila
@@ -35,21 +36,78 @@ public class Gabinete extends Thread {
             } finally {
                 server.l.unlock(); 
             }
-    
+
             if (s != null) {
+
                 try (
                     DataInputStream entrada = new DataInputStream(s.getInputStream());
                     DataOutputStream saida = new DataOutputStream(s.getOutputStream())) {
                    // Scanner obj = new Scanner(System.in);
                     
-                        
-                    // Criar uma thread para enviar mensagens ao cliente
-                    /*
-                     Substituir pelo objeto resposta e depos serializar
-                     */
-                    Thread enviarMensagens = new Thread(() -> {
-                        try {
-                            if (cliente != null) {
+                    //Resetar o cliente
+                    this.cliente = null;
+                    
+                    //1º Fase -> Autenticação/Registo do Cliente
+                    Mensagem authCliente = Mensagem.deserializar(entrada);
+
+                    //Autenticação
+                    if (authCliente.getTipo() == 2) {
+                        try{
+                            String nome = authCliente.getNome();
+                            String passe = authCliente.getPassword();
+
+                            Cliente cli = null; 
+                            cli = server.clientes.getCliente(nome, passe);
+
+                            if (cli != null) {
+                                cliente = cli;
+                            }
+                            else {
+                                System.err.println("Falha na autenticação para: " + nome);
+                            }
+
+                        } catch(InvalidMessageException i) {
+                            System.err.println("Mensagem inválida recebida. A encerrar conexão...");
+                            i.printStackTrace();
+                        }
+                    }
+
+                    //Registo
+                    if (authCliente.getTipo() == 1) {
+                        try{
+                            String nome = authCliente.getNome();
+                            String passe = authCliente.getPassword();
+                                
+                            Cliente cli = server.clientes.adicionarCliente(nome, passe);
+
+                            if (cli != null) {
+                                cliente = cli;
+                            }
+
+                            else {
+                                System.err.println("Falha no registo para: " + nome);
+                            }
+                        } catch (InvalidMessageException i) {
+                            System.err.println("Mensagem inválida recebida. A encerrar conexão...");
+                            i.printStackTrace();
+                        }
+                          
+                    }
+
+                    //Verifica se a autenticação é válida
+
+                    Resposta sessaoValida = Resposta.sessaoValida(this.cliente != null);
+                    sessaoValida.serializar(saida);
+
+                    //Autenticação é válida
+                    if (this.cliente != null) {
+
+                        // Criar uma thread para enviar mensagens ao cliente
+                        /*
+                        Substituir pelo objeto resposta e depos serializar
+                        */
+                        Thread enviarMensagens = new Thread(() -> {
+                            try {
                                 cliente.l.lock();
                                 try {
                                     while(!cliente.has_Respostas()) {
@@ -69,95 +127,35 @@ public class Gabinete extends Thread {
                                     cliente.l.unlock();
                                 }
                             }
-                            else {
-                                System.err.println("Erro.");
-                                return;
+                            catch (IOException e) {
+                                System.err.println("Erro ao enviar mensagem: " + e.getMessage());
                             }
-                        } catch (IOException e) {
-                            System.err.println("Erro ao enviar mensagem: " + e.getMessage());
-                        }
-                    });
+                        });
                     
-                    enviarMensagens.start();
+                        enviarMensagens.start();
 
-                    //Ler as mensagens recebidas
-                    Mensagem mRecebida;
-                    while ((mRecebida = Mensagem.deserializar(entrada)) != null) {
+                        //Ler as mensagens recebidas
+                        Mensagem mRecebida;
+                        while ((mRecebida = Mensagem.deserializar(entrada)) != null) {
 
-                        if (mRecebida.getTipo() == 2) {
-                            try{
-                                String nome = mRecebida.getNome();
-                                String passe = mRecebida.getPassword();
-
-                                Cliente cli = null; 
-                                cli = server.clientes.getCliente(nome, passe);
-
-                                if (cli != null) {
-                                    cliente = cli;
-                                }
-                                else {
-                                    System.err.println("Falha na autenticação para: " + nome);
-                                    s.close();
-                                    return;
-                                }
-
-                            } catch(InvalidMessageException i) {
-                                System.err.println("Mensagem inválida recebida. A encerrar conexão...");
-                                i.printStackTrace();
-                                try {
-                                    s.close();
-                                } catch (IOException ex) {
-                                    ex.printStackTrace();
-                                }
-                                return;
+                            System.out.println("Cliente: " + mRecebida);
+                            server.l.lock();
+                            try {
+                                server.mensagens.add(mRecebida);
+                                server.condTask.signal();
+                            } finally {
+                                server.l.unlock();
                             }
-                        }
-
-                        if (mRecebida.getTipo() == 1) {
-                            try{
-                                String nome = mRecebida.getNome();
-                                String passe = mRecebida.getPassword();
-                                
-                                Cliente cli = server.clientes.adicionarCliente(nome, passe);
-
-                                if (cli != null) {
-                                    cliente = cli;
-                                }
-
-                                else {
-                                    System.err.println("Falha no registo para: " + nome);
-                                    s.close();
-                                    return;
-                                }
-                            } catch (InvalidMessageException i) {
-                                System.err.println("Mensagem inválida recebida. A encerrar conexão...");
-                                i.printStackTrace();
-                                try {
-                                    s.close();
-                                } catch (IOException ex) {
-                                    ex.printStackTrace();
-                                }
-                                return;
-                            }
-                          
-                        }
-
-                        System.out.println("Cliente: " + mRecebida);
-                        server.l.lock();
-                        try {
-                        server.mensagens.add(mRecebida);
-                        server.condTask.signal();
-                        } finally {
-                            server.l.unlock();
-                        }
                       /* if (mRecebida.equalsIgnoreCase("sair")) {
                             System.out.println("A encerrar conexão...");
                             break;
                         } */
+                        }
+    
+                        enviarMensagens.join(); // Aguarda a thread de envio finalizar
+
                     }
-    
-                    enviarMensagens.join(); // Aguarda a thread de envio finalizar
-    
+
                 } catch (IOException | InterruptedException e) {
                     System.err.println("Erro ao comunicar com o cliente: " + e.getMessage());
                 } finally { // serve para fechar arquivos/sockets ou libertar recursos
