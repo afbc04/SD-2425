@@ -18,30 +18,31 @@ public class TaskHandler extends Thread{
         
         while(true){
 
+            Task task = null;
+
             server.l.lock();
             try{
                 //aguarda até que hajam mensagens (tarefas)
                 while(server.mensagens.isEmpty()) server.condTask.await();
-                Task task = server.mensagens.poll(); //Retira uma mensagem da fila
-
-                if(task!=null){
-
-                    Resposta resposta = processaMensagem(task.mensagem);
-
-                    //verifica qual é o cliente e insere lhe a resposta
-                    Cliente c = task.cliente;
-
-                    c.l.lock();
-                    c.insert_Resposta(resposta);
-                    c.l.unlock();
-                        
-                }
-
+                task = server.mensagens.poll(); //Retira uma mensagem da fila
 
             } catch(InterruptedException e){
                 e.printStackTrace();
             } finally{
                 server.l.unlock();
+            }
+
+            if(task!=null){
+
+                Resposta resposta = processaMensagem(task.mensagem);
+
+                //verifica qual é o cliente e insere lhe a resposta
+                Cliente c = task.cliente;
+
+                c.l.lock();
+                c.insert_Resposta(resposta);
+                c.l.unlock();
+                    
             }
 
         }

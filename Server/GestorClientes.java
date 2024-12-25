@@ -60,6 +60,7 @@ public class GestorClientes {
                     c = null;
                 }
                 else {
+
                     c.l.unlock();
                 }
                 

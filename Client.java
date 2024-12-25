@@ -177,7 +177,7 @@ public class Client {
                 });
                 escritorCliente.start();
 
-                while (socket.isConnected()) {
+                while (socket.isConnected() && !socket.isClosed()) {
 
                     menu(scanner,nome);
                     String input = scanner.nextLine();

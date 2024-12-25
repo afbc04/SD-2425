@@ -20,7 +20,7 @@ public class Gabinete extends Thread {
     }
 
     public void run() {
-        Socket s_gab = null;
+        Socket s = null;
     
         while (true) {
 
@@ -31,7 +31,7 @@ public class Gabinete extends Thread {
                     server.condGab.await(); // Aguardar até que haja um cliente na fila
                 }
 
-                s_gab = server.clientesWaiting.poll(); // Retira um socket da fila
+                s = server.clientesWaiting.poll(); // Retira um socket da fila
                 
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -39,7 +39,7 @@ public class Gabinete extends Thread {
                 server.l.unlock(); 
             }
 
-            final Socket s = s_gab;
+            //final Socket s = s_gab;
 
             if (s != null) {
 
@@ -137,14 +137,11 @@ public class Gabinete extends Thread {
                         });
                         enviarMensagens.start();
 
-                        System.out.println("A");
                         //Ler as mensagens recebidas
                         Mensagem mRecebida = null;
                         while (s.isConnected()) {
-                            System.out.println("B : " + teste);
                             mRecebida = Mensagem.deserializar(entrada);
                             teste++;
-                            System.out.println("D");
                             System.out.println("Cliente: " + mRecebida);
                             server.l.lock();
                             try {
@@ -169,11 +166,11 @@ public class Gabinete extends Thread {
                     System.err.println("Erro ao comunicar com o cliente: " + e.getMessage());
                 } finally { // serve para fechar arquivos/sockets ou libertar recursos
 
-                    //try {
-                        //s.close(); // Fechar o socket após a comunicação
-                    //} catch (IOException e) {
-                    //    System.err.println("Erro ao fechar socket: " + e.getMessage());
-                    //}
+                    try {
+                        s.close(); // Fechar o socket após a comunicação
+                    } catch (IOException e) {
+                        System.err.println("Erro ao fechar socket: " + e.getMessage());
+                    }
 
                 }
                 System.out.println("Conexão com o cliente encerrada.");
