@@ -23,10 +23,10 @@ public class Client {
             return;
         }
 
-        try (Socket socket = new Socket(servidor_ip, porta)) {
+        try (final Socket socket = new Socket(servidor_ip, porta)) {
 
             System.out.println("Conectado ao servidor.");
-            ClienteDados cliente = new ClienteDados(socket);
+            ClienteDados cliente = new ClienteDados();
 
             DataInputStream entrada = new DataInputStream(socket.getInputStream());
             DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
@@ -43,7 +43,7 @@ public class Client {
                 //Thread que lê as respostas do servidor
                 Thread leitorCliente = new Thread(() -> {
     
-                    while(true) {
+                    while(socket.isConnected() && !socket.isClosed()) {
     
                         try {
     
@@ -85,7 +85,7 @@ public class Client {
                 //Thread que lê pedidos e envia mensagens ao servidor
                 Thread escritorCliente = new Thread(() -> {
 
-                    while (true) {
+                    while (socket.isConnected() && !socket.isClosed()) {
 
                         String pedido = null;
                         int pedidoID = 0;
@@ -98,87 +98,86 @@ public class Client {
                                 cliente.condPED.await();
 
                             pedido = cliente.pedidos.poll(); //Retira um pedido da fila
-                            pedidoID = cliente.taskID;
-                            cliente.taskID++;
             
+                            //Pedido válido
+                            if (pedido != null) {
+                            
+                                String input = pedido.trim();
+                                String[] tokens = input.split(" ");
+                                String command = tokens[0].toUpperCase();
+                            
+                                Mensagem m = null;
+                                pedidoID = cliente.taskID;
+                                cliente.taskID++;
+                            
+                                try {
+
+                                    switch (command) {
+                                        case "PUT":
+                                            m = handlePut(pedidoID,tokens);
+                                            break;
+                                        case "GET":
+                                            m = handleGet(pedidoID,tokens);
+                                            break;
+                                        case "MULTIPUT":
+                                            m = handleMultiPut(pedidoID,tokens);
+                                            break;
+                                        case "MULTIGET":
+                                            m = handleMultiGet(pedidoID,tokens);
+                                            break;
+                                        case "GETWHEN":
+                                            m = handleGetWhen(pedidoID,tokens);
+                                            break;
+                                        case "OPEN":
+
+                                            List<String> lista = handleOpenFile(tokens);
+
+                                            for (String s : lista)
+                                                cliente.pedidos.add(s);
+
+                                            break;
+
+                                        default:
+                                            System.err.println("Comando inválido.");
+                                            break;
+                                    }
+
+                                } catch (IllegalArgumentException e) {
+                                    System.err.println("Erro: " + e.getMessage());
+                                }
+                            
+                                //Mandar a mensagem
+                                if (m != null && socket.isConnected() && !socket.isClosed()) {
+
+                                    try {
+                                      
+                                        m.serializar(saida);
+
+                                        cliente.dados.put(m.getID(),new Dados(m));
+
+                                    }
+                                    catch (IOException e) {
+                                        System.err.println("Erro na serialização da mensagem: " + e.getMessage());
+                                    }
+                                
+                                }            
+
+                            }
+                            
                         } catch(InterruptedException e){
                             break;
                         } finally{
                             cliente.l.writeLock().unlock();
                         }
             
-                        //Pedido válido
-                        if (pedido != null) {
-            
-                            String input = pedido.trim();
-                            String[] tokens = input.split(" ");
-                            String command = tokens[0].toUpperCase();
-            
-                            Mensagem m = null;
-            
-                            try {
-
-                                switch (command) {
-                                    case "PUT":
-                                        m = handlePut(pedidoID,tokens);
-                                        break;
-                                    case "GET":
-                                        m = handleGet(pedidoID,tokens);
-                                        break;
-                                    case "MULTIPUT":
-                                        m = handleMultiPut(pedidoID,tokens);
-                                        break;
-                                    case "MULTIGET":
-                                        m = handleMultiGet(pedidoID,tokens);
-                                        break;
-                                    case "GETWHEN":
-                                        m = handleGetWhen(pedidoID,tokens);
-                                        break;
-                                    case "OPEN":
-
-                                        List<String> lista = handleOpenFile(tokens);
-
-                                        cliente.l.writeLock().lock();
-                                        for (String s : lista)
-                                            cliente.pedidos.add(s);
-                                        cliente.condPED.signalAll();
-                                        cliente.l.writeLock().unlock();
-
-
-                                    default:
-                                        System.out.println("Comando inválido.");
-                                        break;
-                                }
-
-                            } catch (IllegalArgumentException e) {
-                                System.err.println("Erro: " + e.getMessage());
-                            }
-            
-                            //Mandar a mensagem
-                            if (m != null) {
-
-                                try {
-                                    m.serializar(saida);
-
-                                    cliente.l.writeLock().lock();
-                                    cliente.dados.put(m.getID(),new Dados(m));
-                                    cliente.l.writeLock().unlock();
-
-                                }
-                                catch (IOException e) {
-                                    System.err.println("Erro na serialização da mensagem: " + e.getMessage());
-                                }
-            
-                            }            
-                            
-                        }
+                        
 
                     }
     
                 });
                 escritorCliente.start();
 
-                while (true) {
+                while (socket.isConnected()) {
 
                     menu(scanner,nome);
                     String input = scanner.nextLine();

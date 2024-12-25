@@ -20,7 +20,7 @@ public class Gabinete extends Thread {
     }
 
     public void run() {
-        Socket s = null;
+        Socket s_gab = null;
     
         while (true) {
 
@@ -30,15 +30,20 @@ public class Gabinete extends Thread {
                 while (server.clientesWaiting.isEmpty()) {
                     server.condGab.await(); // Aguardar até que haja um cliente na fila
                 }
-                s = server.clientesWaiting.poll(); // Retira um socket da fila
-                System.out.println("Sockets: " + server.clientesWaiting.size());
+
+                s_gab = server.clientesWaiting.poll(); // Retira um socket da fila
+                
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
                 server.l.unlock(); 
             }
 
+            final Socket s = s_gab;
+
             if (s != null) {
+
+                int teste = 0;
 
                 try (
                     DataInputStream entrada = new DataInputStream(s.getInputStream());
@@ -50,50 +55,39 @@ public class Gabinete extends Thread {
                     
                     //1º Fase -> Autenticação/Registo do Cliente
                     Mensagem authCliente = Mensagem.deserializar(entrada);
-                    System.out.println("Z : " + authCliente.getTipo());
                     //Autenticação
                     if (authCliente.getTipo() == 2) {
-                        System.out.println("X");
+
                         try{
                             String nome = authCliente.getNome();
                             String passe = authCliente.getPassword();
 
-                            Cliente cli = null; 
-                            cli = server.clientes.getCliente(nome, passe);
+                            this.cliente = server.clientes.getCliente(nome, passe);
 
-                            if (cli != null) {
-                                cliente = cli;
-                            }
-                            else {
-                                System.err.println("Falha na autenticação para: " + nome);
+                            if (this.cliente == null) {
+                                System.out.println("Falha na autenticação para: " + nome);
                             }
 
                         } catch(InvalidMessageException i) {
                             System.err.println("Mensagem inválida recebida. A encerrar conexão...");
                             i.printStackTrace();
                         }
+
                     }
 
                     //Registo
                     if (authCliente.getTipo() == 1) {
-                        System.out.println("Y");
+
                         try{
                             String nome = authCliente.getNome();
                             String passe = authCliente.getPassword();
                                 
-                            System.out.println("A");
+                            this.cliente = server.clientes.adicionarCliente(nome, passe);
 
-                            Cliente cli = server.clientes.adicionarCliente(nome, passe);
-
-                            System.out.println("B");
-
-                            if (cli != null) {
-                                cliente = cli;
+                            if (this.cliente == null) {
+                                System.out.println("Falha no registo para: " + nome);
                             }
 
-                            else {
-                                System.err.println("Falha no registo para: " + nome);
-                            }
                         } catch (InvalidMessageException i) {
                             System.err.println("Mensagem inválida recebida. A encerrar conexão...");
                             i.printStackTrace();
@@ -102,12 +96,8 @@ public class Gabinete extends Thread {
                     }
 
                     //Verifica se a autenticação é válida
-
-                    
                     Resposta sessaoValida = Resposta.sessaoValida(authCliente.getID(),this.cliente != null);
-                    System.out.println("T");
                     sessaoValida.serializar(saida);
-                    System.out.println("W");
 
                     //Autenticação é válida
                     if (this.cliente != null) {
@@ -145,13 +135,16 @@ public class Gabinete extends Thread {
                             }
                             
                         });
-                    
                         enviarMensagens.start();
 
+                        System.out.println("A");
                         //Ler as mensagens recebidas
-                        Mensagem mRecebida;
-                        while ((mRecebida = Mensagem.deserializar(entrada)) != null) {
-
+                        Mensagem mRecebida = null;
+                        while (s.isConnected()) {
+                            System.out.println("B : " + teste);
+                            mRecebida = Mensagem.deserializar(entrada);
+                            teste++;
+                            System.out.println("D");
                             System.out.println("Cliente: " + mRecebida);
                             server.l.lock();
                             try {
@@ -165,19 +158,23 @@ public class Gabinete extends Thread {
                             break;
                         } */
                         }
+                        System.out.println("C");
+
     
-                        enviarMensagens.join(); // Aguarda a thread de envio finalizar
+                        enviarMensagens.interrupt();
 
                     }
 
-                } catch (IOException | InterruptedException e) {
+                } catch (IOException e) {
                     System.err.println("Erro ao comunicar com o cliente: " + e.getMessage());
                 } finally { // serve para fechar arquivos/sockets ou libertar recursos
-                    try {
-                        s.close(); // Fechar o socket após a comunicação
-                    } catch (IOException e) {
-                        System.err.println("Erro ao fechar socket: " + e.getMessage());
-                    }
+
+                    //try {
+                        //s.close(); // Fechar o socket após a comunicação
+                    //} catch (IOException e) {
+                    //    System.err.println("Erro ao fechar socket: " + e.getMessage());
+                    //}
+
                 }
                 System.out.println("Conexão com o cliente encerrada.");
             }

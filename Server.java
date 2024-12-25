@@ -41,7 +41,7 @@ public class Server {
              }
 
              while(true) {
-                 Socket socket = servidorSocket.accept(); // aceitar a conexão
+                 final Socket socket = servidorSocket.accept(); // aceitar a conexão
                  System.out.println("Cliente conectado: " + socket.getInetAddress().getHostAddress());
 
                  server.l.lock();

@@ -11,16 +11,13 @@ import Serializacao.Resposta;
 public class Cliente {
     public Lock l;
     public Condition cond;
-    private final Integer id;
     private String password;
     private Queue<Resposta> respostas;
-    private ClienteCredenciais credenciais;
 
 
-    public Cliente(String password, Integer id){
+    public Cliente(String password){
         //if(credenciais == null) throw new IllegalArgumentException("As credenciais do cliente não podem ser nulas");
 
-        this.id = id;
         this.password = password;
         this.l = new ReentrantLock();
         this.cond = l.newCondition();
@@ -30,10 +27,6 @@ public class Cliente {
 
     public boolean samePassword(String password) {
         return this.password.equals(password);
-    }
-
-    public ClienteCredenciais getCredenciais() {
-        return this.credenciais;
     }
 
 
@@ -50,7 +43,7 @@ public class Cliente {
         return !respostas.isEmpty();
     }
 
-
+/* 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -64,5 +57,5 @@ public class Cliente {
     @Override
     public int hashCode() {
         return 17*31*this.credenciais.hashCode();
-    }
+    }*/
 }

@@ -8,10 +8,8 @@ import java.util.concurrent.locks.ReentrantLock;
 public class GestorClientes {
     private Lock clientes_l = new ReentrantLock();
     private Map<String,Cliente> clientes = new HashMap<>();
-    private Integer ids;
 
     public GestorClientes() {
-        this.ids = 1;
     }
     
     public Cliente adicionarCliente(String nome, String password){
@@ -23,8 +21,7 @@ public class GestorClientes {
             
             //Cliente não existe
             if (c == null) {
-                c = new Cliente(password, ids);
-                this.ids++;
+                c = new Cliente(password);
                 this.clientes.put(nome,c);
                 return c;
             }

@@ -1,0 +1,5000 @@
+PUT e Pomegranate
+MULTIPUT k Peach a Avocado i Apple n Fig d Nectarine d Dragonfruit t Apple
+PUT p Nectarine
+PUT d Cherry
+GET q
+PUT q Pomegranate
+PUT p Grape
+PUT l Strawberry
+PUT o Watermelon
+PUT u Blackberry
+PUT b Raspberry
+PUT n Kiwi
+GET c
+GET b
+PUT i Passionfruit
+GET a
+GET q
+MULTIPUT a Dragonfruit i Persimmon q Pear t Papaya j Dragonfruit c Nectarine g Pomegranate t Blueberry
+MULTIGET d h w v j v c a j q s c
+PUT b Mango
+GET o
+PUT l Pear
+GETWHEN p r Cherry
+PUT s Pear
+GETWHEN c h Passionfruit
+PUT u Guava
+PUT l Blackberry
+PUT w Peach
+MULTIPUT t Nectarine t Watermelon q Watermelon u Cashew o Watermelon q Fig r Blackberry o Tamarind o Cashew j Pear o Persimmon
+PUT i Pineapple
+GET b
+PUT b Starfruit
+GET j
+MULTIPUT u Watermelon d Tamarind p Melon k Nectarine v Nectarine
+GET r
+MULTIPUT r Papaya a Cherry b Pomegranate f Papaya e Cherry b Cherry t Fig a Grape r Orange q Avocado d Apple f Mango
+GET q
+GET r
+GET i
+GET b
+PUT h Peach
+PUT b Blackberry
+GET i
+MULTIPUT q Watermelon o Avocado o Pear l Dragonfruit m Blueberry
+PUT o Raspberry
+MULTIGET m l j j w i
+GET t
+PUT i Banana
+GET u
+MULTIPUT v Avocado p Apple n Pear a Melon l Pomegranate n Papaya l Nectarine w Blackberry v Lemon e Strawberry p Fig n Lemon
+PUT k Blackberry
+PUT k Avocado
+GET w
+PUT p Pear
+GET h
+GET f
+GETWHEN t m Grape
+GET o
+MULTIPUT d Papaya g Avocado t Raspberry o Dragonfruit b Guava o Fig
+MULTIGET t c i d w
+MULTIGET t p c s f l e i q b e j
+GET w
+GET t
+GET e
+PUT f Strawberry
+MULTIPUT b Mango t Banana n Grape q Passionfruit c Fig k Avocado f Strawberry g Passionfruit
+GET a
+GET d
+PUT f Mango
+MULTIPUT t Cherry u Pineapple q Pear b Blueberry j Blueberry m Peach s Peach l Pomegranate o Cherry
+GET d
+PUT j Avocado
+MULTIPUT g Blueberry s Pear t Guava u Blueberry a Peach l Raspberry v Cherry v Orange d Fig h Melon o Peach m Watermelon
+GET a
+PUT v Pomegranate
+GET l
+PUT s Kiwi
+GET l
+MULTIPUT k Lemon i Starfruit u Blackberry d Guava h Lemon r Nectarine m Starfruit j Dragonfruit c Peach e Starfruit c Kiwi j Tamarind
+GET e
+MULTIGET c f m f i
+GET g
+GET h
+PUT g Pomegranate
+GET h
+GET e
+PUT e Pomegranate
+PUT t Passionfruit
+MULTIPUT n Blueberry d Cherry r Blackberry d Papaya
+GET s
+GET p
+GET u
+PUT q Pear
+PUT d Dragonfruit
+GET l
+GET a
+MULTIPUT k Pineapple p Pomegranate d Peach m Orange v Grape b Mango o Cashew r Starfruit
+GET n
+PUT j Cashew
+MULTIPUT e Apple w Melon a Peach m Fig h Kiwi
+GET g
+GET i
+GET g
+PUT e Blackberry
+PUT p Raspberry
+PUT u Nectarine
+MULTIPUT m Kiwi e Pear v Blackberry v Blueberry t Pomegranate m Kiwi d Papaya c Lemon k Dragonfruit u Passionfruit
+PUT t Apple
+PUT w Cherry
+PUT i Starfruit
+GETWHEN w p Fig
+PUT a Tamarind
+MULTIPUT q Guava h Pomegranate i Avocado h Blackberry q Guava t Passionfruit d Starfruit c Cashew
+GET c
+PUT j Pomegranate
+PUT h Orange
+PUT n Tamarind
+GET a
+GET t
+MULTIGET k h e b a
+PUT u Kiwi
+PUT t Lychee
+MULTIPUT j Watermelon p Pear c Guava k Pear a Persimmon j Apple p Lychee m Cashew
+PUT t Papaya
+PUT f Blackberry
+GET h
+GETWHEN i e Passionfruit
+MULTIPUT u Watermelon m Papaya u Persimmon s Nectarine u Passionfruit r Lychee a Cherry i Strawberry r Strawberry c Cashew
+GET t
+PUT b Cherry
+GET d
+PUT q Starfruit
+GET n
+PUT w Dragonfruit
+GET i
+PUT n Guava
+MULTIPUT i Melon a Mango p Banana a Melon u Guava a Pear
+MULTIGET u b g d f q c j
+GET b
+GET v
+PUT e Guava
+PUT b Orange
+PUT l Mango
+MULTIPUT d Mango h Lychee f Fig e Tamarind w Pear a Fig k Grape i Nectarine r Papaya j Persimmon f Strawberry
+GET u
+GET n
+PUT e Blackberry
+MULTIPUT p Persimmon m Melon h Blueberry n Lychee p Orange c Lychee f Lemon f Persimmon v Lemon f Orange l Blueberry m Guava
+MULTIPUT b Watermelon a Guava h Lychee a Orange i Tamarind v Mango i Avocado a Pomegranate u Apple m Raspberry
+MULTIPUT n Avocado v Fig h Blueberry s Starfruit r Strawberry a Pineapple t Cashew v Passionfruit t Melon
+MULTIPUT m Mango e Papaya r Pomegranate n Melon d Grape
+GET f
+MULTIPUT s Papaya h Avocado m Tamarind f Peach m Watermelon s Pomegranate
+PUT a Banana
+PUT k Cherry
+GET n
+GET p
+GET d
+PUT w Persimmon
+GET u
+GET w
+GET m
+GET h
+GET j
+GETWHEN q t Kiwi
+GET h
+PUT d Watermelon
+PUT b Guava
+GET f
+GET r
+GET n
+PUT j Nectarine
+GET n
+GET q
+PUT k Starfruit
+PUT k Persimmon
+GET f
+GET l
+PUT q Cherry
+MULTIGET l o v g e m o g g
+GET j
+PUT j Nectarine
+GET h
+PUT c Persimmon
+PUT h Tamarind
+MULTIGET q q d s s
+PUT k Blueberry
+GET m
+MULTIPUT s Blueberry t Peach o Melon u Papaya n Starfruit w Lychee s Nectarine r Starfruit
+PUT f Melon
+GET d
+GET r
+MULTIPUT b Melon r Cashew u Pomegranate k Grape
+PUT v Banana
+GET e
+GET q
+GET h
+MULTIGET l i d u l v j o
+MULTIPUT u Dragonfruit w Tamarind h Tamarind e Cashew r Cashew
+GET i
+GET a
+GET g
+PUT i Raspberry
+GET b
+MULTIPUT v Melon p Pineapple a Watermelon s Pear j Cherry a Lychee b Apple m Grape s Grape r Pomegranate b Nectarine w Cherry
+PUT p Orange
+MULTIPUT j Raspberry o Orange n Raspberry f Strawberry e Pear c Persimmon m Papaya u Dragonfruit d Grape
+PUT l Starfruit
+GET f
+MULTIPUT f Pear c Guava q Papaya p Pomegranate w Orange u Dragonfruit b Cashew l Lemon m Blueberry
+MULTIPUT b Raspberry j Melon f Passionfruit l Peach p Cashew g Mango v Apple l Starfruit
+PUT f Lemon
+GET r
+GET v
+PUT v Kiwi
+PUT r Orange
+GET p
+GET j
+MULTIPUT a Cashew o Guava r Fig w Grape i Peach k Peach m Lychee
+GET d
+PUT c Lychee
+PUT i Lemon
+PUT w Pomegranate
+MULTIGET l n v
+GET q
+MULTIPUT d Grape j Starfruit j Cashew g Starfruit
+GET k
+GET b
+PUT p Cherry
+MULTIGET e b e o i t s g
+MULTIGET m m t q l d c i k r g
+PUT j Watermelon
+MULTIPUT s Starfruit p Blueberry h Starfruit a Passionfruit i Watermelon j Dragonfruit j Strawberry
+GET j
+MULTIPUT n Nectarine t Banana v Blueberry w Strawberry v Papaya g Grape l Blueberry
+MULTIPUT h Guava v Fig n Lemon w Kiwi p Lemon w Avocado l Mango
+PUT s Grape
+MULTIPUT k Papaya f Grape a Starfruit i Papaya p Cherry o Fig d Banana w Papaya n Mango m Strawberry m Watermelon
+GET d
+MULTIPUT t Nectarine e Pineapple a Guava l Apple i Watermelon l Passionfruit r Mango g Peach g Mango e Pomegranate q Orange
+MULTIPUT w Guava p Pear f Lychee q Pineapple n Melon c Kiwi b Blackberry f Starfruit j Kiwi
+PUT j Peach
+GET a
+PUT b Tamarind
+PUT n Guava
+PUT p Fig
+GET g
+PUT l Grape
+MULTIPUT j Starfruit h Dragonfruit d Kiwi i Persimmon s Persimmon i Lemon w Cherry t Persimmon u Pomegranate
+MULTIGET w l i s e h g
+PUT p Pomegranate
+GET c
+PUT c Cashew
+GET e
+PUT p Melon
+PUT w Grape
+GET a
+PUT i Kiwi
+PUT g Apple
+MULTIPUT j Blueberry o Apple k Pomegranate r Blueberry t Pear j Nectarine m Lemon t Melon i Fig
+GET a
+PUT u Grape
+PUT n Tamarind
+PUT h Peach
+GET c
+MULTIPUT r Banana q Peach d Dragonfruit
+GET d
+GET j
+GET m
+PUT r Orange
+MULTIPUT w Apple w Raspberry t Mango t Tamarind q Starfruit
+GET k
+GET k
+PUT s Strawberry
+PUT q Lychee
+GET h
+MULTIPUT s Strawberry v Blackberry d Passionfruit n Fig o Tamarind i Persimmon
+MULTIGET t j b d g t n l v p u w
+MULTIPUT n Strawberry k Tamarind c Persimmon a Apple q Fig
+MULTIGET k r i f r b
+GET t
+PUT v Tamarind
+MULTIPUT q Grape t Cherry c Melon c Cashew g Persimmon w Orange
+GET f
+PUT p Papaya
+GET v
+MULTIPUT h Pineapple l Tamarind f Dragonfruit p Kiwi l Blueberry t Papaya p Starfruit f Kiwi o Pineapple s Tamarind w Persimmon
+GET m
+PUT v Pomegranate
+GETWHEN r u Starfruit
+GET p
+PUT p Blueberry
+PUT k Grape
+PUT b Avocado
+PUT i Pineapple
+PUT d Watermelon
+MULTIGET p q k e v e b
+GET l
+GET s
+PUT d Strawberry
+GET w
+MULTIPUT n Lemon w Apple o Mango n Mango
+GETWHEN b t Persimmon
+GET l
+GET s
+PUT w Starfruit
+GET j
+GETWHEN c k Banana
+PUT a Cashew
+GET f
+PUT g Cashew
+MULTIPUT s Raspberry l Blackberry t Cherry q Strawberry t Kiwi
+GET v
+GET f
+GET v
+MULTIPUT o Pomegranate f Pear j Banana v Strawberry t Persimmon d Banana k Pineapple b Mango m Watermelon j Persimmon
+PUT e Peach
+GET q
+GET n
+MULTIGET k q g p g b
+MULTIPUT c Raspberry o Cashew s Strawberry q Cashew u Grape
+GET q
+GET o
+GET g
+MULTIPUT n Mango v Tamarind w Nectarine
+MULTIPUT w Nectarine k Passionfruit v Orange w Blueberry g Pomegranate n Guava w Tamarind b Papaya d Lychee v Kiwi l Avocado
+PUT l Avocado
+GET d
+GET b
+GET j
+GET u
+PUT f Fig
+GET q
+GET c
+PUT b Cashew
+GET e
+PUT g Cashew
+GET u
+MULTIGET r n a o j o m j t c
+GETWHEN w l Banana
+PUT o Persimmon
+MULTIPUT a Raspberry k Grape f Papaya d Pineapple e Orange r Nectarine w Mango p Raspberry u Fig l Lychee l Starfruit v Pineapple
+GET h
+PUT w Starfruit
+GET p
+GET p
+PUT v Lychee
+MULTIPUT a Blueberry m Guava w Lychee q Pear h Orange q Persimmon v Melon
+MULTIPUT d Nectarine a Blueberry w Banana o Mango
+PUT p Nectarine
+PUT f Pomegranate
+GET n
+PUT q Pomegranate
+PUT s Persimmon
+GET n
+PUT d Nectarine
+GET m
+PUT r Persimmon
+MULTIPUT f Mango e Lemon l Fig s Grape o Persimmon b Pineapple v Peach c Pineapple k Papaya
+MULTIPUT q Persimmon s Kiwi c Apple k Lemon u Peach r Papaya t Banana l Nectarine j Watermelon u Apple s Strawberry
+GET h
+MULTIGET p d f a k
+PUT t Melon
+MULTIPUT v Peach c Blueberry d Pomegranate
+PUT i Melon
+PUT p Lychee
+GET j
+PUT p Starfruit
+PUT k Persimmon
+MULTIPUT d Lemon d Mango o Blueberry v Strawberry b Passionfruit u Blackberry s Lychee
+PUT i Lychee
+MULTIGET f f b o u v a d o d
+MULTIGET d n h d t
+PUT t Banana
+GET n
+MULTIPUT p Watermelon t Grape o Melon q Passionfruit v Banana j Peach a Cashew m Melon
+GET r
+MULTIPUT h Blueberry r Passionfruit s Blackberry f Nectarine j Dragonfruit m Pomegranate g Pear n Kiwi p Pomegranate
+GET e
+MULTIPUT i Cherry w Orange j Blueberry p Persimmon v Grape k Dragonfruit c Papaya t Dragonfruit w Cashew
+PUT t Nectarine
+GET p
+PUT h Pomegranate
+GETWHEN k o Raspberry
+PUT w Strawberry
+PUT g Guava
+PUT m Cashew
+GET u
+MULTIPUT s Peach g Fig k Pineapple m Fig
+GET f
+GET g
+MULTIGET r s v v c j q l v
+PUT b Passionfruit
+GET e
+PUT m Nectarine
+GET n
+PUT k Blackberry
+MULTIGET g f k r v q
+GET q
+MULTIPUT l Dragonfruit d Papaya o Mango r Banana m Blueberry k Lychee k Grape n Orange n Grape a Blueberry o Avocado
+GET f
+PUT w Watermelon
+MULTIGET h o q q w t
+MULTIPUT p Lemon n Guava p Melon t Lychee f Watermelon d Watermelon g Strawberry o Dragonfruit c Watermelon f Passionfruit
+GET p
+MULTIPUT l Lemon p Lemon t Papaya
+PUT r Dragonfruit
+PUT b Pear
+GET f
+PUT v Mango
+MULTIPUT r Kiwi l Cherry m Apple b Pineapple j Banana q Starfruit b Pineapple j Lemon j Blueberry
+PUT g Cherry
+MULTIPUT g Pineapple m Passionfruit n Cashew n Tamarind d Dragonfruit w Kiwi m Fig t Peach i Guava u Grape l Banana l Nectarine
+GET e
+PUT o Avocado
+PUT g Blueberry
+GET b
+PUT q Guava
+MULTIPUT u Mango s Kiwi m Banana
+PUT f Kiwi
+PUT c Cashew
+PUT t Avocado
+GET g
+GET c
+PUT b Cherry
+PUT r Starfruit
+PUT u Pear
+PUT v Raspberry
+GET d
+GET k
+GETWHEN g f Pomegranate
+GET m
+GET b
+MULTIPUT e Raspberry m Lemon n Melon s Passionfruit r Peach v Cherry q Pomegranate b Blueberry i Melon
+GET k
+GET w
+GET p
+PUT m Starfruit
+GET b
+PUT e Cashew
+GET n
+PUT l Avocado
+MULTIPUT p Dragonfruit g Lychee o Orange h Mango h Raspberry l Nectarine d Pear b Strawberry b Cashew
+PUT o Blueberry
+MULTIPUT g Lemon f Mango c Mango o Strawberry b Strawberry
+MULTIPUT t Pear w Starfruit d Passionfruit
+PUT n Avocado
+MULTIPUT u Cashew e Starfruit k Pear u Orange h Cherry j Grape m Orange e Apple o Blackberry
+GET n
+GET s
+GET t
+GET o
+MULTIPUT n Lychee o Strawberry r Peach f Watermelon l Avocado t Melon a Passionfruit v Dragonfruit
+GET f
+GET f
+GET n
+PUT e Tamarind
+GETWHEN g g Pineapple
+GET h
+MULTIGET j j s b l o h b v r g h
+GET p
+GET e
+PUT u Nectarine
+GETWHEN q q Dragonfruit
+MULTIPUT b Starfruit q Nectarine k Nectarine v Pear m Pomegranate i Mango p Lychee f Tamarind a Pineapple
+PUT w Fig
+MULTIPUT v Peach u Tamarind n Fig i Raspberry q Peach m Grape w Strawberry j Raspberry l Melon o Papaya
+PUT t Tamarind
+PUT c Passionfruit
+PUT u Fig
+PUT q Blueberry
+MULTIGET q g u p d r e a j j i d
+GET c
+MULTIGET v n b d i j j
+PUT t Avocado
+MULTIGET h e t i g o
+PUT b Peach
+GET b
+PUT c Lychee
+GET t
+PUT w Mango
+MULTIGET u n i h c
+MULTIPUT a Cherry n Guava o Tamarind v Nectarine
+GET n
+GET r
+PUT p Persimmon
+MULTIGET w d i v v t t m l k d
+GET q
+PUT o Starfruit
+PUT p Persimmon
+GETWHEN n b Persimmon
+GET n
+GET l
+PUT t Grape
+GET g
+GET k
+MULTIPUT k Watermelon r Lemon d Starfruit g Guava c Cashew r Kiwi d Tamarind
+MULTIPUT c Strawberry n Grape p Melon q Pineapple k Pineapple v Strawberry
+PUT b Orange
+PUT a Blackberry
+GET w
+MULTIPUT r Papaya q Avocado s Strawberry h Starfruit v Tamarind
+MULTIPUT q Guava d Fig a Cashew r Passionfruit f Dragonfruit s Persimmon g Strawberry
+MULTIPUT n Pomegranate h Pomegranate o Apple a Lemon e Nectarine q Guava m Tamarind m Banana o Blackberry b Blackberry s Strawberry
+PUT s Lychee
+GET g
+GET c
+MULTIPUT e Peach v Cherry u Blueberry t Fig
+GET f
+GET e
+MULTIPUT i Avocado o Dragonfruit o Passionfruit r Pineapple r Cashew n Pear s Banana f Pear v Pineapple s Orange
+GET s
+GET p
+MULTIGET r o m b
+PUT c Avocado
+GET m
+PUT o Raspberry
+MULTIPUT b Fig d Banana r Dragonfruit e Strawberry q Lemon
+GET r
+PUT u Banana
+GET k
+GET h
+GET s
+GET i
+GET e
+PUT c Lemon
+MULTIPUT u Melon e Mango c Banana v Raspberry j Guava u Fig f Lychee f Tamarind f Papaya e Tamarind u Apple
+GET w
+GET b
+GET w
+PUT k Melon
+PUT s Tamarind
+PUT i Raspberry
+PUT e Cashew
+PUT v Blackberry
+PUT b Blackberry
+GET l
+GET e
+GETWHEN h p Mango
+MULTIPUT v Starfruit r Nectarine r Passionfruit c Watermelon l Mango b Cashew
+PUT h Lemon
+PUT p Mango
+PUT c Guava
+GET r
+GET h
+GET m
+GET c
+GET m
+GET e
+PUT h Lychee
+PUT e Tamarind
+GET p
+GET p
+GET w
+GET r
+PUT k Cashew
+GETWHEN u f Persimmon
+MULTIGET t i r o a s d
+GET o
+PUT n Strawberry
+GET o
+PUT d Papaya
+PUT d Peach
+GET r
+PUT g Watermelon
+MULTIPUT p Pineapple w Guava p Raspberry n Guava p Raspberry g Lemon j Pineapple u Fig n Dragonfruit a Nectarine w Pineapple
+GET g
+GET g
+GET p
+PUT t Melon
+PUT v Pomegranate
+GET a
+PUT m Lemon
+GET c
+GET a
+PUT u Passionfruit
+GET o
+GET s
+PUT i Raspberry
+GET q
+PUT t Cherry
+GET a
+GET h
+GET a
+GETWHEN v t Lychee
+PUT b Watermelon
+PUT p Blackberry
+GET f
+PUT j Banana
+MULTIPUT p Watermelon p Banana k Lemon m Cashew p Persimmon d Lemon b Kiwi q Cashew r Fig f Banana
+GET m
+PUT t Cherry
+GET l
+PUT e Cashew
+GET s
+PUT o Nectarine
+GET i
+GET e
+GET v
+PUT c Avocado
+GET b
+GET k
+PUT k Guava
+PUT b Pomegranate
+PUT t Watermelon
+GET n
+MULTIPUT a Persimmon b Raspberry h Persimmon
+GET q
+PUT m Persimmon
+MULTIPUT d Pineapple p Raspberry u Strawberry c Melon
+GET u
+PUT b Avocado
+GET n
+GET o
+PUT h Blackberry
+GET g
+MULTIGET p v k b r
+PUT c Cherry
+PUT l Pear
+PUT d Strawberry
+GET j
+MULTIGET j t l v b u s n f f e l
+PUT p Cashew
+PUT r Strawberry
+GET a
+PUT j Melon
+GET t
+GET j
+MULTIPUT u Grape n Fig a Lychee h Fig k Nectarine
+GETWHEN o l Passionfruit
+MULTIPUT g Guava w Pear u Blueberry t Grape
+GETWHEN w p Papaya
+PUT t Pineapple
+PUT f Lemon
+GET v
+PUT c Nectarine
+PUT s Orange
+GET e
+MULTIPUT w Strawberry h Raspberry l Passionfruit o Guava c Melon h Apple
+PUT r Grape
+PUT e Strawberry
+GET g
+GET s
+PUT b Nectarine
+PUT a Peach
+GET j
+PUT r Persimmon
+GET h
+PUT g Guava
+PUT o Starfruit
+MULTIGET e b m l a u e
+GET k
+GET g
+PUT i Persimmon
+GET i
+GET h
+PUT l Apple
+GET v
+PUT r Cashew
+PUT d Watermelon
+MULTIGET u a a p n j d j
+MULTIPUT w Fig i Melon c Strawberry
+GET k
+GET m
+PUT t Blackberry
+GET c
+PUT u Cashew
+PUT d Orange
+PUT d Passionfruit
+GETWHEN h g Cashew
+GET v
+MULTIPUT e Banana p Cashew e Blueberry u Apple c Nectarine s Persimmon j Kiwi l Blackberry f Lychee w Tamarind
+GET i
+MULTIPUT o Guava n Peach s Strawberry j Persimmon a Blackberry w Cashew n Starfruit o Starfruit d Passionfruit m Starfruit i Pear f Fig
+PUT e Papaya
+GET e
+GET t
+GET v
+PUT u Pomegranate
+GET c
+PUT l Avocado
+PUT a Avocado
+PUT b Grape
+GET i
+PUT o Tamarind
+MULTIPUT t Orange i Pear u Papaya d Raspberry d Nectarine m Lemon
+PUT q Tamarind
+PUT f Grape
+MULTIPUT n Fig a Papaya d Papaya f Grape g Cherry o Avocado r Blueberry t Fig e Watermelon o Starfruit i Persimmon i Mango
+PUT b Orange
+MULTIPUT n Starfruit w Raspberry g Pomegranate e Lychee d Grape d Guava g Melon w Pomegranate n Watermelon
+MULTIPUT o Watermelon m Cashew b Starfruit m Watermelon
+PUT t Papaya
+PUT h Avocado
+PUT h Pear
+GET g
+GET a
+PUT b Cherry
+PUT r Passionfruit
+PUT e Strawberry
+PUT l Melon
+PUT d Lemon
+PUT a Raspberry
+PUT b Mango
+GET n
+PUT o Apple
+GET s
+GET d
+PUT r Cherry
+MULTIPUT k Cashew h Grape e Melon d Lemon i Pineapple
+GET f
+PUT u Blackberry
+MULTIPUT k Cherry f Apple q Papaya w Nectarine l Strawberry t Starfruit
+MULTIPUT q Persimmon s Lemon i Dragonfruit
+MULTIPUT e Grape e Grape e Dragonfruit l Raspberry
+GET g
+MULTIPUT k Pear f Avocado i Passionfruit s Peach c Banana h Raspberry s Mango w Avocado e Blueberry q Guava d Pineapple a Mango
+MULTIPUT i Nectarine s Cherry i Raspberry w Melon p Tamarind
+GET b
+MULTIPUT g Apple p Guava t Tamarind o Avocado g Mango r Pineapple w Guava b Persimmon l Avocado m Papaya c Mango
+GET t
+MULTIGET m w f u c a p q t l p
+GET d
+MULTIPUT n Dragonfruit b Pear a Nectarine v Watermelon v Lychee c Blackberry q Passionfruit n Pineapple
+MULTIGET q g b q
+PUT c Tamarind
+GET g
+PUT r Fig
+PUT g Papaya
+PUT j Passionfruit
+GET v
+PUT f Kiwi
+GET r
+GET m
+GET n
+GET k
+GET w
+GET u
+PUT m Cashew
+GET l
+PUT k Lychee
+MULTIPUT f Banana c Nectarine p Tamarind t Lychee
+GET c
+PUT g Blueberry
+GET p
+GET k
+GET k
+GET i
+MULTIPUT j Peach n Fig u Orange m Fig f Grape t Lemon e Dragonfruit
+GET c
+MULTIGET i h f n
+GET g
+GETWHEN b u Banana
+PUT n Mango
+GET i
+PUT n Raspberry
+PUT r Pomegranate
+PUT b Papaya
+MULTIGET g l u b q r g s i
+GET a
+PUT d Grape
+PUT b Banana
+PUT c Persimmon
+MULTIPUT c Raspberry m Apple r Dragonfruit m Peach e Avocado k Guava k Mango e Strawberry u Cashew t Nectarine
+GET u
+GET s
+MULTIPUT q Cashew h Dragonfruit r Mango m Passionfruit e Cashew i Fig q Dragonfruit s Lemon d Pear c Tamarind v Blueberry m Grape
+PUT q Pomegranate
+PUT q Banana
+PUT q Tamarind
+PUT l Mango
+PUT f Dragonfruit
+GET f
+GET h
+PUT t Dragonfruit
+MULTIPUT u Raspberry u Starfruit f Pineapple n Fig m Mango j Raspberry l Guava h Tamarind u Lychee r Dragonfruit
+PUT v Peach
+MULTIPUT r Strawberry s Apple j Lemon
+GET h
+PUT l Lychee
+MULTIPUT p Passionfruit f Cashew e Passionfruit o Guava l Cherry g Blackberry q Fig u Persimmon n Mango p Peach
+PUT c Melon
+PUT v Strawberry
+PUT k Persimmon
+MULTIPUT j Orange f Melon m Guava b Lychee
+PUT l Avocado
+GET u
+MULTIPUT e Pear i Orange h Persimmon u Guava q Lychee o Papaya s Raspberry u Tamarind d Raspberry i Lemon j Blueberry p Persimmon
+PUT p Apple
+MULTIPUT p Grape g Nectarine b Nectarine h Grape n Strawberry w Dragonfruit v Lychee u Lychee a Dragonfruit
+GET f
+PUT l Pineapple
+PUT i Blueberry
+MULTIGET l g a n l n g j u u t
+MULTIPUT h Banana a Orange c Cashew
+PUT h Watermelon
+PUT h Fig
+GET s
+PUT e Lychee
+PUT s Dragonfruit
+PUT d Grape
+MULTIPUT c Apple p Tamarind r Dragonfruit o Cherry h Cherry f Grape
+MULTIPUT u Blackberry w Melon k Lychee u Strawberry t Cherry n Persimmon p Tamarind g Orange
+GET m
+PUT g Melon
+PUT d Pomegranate
+GET w
+GET l
+MULTIPUT m Apple i Passionfruit l Kiwi t Papaya n Mango b Cherry r Mango q Kiwi j Nectarine r Mango k Blueberry j Blackberry
+GET q
+PUT v Papaya
+GET n
+PUT l Blueberry
+PUT w Guava
+MULTIPUT k Cherry k Pineapple t Apple i Pear n Nectarine i Kiwi s Mango v Raspberry f Starfruit t Apple q Raspberry
+GET g
+PUT v Strawberry
+MULTIPUT k Orange j Blackberry k Papaya f Cashew f Avocado t Cherry e Nectarine m Grape p Passionfruit
+GET b
+MULTIPUT k Dragonfruit k Avocado l Avocado p Avocado h Fig u Papaya c Pear a Pomegranate n Pear
+PUT k Peach
+PUT i Dragonfruit
+GET w
+MULTIGET i p p r w r b h
+PUT o Persimmon
+PUT k Cashew
+MULTIPUT o Nectarine k Pear b Passionfruit o Cashew n Papaya a Mango
+PUT d Blackberry
+MULTIGET i u e j m j k g q b d
+PUT j Lychee
+PUT k Cherry
+PUT m Dragonfruit
+PUT k Banana
+MULTIPUT d Mango m Blackberry n Strawberry r Blueberry t Lemon g Cherry h Pear q Pomegranate
+MULTIPUT q Peach h Starfruit j Orange p Starfruit t Blackberry l Starfruit b Pomegranate c Melon t Lemon s Orange
+GET u
+PUT w Starfruit
+MULTIPUT p Blueberry v Lychee e Persimmon e Apple b Tamarind k Banana p Raspberry i Cherry k Passionfruit k Orange m Nectarine
+PUT m Raspberry
+GET t
+GET u
+PUT e Kiwi
+PUT p Kiwi
+GET e
+PUT c Dragonfruit
+MULTIPUT t Banana l Blueberry d Guava i Nectarine t Blueberry r Starfruit j Apple o Nectarine g Pear a Cherry
+MULTIPUT j Blackberry o Apple w Tamarind n Mango q Mango m Raspberry e Blueberry v Lemon
+PUT w Papaya
+MULTIGET v l j u s r q r
+PUT v Lemon
+PUT i Lychee
+GET k
+PUT t Banana
+PUT q Lemon
+GET u
+GET b
+MULTIGET h c i c
+PUT j Apple
+MULTIPUT k Lemon n Apple w Banana d Lychee h Watermelon t Cashew b Raspberry n Persimmon o Lychee k Apple q Grape
+GET k
+PUT t Persimmon
+GET a
+PUT j Watermelon
+PUT q Fig
+GET e
+GET n
+GET n
+MULTIPUT r Banana c Dragonfruit q Cherry l Avocado
+PUT r Banana
+GET k
+PUT a Grape
+PUT l Watermelon
+PUT t Pineapple
+PUT e Raspberry
+PUT t Strawberry
+PUT w Cashew
+PUT i Grape
+GET n
+PUT a Blackberry
+PUT l Dragonfruit
+PUT u Blackberry
+PUT b Strawberry
+MULTIGET k m d l s c k t n c
+PUT i Tamarind
+PUT m Blueberry
+PUT p Passionfruit
+GET f
+GET m
+MULTIPUT f Banana m Pear a Pomegranate q Strawberry l Melon m Banana
+MULTIPUT e Mango d Lychee w Kiwi j Persimmon e Cherry b Papaya v Banana n Banana r Tamarind e Nectarine b Starfruit b Mango
+GET s
+GET d
+PUT l Strawberry
+MULTIPUT b Pineapple t Blackberry j Peach l Melon u Fig d Blueberry n Banana q Guava f Kiwi a Lychee t Persimmon
+GET f
+PUT c Pineapple
+GET m
+GET o
+PUT g Melon
+GET s
+PUT d Cashew
+MULTIPUT o Persimmon w Pineapple t Watermelon l Blueberry m Blueberry
+PUT q Blueberry
+PUT d Pomegranate
+GET i
+GET w
+GET e
+GET m
+GET a
+GET i
+GET g
+GET i
+MULTIPUT t Guava w Nectarine l Apple i Raspberry h Lemon n Watermelon b Watermelon b Blueberry r Strawberry i Tamarind i Banana r Pomegranate
+PUT n Persimmon
+GET s
+PUT i Lemon
+GET e
+GETWHEN l m Orange
+PUT p Guava
+GET f
+PUT p Cashew
+GET f
+GET d
+PUT k Orange
+PUT t Guava
+PUT u Nectarine
+GET r
+PUT u Peach
+PUT l Apple
+PUT i Cherry
+GET p
+GET g
+GET b
+MULTIGET s b f f s
+GET i
+PUT p Guava
+PUT f Melon
+GET t
+MULTIPUT j Kiwi l Avocado f Pineapple g Nectarine
+GET r
+GET q
+GET a
+GET c
+MULTIPUT s Peach o Grape n Blackberry n Blueberry s Lychee p Raspberry l Lychee e Papaya r Dragonfruit c Lychee
+GET d
+PUT i Passionfruit
+GET q
+GET r
+GET e
+PUT a Lychee
+GET t
+GET u
+PUT b Blueberry
+PUT f Cherry
+PUT c Passionfruit
+MULTIPUT u Lemon v Pomegranate b Orange t Nectarine r Fig t Pineapple b Banana n Mango h Banana l Watermelon
+GET i
+GET j
+GET o
+PUT j Lychee
+GETWHEN p q Watermelon
+PUT w Starfruit
+MULTIPUT t Pear a Nectarine g Blackberry b Tamarind j Tamarind u Guava u Cherry k Apple k Lychee
+PUT s Persimmon
+MULTIPUT d Strawberry q Banana o Dragonfruit n Avocado t Avocado
+PUT c Cherry
+GETWHEN p e Passionfruit
+PUT t Pear
+PUT i Fig
+PUT k Lychee
+GET n
+PUT u Blueberry
+PUT e Mango
+GET l
+GET t
+GET j
+MULTIPUT q Pomegranate d Apple h Cashew l Strawberry v Passionfruit c Nectarine r Grape l Pomegranate p Cherry n Melon h Nectarine
+GET w
+PUT s Kiwi
+GET n
+MULTIPUT j Raspberry l Lychee b Grape j Mango f Blackberry v Melon r Tamarind
+PUT w Melon
+GET p
+MULTIPUT h Pineapple t Pear k Blackberry w Persimmon o Fig g Guava
+GET c
+GET j
+PUT f Cherry
+PUT l Raspberry
+PUT g Guava
+GET o
+PUT b Tamarind
+PUT i Melon
+GET j
+PUT p Lemon
+GET i
+GET g
+MULTIGET k l c o r m
+MULTIPUT r Raspberry t Cherry q Passionfruit v Lychee s Pomegranate l Cherry o Tamarind
+PUT a Orange
+MULTIGET c w u c c v
+GET n
+PUT s Blackberry
+PUT u Fig
+PUT u Lemon
+GET o
+MULTIPUT h Papaya u Tamarind o Lemon s Cashew n Cherry
+PUT u Nectarine
+PUT q Avocado
+PUT a Orange
+MULTIPUT r Pomegranate k Apple t Persimmon s Cherry
+PUT s Avocado
+MULTIPUT g Grape o Guava r Kiwi s Pineapple v Dragonfruit n Fig d Kiwi f Watermelon j Lychee
+PUT a Kiwi
+MULTIGET q d q
+PUT l Cherry
+PUT a Papaya
+GETWHEN f v Pear
+PUT e Mango
+MULTIPUT v Orange r Pomegranate c Banana q Passionfruit k Cashew n Fig w Orange h Dragonfruit
+PUT s Nectarine
+PUT g Blueberry
+PUT p Strawberry
+PUT e Guava
+PUT r Melon
+GET v
+MULTIPUT r Strawberry d Dragonfruit o Papaya o Orange
+PUT d Dragonfruit
+PUT r Passionfruit
+GET a
+PUT j Persimmon
+PUT g Orange
+GET n
+PUT c Mango
+PUT d Lychee
+MULTIPUT i Pomegranate u Pear w Pomegranate s Tamarind s Cherry w Avocado
+PUT j Apple
+PUT u Watermelon
+MULTIPUT e Starfruit b Blueberry j Passionfruit h Watermelon l Apple c Pear
+PUT c Peach
+GETWHEN c r Tamarind
+GET a
+MULTIPUT c Lychee l Peach m Strawberry j Pear k Papaya g Papaya f Dragonfruit
+GET b
+GET e
+MULTIGET i k e l e
+MULTIGET f b u i q c m
+PUT s Banana
+MULTIPUT c Watermelon l Pear j Lemon
+PUT r Blackberry
+PUT h Nectarine
+MULTIPUT l Banana n Melon h Kiwi
+MULTIPUT h Mango g Orange b Kiwi v Pineapple s Lychee s Lemon c Pineapple s Tamarind a Mango
+PUT u Cherry
+MULTIPUT e Watermelon k Avocado f Dragonfruit g Pear n Orange i Orange r Kiwi t Kiwi m Blackberry
+MULTIPUT l Tamarind k Guava n Pear p Peach t Apple j Avocado a Cashew c Banana m Kiwi r Orange o Pomegranate i Watermelon
+GET b
+MULTIPUT f Nectarine h Strawberry l Passionfruit k Orange
+MULTIGET f c h p b q k
+GET b
+MULTIPUT g Persimmon o Cherry j Tamarind t Pear w Melon
+MULTIPUT p Avocado o Strawberry l Melon o Raspberry r Persimmon g Mango t Dragonfruit r Apple
+PUT d Raspberry
+GET a
+PUT s Orange
+GET l
+PUT u Pineapple
+PUT w Mango
+PUT i Blackberry
+PUT t Kiwi
+GET v
+GET t
+PUT d Pomegranate
+PUT u Blackberry
+GET u
+GET v
+PUT r Pear
+GET o
+PUT a Dragonfruit
+GET b
+PUT j Fig
+MULTIPUT w Peach r Lemon g Cashew u Strawberry s Pomegranate b Guava
+PUT c Orange
+GET u
+PUT m Persimmon
+GET b
+GET s
+GET t
+GET o
+GET u
+PUT f Fig
+GET h
+PUT b Pomegranate
+MULTIPUT n Pineapple h Grape a Blueberry t Pomegranate h Raspberry
+GET e
+GET f
+GET g
+GET u
+PUT p Pineapple
+MULTIPUT m Watermelon f Starfruit d Blueberry b Pomegranate o Apple v Apple n Passionfruit m Lemon k Pomegranate
+GET t
+PUT r Pear
+MULTIPUT k Kiwi b Lychee g Passionfruit a Pear h Watermelon d Lychee t Papaya
+GET u
+GET k
+GET g
+PUT h Pear
+PUT w Lychee
+PUT v Blueberry
+GET e
+GET f
+PUT p Avocado
+PUT n Passionfruit
+GET w
+MULTIPUT d Lychee k Melon b Cherry i Papaya n Blackberry b Dragonfruit
+PUT l Nectarine
+GET n
+MULTIPUT g Watermelon r Papaya t Guava q Pear v Guava s Pomegranate f Pomegranate
+PUT n Lychee
+GET e
+PUT k Blueberry
+PUT u Blueberry
+PUT f Orange
+GET w
+GET g
+MULTIGET d l e l s m a p
+PUT g Lychee
+GET b
+PUT g Tamarind
+MULTIPUT k Grape k Dragonfruit a Tamarind w Melon
+GET n
+PUT j Dragonfruit
+GET m
+PUT c Persimmon
+MULTIPUT i Papaya d Lychee i Banana
+MULTIPUT u Apple t Peach i Papaya m Kiwi b Lemon n Peach
+GET d
+MULTIGET q e k q i r s h p w f
+GET w
+PUT k Pear
+PUT b Lemon
+GET u
+GET j
+GET k
+MULTIPUT c Apple v Papaya f Cashew r Watermelon j Papaya q Cherry e Cherry k Papaya q Persimmon j Kiwi m Fig
+PUT c Grape
+GET h
+PUT e Blueberry
+GET p
+PUT k Raspberry
+PUT r Strawberry
+GET q
+PUT o Apple
+GET j
+PUT o Cashew
+GET k
+MULTIPUT m Lychee w Papaya s Papaya m Cashew f Fig o Papaya l Banana n Grape h Blackberry o Lychee n Apple
+PUT r Starfruit
+PUT b Nectarine
+GET l
+GET u
+GET v
+PUT l Guava
+GET u
+PUT e Lychee
+GET h
+GET a
+PUT l Dragonfruit
+PUT s Papaya
+MULTIPUT v Persimmon v Watermelon g Fig n Peach p Lemon b Peach a Persimmon l Passionfruit v Kiwi n Dragonfruit p Cherry e Persimmon
+PUT p Fig
+PUT e Tamarind
+PUT h Grape
+GET u
+MULTIPUT w Raspberry r Kiwi n Dragonfruit c Papaya u Mango a Peach
+GET w
+PUT e Guava
+GET o
+GET l
+GET v
+GET l
+GET w
+GET h
+PUT v Lychee
+GET n
+PUT j Passionfruit
+GET i
+GET t
+GET d
+GETWHEN b c Strawberry
+MULTIPUT v Passionfruit c Starfruit d Blueberry i Cashew
+MULTIPUT o Orange v Lychee e Blackberry o Pear r Pear h Orange t Blueberry g Guava r Blackberry
+GET i
+PUT h Blackberry
+MULTIGET a s w u
+GET g
+MULTIPUT d Watermelon b Kiwi b Apple f Banana a Watermelon u Peach e Grape l Starfruit
+PUT h Blackberry
+MULTIPUT f Blackberry c Persimmon j Avocado t Kiwi
+GET c
+MULTIPUT s Kiwi b Cashew i Pineapple v Grape s Lychee e Apple n Fig m Strawberry i Persimmon j Dragonfruit
+PUT h Pomegranate
+GET i
+GET g
+GET t
+PUT j Cashew
+GET u
+PUT k Kiwi
+GET l
+GET v
+MULTIPUT g Watermelon f Cherry f Pineapple k Persimmon q Grape
+GET r
+PUT t Lychee
+MULTIPUT i Papaya b Grape u Peach g Pineapple i Kiwi l Strawberry n Pear n Fig b Pineapple
+PUT i Pineapple
+GET m
+GET k
+MULTIGET o j i c n
+PUT i Dragonfruit
+PUT o Cherry
+PUT s Orange
+GET a
+MULTIPUT n Watermelon f Tamarind c Dragonfruit v Banana
+GET p
+GET t
+PUT i Orange
+PUT p Papaya
+PUT s Lychee
+GET q
+PUT s Banana
+PUT i Persimmon
+GET v
+MULTIPUT i Avocado q Papaya r Raspberry
+MULTIPUT n Dragonfruit c Banana b Lemon r Kiwi
+GET a
+GET v
+GET s
+PUT c Fig
+GETWHEN n h Pomegranate
+MULTIPUT n Grape i Orange j Pineapple j Blackberry b Raspberry j Blueberry
+MULTIPUT m Watermelon u Passionfruit t Banana b Peach h Blackberry
+GET a
+PUT u Strawberry
+MULTIPUT i Fig v Dragonfruit n Raspberry e Blueberry s Passionfruit e Lychee f Dragonfruit b Orange j Grape o Mango
+GET f
+PUT g Kiwi
+GET e
+PUT j Pomegranate
+GET r
+GET t
+PUT o Blackberry
+GETWHEN n b Banana
+PUT t Nectarine
+PUT i Strawberry
+GET q
+MULTIGET b v d m r e c q
+MULTIGET e i n s a f
+PUT n Grape
+PUT u Dragonfruit
+PUT s Passionfruit
+GET b
+GETWHEN c g Nectarine
+PUT u Avocado
+GET u
+GETWHEN l f Melon
+PUT k Cherry
+MULTIGET l o t q o
+PUT i Avocado
+PUT f Starfruit
+GET p
+PUT m Pineapple
+PUT c Cashew
+PUT j Grape
+GET s
+PUT c Papaya
+PUT a Papaya
+GET e
+PUT u Fig
+MULTIGET c a c h a
+PUT r Mango
+MULTIPUT j Lemon c Persimmon u Starfruit u Pineapple
+PUT r Guava
+GET u
+GET l
+GET s
+MULTIPUT v Pineapple t Cashew s Pear t Lychee k Avocado k Dragonfruit
+GET t
+GET o
+GET t
+GET e
+PUT u Dragonfruit
+GET e
+MULTIPUT h Blueberry r Orange q Kiwi n Guava d Orange f Mango h Guava
+PUT f Mango
+PUT g Guava
+PUT a Avocado
+GET l
+GET l
+PUT c Pomegranate
+GET m
+PUT k Orange
+PUT i Lemon
+GET c
+PUT c Starfruit
+PUT r Pear
+MULTIPUT g Melon n Strawberry l Blueberry h Persimmon l Watermelon k Cherry s Apple u Strawberry d Pomegranate
+MULTIPUT b Pineapple d Lychee p Guava p Strawberry e Watermelon h Raspberry t Dragonfruit q Pear t Passionfruit i Avocado d Watermelon
+PUT r Cashew
+PUT v Cashew
+PUT p Peach
+PUT j Cherry
+GET j
+PUT h Raspberry
+MULTIGET c o f a e j b r
+PUT w Strawberry
+GET w
+MULTIPUT u Dragonfruit h Guava m Banana b Lychee f Blueberry d Blackberry r Persimmon t Starfruit c Lemon q Mango
+PUT b Nectarine
+PUT i Pear
+GET w
+PUT t Banana
+PUT g Peach
+GET v
+GET q
+PUT d Cherry
+GET c
+MULTIPUT t Apple f Banana l Tamarind w Avocado e Pineapple a Nectarine k Lychee j Nectarine
+MULTIPUT v Pear v Banana h Melon g Blackberry o Strawberry f Papaya m Tamarind
+PUT b Orange
+MULTIPUT a Blueberry o Melon u Mango e Lemon v Watermelon p Papaya c Nectarine m Orange l Strawberry d Apple
+GET o
+GET o
+GET d
+GET r
+GET v
+GET n
+PUT g Passionfruit
+MULTIPUT b Persimmon e Blueberry g Grape h Fig b Mango b Grape b Cherry s Starfruit a Nectarine v Cashew
+GETWHEN j t Orange
+MULTIPUT u Passionfruit u Mango r Cherry k Peach g Apple b Blueberry
+PUT v Banana
+GET m
+GET u
+PUT f Pineapple
+MULTIPUT a Apple d Raspberry q Melon l Apple o Pear r Raspberry g Papaya h Peach k Lychee f Persimmon n Kiwi i Tamarind
+PUT f Pomegranate
+PUT u Lychee
+MULTIPUT v Blueberry n Strawberry w Blackberry e Raspberry p Guava f Melon w Papaya d Fig t Avocado c Tamarind
+MULTIGET a k o w k k l i e
+PUT l Watermelon
+GET g
+GET b
+GET t
+PUT q Melon
+PUT c Passionfruit
+PUT n Cherry
+MULTIPUT d Fig l Nectarine q Kiwi v Nectarine w Lychee o Lemon r Starfruit c Passionfruit
+GET d
+MULTIGET h r m f p f r l j d
+PUT h Pear
+GET k
+MULTIPUT n Lemon f Papaya k Orange o Cashew t Melon h Cherry r Starfruit g Banana g Blackberry d Guava
+MULTIPUT e Cashew o Pineapple e Cherry v Pear p Melon t Apple a Avocado g Starfruit
+PUT v Guava
+GET m
+GET s
+PUT l Blackberry
+MULTIPUT w Avocado k Banana d Raspberry n Cashew c Raspberry e Cashew
+PUT a Lychee
+PUT h Melon
+PUT t Lychee
+PUT o Cherry
+GET i
+GET v
+MULTIGET a e l
+PUT f Strawberry
+GET o
+PUT j Orange
+GET p
+GET e
+PUT p Lychee
+GET i
+PUT n Orange
+PUT n Guava
+PUT k Avocado
+GETWHEN v m Pear
+MULTIGET a t e b w
+MULTIPUT i Cherry a Avocado v Pomegranate g Pineapple o Nectarine m Pineapple
+PUT k Peach
+GET t
+MULTIGET f s h m j j w r
+PUT k Apple
+GET o
+PUT h Pear
+MULTIPUT u Dragonfruit p Grape m Cherry g Papaya
+PUT c Banana
+PUT b Peach
+PUT f Pomegranate
+GET e
+MULTIGET t c m h r u f v
+MULTIPUT e Watermelon a Avocado k Banana m Papaya a Strawberry h Raspberry g Dragonfruit a Pomegranate
+PUT u Pineapple
+GET u
+PUT h Kiwi
+PUT s Mango
+GET v
+GET p
+MULTIGET m n e j d g u j l p h u
+MULTIPUT d Pear j Banana d Melon k Pear w Melon q Orange c Orange
+PUT m Pineapple
+PUT l Apple
+MULTIPUT r Papaya d Raspberry h Cherry
+GET u
+MULTIGET f i w i n d l i v v g l
+GET v
+GET m
+PUT b Fig
+MULTIPUT a Melon s Apple l Apple i Strawberry b Peach a Papaya n Strawberry w Watermelon g Melon w Raspberry l Pineapple b Apple
+MULTIPUT i Peach u Lemon g Grape m Apple j Guava a Raspberry v Cherry
+MULTIPUT d Grape p Fig t Orange d Lemon m Peach u Grape f Persimmon g Lemon o Pomegranate c Papaya
+PUT a Orange
+GET j
+PUT h Avocado
+GET a
+MULTIPUT h Dragonfruit a Banana d Lychee a Strawberry
+GET m
+GET q
+GET d
+GET f
+MULTIPUT w Persimmon f Starfruit g Cherry t Persimmon a Starfruit c Starfruit s Kiwi f Banana
+MULTIPUT c Nectarine s Orange j Blackberry t Avocado q Strawberry r Strawberry l Cherry q Strawberry c Persimmon e Avocado
+GET g
+GET u
+PUT u Watermelon
+PUT i Pineapple
+PUT o Papaya
+PUT j Pomegranate
+MULTIPUT j Peach u Peach w Blackberry h Cherry l Raspberry c Orange j Watermelon r Banana
+PUT d Nectarine
+PUT t Banana
+PUT q Grape
+GET l
+PUT b Apple
+PUT m Fig
+GET u
+GET g
+PUT h Pomegranate
+PUT g Apple
+MULTIPUT g Blackberry h Cherry j Mango e Orange l Fig c Banana r Passionfruit q Raspberry
+GET w
+GET m
+GET l
+MULTIGET v t e d
+GET r
+GET r
+PUT l Raspberry
+GET b
+PUT w Peach
+MULTIPUT l Cherry f Peach k Strawberry h Dragonfruit e Melon q Cherry l Guava
+PUT l Banana
+GET w
+GETWHEN n m Raspberry
+GET q
+GET j
+GET l
+GET w
+GET a
+GET f
+MULTIGET o e a b p o m b
+PUT g Cashew
+GET g
+GET i
+GET n
+GET j
+GET i
+PUT k Tamarind
+GET r
+GET d
+PUT o Blueberry
+MULTIPUT k Cashew o Banana a Lemon
+GETWHEN g s Mango
+PUT u Pineapple
+MULTIPUT q Kiwi j Nectarine d Starfruit f Banana p Cherry
+PUT q Mango
+GET g
+MULTIPUT w Tamarind h Blackberry a Guava o Nectarine s Pear t Strawberry
+GET p
+PUT u Passionfruit
+MULTIGET c q b u d h w n p
+GET f
+PUT d Cherry
+GET s
+PUT o Tamarind
+GET r
+GET r
+GET a
+MULTIGET q w c j t m l h s o m
+MULTIGET d m f q u
+PUT n Lychee
+GET i
+GET n
+GET f
+GET h
+PUT u Persimmon
+GET c
+GET l
+GET c
+PUT m Starfruit
+PUT i Blueberry
+GET c
+PUT u Papaya
+GET w
+GET m
+PUT g Pear
+GET b
+PUT b Tamarind
+GET t
+MULTIPUT a Orange v Avocado s Pineapple u Apple t Lychee o Melon
+GET n
+MULTIPUT f Kiwi m Raspberry m Cashew t Starfruit v Dragonfruit l Persimmon o Watermelon
+PUT l Melon
+GET q
+PUT c Passionfruit
+PUT r Mango
+PUT b Watermelon
+PUT c Kiwi
+GET g
+GET g
+MULTIPUT e Papaya i Blackberry w Blackberry a Guava i Peach
+PUT a Pomegranate
+GET i
+GET q
+MULTIPUT q Dragonfruit w Melon v Cashew l Papaya e Grape s Avocado n Blueberry d Guava
+PUT p Passionfruit
+GET p
+PUT t Mango
+MULTIGET h w v m t w n t e o o
+GET k
+GET j
+GET m
+PUT a Lemon
+MULTIGET k t l d c g b b v a
+PUT j Guava
+PUT o Dragonfruit
+MULTIGET r m r v b a b
+GET m
+GET n
+PUT u Melon
+MULTIPUT j Blackberry d Starfruit i Melon n Lemon d Apple
+GETWHEN b l Strawberry
+PUT o Watermelon
+PUT u Dragonfruit
+GET j
+GETWHEN e p Melon
+GET h
+PUT e Cherry
+PUT o Mango
+MULTIPUT a Nectarine q Lychee m Dragonfruit i Persimmon
+PUT l Banana
+PUT h Pear
+GET f
+PUT u Peach
+MULTIPUT n Nectarine h Dragonfruit h Fig m Pineapple t Pineapple h Persimmon h Passionfruit e Pomegranate n Passionfruit m Starfruit
+MULTIGET v n w i e r v c k k
+GETWHEN o g Apple
+MULTIPUT p Blueberry e Grape o Blueberry r Passionfruit o Blackberry m Persimmon i Kiwi a Cherry
+PUT w Raspberry
+GET j
+PUT a Apple
+GET h
+PUT i Persimmon
+GET g
+GET h
+PUT p Pomegranate
+MULTIPUT c Pear w Blueberry i Tamarind p Orange v Peach v Lemon v Apple h Melon v Cherry n Fig r Passionfruit s Orange
+GET o
+PUT o Mango
+GET m
+MULTIGET g r w q d j v u b t
+GETWHEN k f Guava
+GET m
+GET n
+GET a
+PUT s Blackberry
+PUT m Cherry
+MULTIPUT c Cherry a Melon l Melon f Dragonfruit l Lychee k Nectarine j Lemon l Tamarind r Lychee k Lychee
+MULTIPUT b Avocado s Orange h Grape s Persimmon t Banana a Raspberry
+MULTIPUT m Blueberry v Cashew r Melon h Papaya i Blackberry e Peach p Blackberry q Guava u Melon u Mango o Watermelon
+GET f
+GET i
+MULTIPUT q Pomegranate a Papaya w Pineapple a Lychee m Pear d Avocado
+PUT o Watermelon
+PUT u Lychee
+MULTIPUT m Watermelon u Persimmon b Nectarine w Apple q Kiwi u Starfruit n Pear u Melon w Grape m Papaya g Papaya
+PUT w Pineapple
+PUT l Grape
+PUT w Strawberry
+PUT o Orange
+PUT u Kiwi
+GET o
+MULTIPUT h Tamarind s Blackberry u Persimmon v Cashew m Kiwi
+PUT e Lemon
+GET h
+GET g
+PUT u Strawberry
+GET v
+MULTIPUT s Blueberry s Papaya l Melon g Pomegranate a Lemon l Apple m Cherry t Fig i Kiwi d Cashew a Blackberry c Persimmon
+PUT h Pear
+PUT k Papaya
+GET t
+PUT o Pear
+GET o
+MULTIPUT b Strawberry a Papaya c Papaya r Tamarind q Papaya j Tamarind
+PUT n Blueberry
+GET q
+MULTIGET m o j q
+PUT g Starfruit
+MULTIPUT b Lemon g Pineapple m Raspberry c Fig v Lemon
+PUT s Tamarind
+GET h
+PUT t Nectarine
+GET r
+PUT f Starfruit
+GET p
+PUT u Strawberry
+GET d
+GET w
+PUT q Kiwi
+GET s
+PUT l Lemon
+MULTIPUT c Peach o Pomegranate a Mango r Apple e Mango g Guava
+PUT u Peach
+MULTIPUT r Nectarine o Lemon l Banana q Kiwi p Raspberry
+PUT v Melon
+PUT c Blackberry
+GET s
+PUT v Pomegranate
+PUT b Kiwi
+MULTIPUT r Persimmon b Melon n Cashew n Peach s Watermelon i Nectarine r Pineapple j Papaya b Strawberry s Papaya
+MULTIPUT e Persimmon d Pomegranate d Watermelon t Passionfruit j Tamarind t Tamarind i Strawberry o Dragonfruit r Guava k Tamarind b Blackberry p Nectarine
+PUT o Papaya
+GET a
+PUT u Papaya
+MULTIGET c e t
+PUT e Blueberry
+PUT q Avocado
+MULTIPUT i Grape p Avocado j Peach n Banana m Pear l Persimmon b Pomegranate b Melon w Lychee q Tamarind j Nectarine
+GET u
+MULTIGET n q w b f n
+GET p
+PUT j Strawberry
+PUT g Apple
+GET k
+PUT m Cashew
+GET u
+PUT e Kiwi
+MULTIPUT m Avocado u Raspberry q Raspberry d Passionfruit n Tamarind
+GET j
+GET v
+MULTIPUT e Blueberry i Kiwi p Pineapple p Dragonfruit d Starfruit h Pomegranate w Banana h Avocado n Persimmon l Lemon
+MULTIPUT o Strawberry g Pear a Persimmon j Nectarine j Pear n Pineapple u Raspberry
+PUT i Cherry
+GET m
+GET c
+PUT t Tamarind
+GET j
+MULTIPUT e Orange h Kiwi b Grape s Lemon f Blueberry l Dragonfruit l Pomegranate i Pear c Cashew n Melon f Tamarind
+GET r
+PUT m Raspberry
+PUT u Raspberry
+MULTIGET t q k k p c n l
+PUT g Pomegranate
+GET d
+PUT k Cashew
+PUT n Passionfruit
+PUT m Passionfruit
+PUT r Mango
+GET s
+MULTIPUT v Lemon q Orange q Banana g Guava q Orange
+GET b
+PUT r Starfruit
+PUT d Orange
+GET a
+PUT l Tamarind
+GET f
+GET l
+GET k
+PUT q Kiwi
+GET b
+MULTIPUT k Papaya s Cashew o Passionfruit b Raspberry d Avocado o Fig q Persimmon
+GET m
+PUT f Melon
+PUT i Strawberry
+MULTIPUT j Banana g Pear t Blackberry r Blueberry s Apple d Grape
+PUT b Blueberry
+PUT w Peach
+GET d
+MULTIPUT t Melon c Fig d Nectarine d Strawberry o Cherry q Lemon k Mango a Watermelon g Nectarine k Mango s Kiwi
+GET i
+PUT q Lychee
+MULTIPUT n Lemon l Banana g Orange p Guava e Pear c Guava d Apple h Dragonfruit
+MULTIPUT h Papaya w Raspberry t Fig g Persimmon a Starfruit i Pear c Avocado t Avocado j Peach v Nectarine v Pineapple
+PUT k Starfruit
+GET s
+PUT r Dragonfruit
+PUT q Guava
+PUT v Blackberry
+GET r
+MULTIPUT o Orange u Pear p Blueberry u Dragonfruit c Guava q Lychee b Pineapple f Strawberry b Pineapple t Avocado t Passionfruit
+MULTIPUT r Papaya a Nectarine a Mango
+MULTIGET u l f h a l b c
+PUT n Grape
+PUT i Nectarine
+MULTIPUT e Avocado k Papaya p Starfruit
+PUT v Orange
+MULTIPUT e Fig s Lemon b Starfruit q Nectarine c Raspberry t Mango h Fig s Strawberry k Strawberry o Papaya c Pomegranate n Starfruit
+MULTIGET e w e
+GET p
+GET i
+GET j
+GET i
+PUT p Dragonfruit
+GET d
+PUT w Fig
+MULTIPUT n Banana p Papaya p Pineapple m Peach g Pomegranate b Passionfruit w Apple
+GET c
+GET i
+PUT i Fig
+GET w
+MULTIPUT t Blueberry b Pomegranate h Pear h Passionfruit d Papaya v Apple p Avocado a Cherry l Lemon
+GET w
+GET g
+PUT q Orange
+GET h
+MULTIPUT m Passionfruit g Fig o Peach u Cashew k Watermelon q Nectarine w Starfruit
+GET p
+PUT p Nectarine
+GET t
+GET s
+MULTIPUT v Orange j Avocado b Avocado j Papaya l Guava
+GET i
+GET b
+GET s
+GET l
+GET i
+MULTIGET m w d l n k l t r n b o
+PUT u Grape
+GET l
+PUT m Papaya
+GET w
+PUT o Fig
+GET c
+GET k
+GET u
+PUT w Dragonfruit
+GET t
+PUT v Melon
+PUT g Blueberry
+GET i
+PUT w Cashew
+GET h
+GET o
+MULTIPUT o Guava g Lemon m Orange a Lychee e Persimmon o Blackberry a Papaya a Tamarind i Mango a Avocado k Grape a Lychee
+MULTIPUT b Persimmon f Banana u Banana n Mango h Pomegranate
+PUT o Pineapple
+PUT p Lychee
+GET j
+PUT u Melon
+GET j
+GET k
+PUT w Blackberry
+MULTIPUT v Grape i Blackberry p Persimmon
+GET s
+PUT w Peach
+PUT q Pineapple
+MULTIGET m k l v s d o b f t k
+MULTIPUT c Mango e Tamarind s Passionfruit d Blackberry l Nectarine j Pineapple r Nectarine t Nectarine a Orange a Raspberry
+PUT h Orange
+PUT p Dragonfruit
+GET k
+GET b
+PUT w Blackberry
+GET s
+MULTIGET v j k o s o o t u w
+PUT q Lemon
+GETWHEN o j Grape
+MULTIPUT e Passionfruit c Peach j Grape c Blackberry
+PUT i Cashew
+PUT b Melon
+PUT e Apple
+PUT w Pomegranate
+GET h
+GET g
+MULTIGET g q q v c
+PUT h Persimmon
+MULTIPUT a Nectarine s Blueberry r Raspberry g Pomegranate
+MULTIGET p t o c c v l c j
+PUT g Kiwi
+PUT m Passionfruit
+MULTIPUT d Dragonfruit r Orange k Fig i Fig r Papaya n Watermelon w Starfruit v Pear p Pear t Grape i Raspberry j Starfruit
+PUT n Raspberry
+GETWHEN j d Avocado
+GET n
+MULTIGET q d p n b d o v
+PUT n Peach
+PUT m Papaya
+PUT o Pomegranate
+PUT b Grape
+PUT r Fig
+PUT j Banana
+GET w
+PUT m Avocado
+MULTIPUT c Avocado a Blueberry p Persimmon p Raspberry k Peach p Avocado l Blueberry
+MULTIPUT m Melon c Cashew g Lychee b Raspberry p Papaya e Pomegranate b Starfruit g Guava r Guava p Dragonfruit t Pear
+PUT j Tamarind
+GET i
+MULTIGET o c d w c o v h
+MULTIPUT m Cherry w Pomegranate g Nectarine d Melon o Cherry
+GET p
+PUT c Persimmon
+GET s
+MULTIPUT b Watermelon r Mango c Watermelon a Pineapple
+GET c
+PUT p Apple
+MULTIPUT s Pineapple v Guava e Kiwi o Tamarind
+GET g
+GET u
+MULTIGET i d p f o f n r r v c
+PUT v Tamarind
+PUT n Watermelon
+GET w
+MULTIPUT q Blackberry d Fig w Grape l Watermelon j Orange n Raspberry g Tamarind
+GET t
+GET q
+GET q
+PUT i Lychee
+MULTIPUT n Persimmon u Orange v Pomegranate i Grape g Blackberry l Mango t Lychee t Raspberry s Cherry
+PUT f Watermelon
+PUT w Cherry
+GET t
+GET g
+GET t
+PUT g Blackberry
+GET f
+PUT i Cherry
+PUT l Apple
+GET n
+GET g
+PUT e Fig
+GET j
+GET o
+MULTIGET t i a
+MULTIPUT d Banana g Starfruit s Peach m Pear f Cashew l Starfruit h Tamarind r Cashew
+GET j
+GET o
+PUT k Apple
+PUT c Grape
+GET v
+GET w
+GET t
+PUT w Peach
+PUT o Fig
+GET n
+PUT q Starfruit
+MULTIPUT r Pear h Cherry j Cashew j Orange p Watermelon r Blueberry e Starfruit c Grape r Passionfruit
+GET m
+MULTIGET o p m n h
+PUT t Mango
+GETWHEN i j Grape
+MULTIPUT b Melon r Kiwi e Pear w Raspberry b Orange u Banana e Melon
+GET f
+PUT n Pear
+PUT u Nectarine
+PUT e Watermelon
+PUT d Pear
+GET p
+MULTIPUT p Watermelon s Pomegranate o Lemon o Banana r Avocado f Lychee u Pomegranate
+PUT i Grape
+PUT i Cherry
+PUT p Melon
+PUT p Guava
+PUT s Mango
+PUT p Pear
+PUT j Watermelon
+GET g
+PUT l Strawberry
+MULTIPUT r Dragonfruit l Watermelon d Mango f Cherry a Pear i Papaya a Starfruit k Strawberry
+PUT f Orange
+GET j
+PUT u Lemon
+PUT c Pear
+MULTIPUT b Dragonfruit p Lemon b Apple o Grape r Banana m Avocado q Papaya f Tamarind w Papaya
+GET h
+GETWHEN l l Avocado
+MULTIPUT w Pomegranate l Avocado u Dragonfruit g Apple a Starfruit q Avocado j Dragonfruit
+GET l
+GET p
+PUT b Fig
+PUT l Raspberry
+PUT s Grape
+MULTIPUT l Melon a Strawberry k Pear g Blueberry c Raspberry k Cherry l Strawberry b Dragonfruit v Watermelon v Grape i Pineapple n Watermelon
+MULTIGET t b p k u g g b p h
+GET p
+PUT c Apple
+GET l
+MULTIPUT s Cherry u Kiwi d Nectarine a Watermelon i Grape a Papaya h Peach c Pear j Papaya a Apple a Melon
+PUT i Banana
+PUT v Pineapple
+GET m
+PUT p Cashew
+MULTIPUT e Fig e Orange e Apple o Dragonfruit i Blackberry f Pineapple a Blueberry
+GET w
+GET u
+MULTIGET a f c u j c a v g
+PUT c Guava
+PUT s Orange
+PUT d Melon
+PUT o Fig
+PUT q Guava
+GET l
+GET s
+GET l
+PUT f Mango
+GET o
+PUT f Lychee
+GET o
+PUT g Peach
+GET d
+PUT k Blackberry
+GET o
+PUT d Tamarind
+PUT e Tamarind
+PUT o Orange
+MULTIPUT d Blueberry m Orange t Mango t Blackberry l Avocado
+MULTIPUT p Mango h Mango g Raspberry b Grape s Lemon s Raspberry g Peach v Blueberry o Papaya
+GET j
+PUT s Fig
+MULTIGET g s v o j k r a a k f o
+MULTIGET e a c c n h j
+MULTIPUT q Starfruit w Avocado p Watermelon b Starfruit o Dragonfruit t Starfruit f Tamarind t Lychee
+PUT h Banana
+PUT p Persimmon
+PUT p Mango
+MULTIGET g e q g k t w
+GET u
+PUT m Passionfruit
+PUT e Kiwi
+PUT c Kiwi
+PUT o Blueberry
+PUT o Fig
+MULTIPUT w Banana o Lychee a Fig o Avocado w Cashew t Strawberry r Blackberry u Lychee h Lychee e Persimmon m Mango
+GET s
+PUT k Cherry
+PUT d Lychee
+MULTIPUT r Lemon t Papaya i Guava q Grape
+PUT a Persimmon
+GET o
+PUT p Banana
+GET e
+GET e
+PUT r Kiwi
+MULTIPUT m Grape u Cherry d Lychee m Starfruit c Nectarine p Guava g Blueberry f Pear o Guava b Passionfruit q Watermelon f Blueberry
+PUT s Starfruit
+PUT b Grape
+GET c
+MULTIPUT f Blackberry o Blackberry r Dragonfruit a Mango l Watermelon
+MULTIPUT n Guava k Starfruit r Strawberry v Dragonfruit g Persimmon u Pear
+GET l
+GET t
+GET q
+PUT j Orange
+GET j
+PUT o Watermelon
+PUT l Papaya
+PUT c Lemon
+MULTIPUT s Cashew l Persimmon n Raspberry c Papaya i Raspberry j Melon b Pomegranate b Dragonfruit
+PUT e Pineapple
+PUT u Nectarine
+GET o
+MULTIPUT d Pineapple p Watermelon u Papaya p Banana h Pomegranate t Dragonfruit
+GET q
+GET g
+MULTIGET r n w i w e
+PUT p Fig
+GET i
+GET a
+GET i
+MULTIPUT o Passionfruit q Melon r Grape h Kiwi u Pineapple h Persimmon i Orange
+GET f
+PUT c Watermelon
+PUT p Banana
+PUT s Kiwi
+PUT l Apple
+GET l
+GET f
+PUT s Blackberry
+PUT n Orange
+MULTIPUT a Lychee j Peach j Watermelon u Blueberry k Apple g Peach e Watermelon c Pineapple b Persimmon d Watermelon t Pineapple
+PUT u Kiwi
+PUT c Strawberry
+GET v
+GET v
+PUT p Cashew
+PUT u Strawberry
+GET a
+MULTIPUT c Fig v Pear g Nectarine
+GETWHEN m b Apple
+PUT m Apple
+GET q
+PUT l Peach
+PUT p Starfruit
+GET n
+GET m
+GET o
+GET a
+MULTIPUT w Lychee o Passionfruit b Avocado b Papaya p Tamarind d Papaya f Kiwi q Raspberry i Melon m Starfruit b Watermelon
+PUT b Guava
+PUT n Raspberry
+PUT b Melon
+PUT j Blueberry
+GET h
+MULTIPUT w Papaya f Peach k Fig g Avocado i Dragonfruit q Cashew j Watermelon f Passionfruit f Banana
+PUT i Blackberry
+GET e
+GET d
+GET k
+MULTIPUT w Dragonfruit l Apple s Lychee f Guava v Cherry j Pineapple k Banana
+GETWHEN h h Strawberry
+GET t
+GET r
+GET m
+GET r
+PUT m Fig
+MULTIGET a w t a
+PUT e Guava
+GET a
+PUT w Kiwi
+PUT j Orange
+PUT k Grape
+GET c
+GET r
+GET r
+MULTIPUT f Pineapple h Lemon c Blueberry c Strawberry m Papaya g Nectarine
+PUT t Lychee
+PUT h Cashew
+GET s
+GET h
+PUT d Starfruit
+PUT i Orange
+MULTIPUT a Apple a Kiwi u Persimmon t Apple p Peach u Guava t Apple v Raspberry c Lemon u Lemon
+GET i
+PUT p Melon
+PUT u Tamarind
+MULTIPUT a Cashew i Passionfruit u Banana c Kiwi a Grape h Mango l Banana u Pear v Dragonfruit f Grape t Blackberry r Raspberry
+PUT t Orange
+PUT m Fig
+PUT n Blueberry
+PUT a Tamarind
+MULTIPUT c Avocado j Passionfruit p Kiwi o Banana w Kiwi j Peach q Nectarine l Peach b Grape v Guava
+PUT f Dragonfruit
+PUT q Nectarine
+MULTIGET s o f h s c i a
+GET h
+MULTIPUT d Lychee w Guava k Tamarind k Pomegranate c Cherry l Orange j Orange h Pineapple
+GET n
+GETWHEN w l Watermelon
+PUT i Mango
+GET r
+PUT a Papaya
+PUT j Pear
+PUT f Cashew
+PUT n Apple
+GET d
+GET b
+GET b
+GET f
+PUT i Grape
+MULTIPUT o Kiwi s Persimmon q Grape w Persimmon i Pineapple l Cherry l Tamarind p Cherry i Blackberry o Lychee t Pear
+GET u
+GET l
+PUT q Peach
+GET l
+MULTIPUT h Avocado d Blueberry l Mango
+MULTIPUT v Strawberry a Blueberry j Blueberry a Cherry i Blackberry l Guava o Orange f Apple
+MULTIPUT j Blueberry e Kiwi d Guava r Kiwi
+GET e
+GETWHEN h n Strawberry
+GET k
+GET h
+MULTIPUT n Watermelon c Pomegranate c Pineapple
+GET g
+MULTIPUT j Blueberry u Pineapple g Melon
+MULTIPUT m Fig o Watermelon l Starfruit t Lychee s Apple a Kiwi e Passionfruit t Strawberry
+GET a
+PUT i Melon
+PUT d Melon
+MULTIPUT h Pomegranate g Persimmon u Pineapple l Kiwi c Strawberry
+GET r
+GET n
+GET k
+GET j
+GET k
+GET q
+GET w
+GET n
+GET n
+GET u
+MULTIPUT h Orange i Starfruit l Passionfruit k Blackberry m Banana p Mango i Pineapple b Lychee q Melon p Passionfruit h Starfruit
+PUT v Pomegranate
+GET r
+MULTIPUT k Guava v Nectarine d Guava j Banana b Papaya f Tamarind q Cashew e Guava
+PUT w Blackberry
+PUT s Grape
+PUT b Banana
+MULTIPUT k Dragonfruit e Tamarind r Pear e Tamarind i Pineapple
+GET n
+MULTIGET q s d g n l n d n
+PUT o Melon
+MULTIPUT b Peach o Guava s Strawberry l Cherry h Grape q Kiwi f Pear u Pineapple i Peach
+PUT q Starfruit
+PUT i Papaya
+GET h
+PUT a Pineapple
+GET s
+GET k
+PUT g Watermelon
+PUT k Banana
+MULTIPUT u Dragonfruit o Pear d Peach q Pear s Strawberry h Fig k Avocado v Strawberry v Peach
+GET w
+PUT g Blackberry
+PUT i Cherry
+MULTIPUT i Strawberry o Melon i Apple
+GET j
+MULTIPUT l Cashew s Grape e Persimmon j Peach
+MULTIPUT m Orange e Cashew p Passionfruit b Lychee j Papaya r Blueberry i Peach u Tamarind
+PUT t Dragonfruit
+MULTIPUT h Banana u Lychee i Peach d Mango c Cherry t Raspberry p Dragonfruit g Pomegranate r Starfruit g Lychee d Watermelon f Persimmon
+MULTIGET u t i b p i i k r
+GET t
+GET w
+MULTIPUT s Cherry u Avocado o Tamarind p Papaya
+GET k
+PUT k Persimmon
+PUT m Kiwi
+MULTIPUT e Starfruit m Avocado o Mango c Peach i Persimmon
+MULTIPUT c Persimmon c Persimmon f Persimmon p Lemon
+PUT d Mango
+MULTIPUT c Kiwi b Cashew m Pear d Nectarine h Orange r Cashew p Blueberry e Papaya s Mango m Grape
+PUT l Blackberry
+PUT s Pineapple
+PUT r Pomegranate
+MULTIPUT l Pear e Passionfruit j Papaya n Melon g Grape t Avocado h Melon
+MULTIPUT i Banana q Watermelon j Pomegranate w Grape p Apple s Fig
+PUT g Persimmon
+MULTIPUT m Melon e Fig s Peach g Persimmon
+GET e
+PUT h Pomegranate
+GET l
+PUT k Lychee
+PUT i Guava
+GET p
+GET t
+GET s
+GETWHEN l l Pomegranate
+GET n
+PUT d Strawberry
+GET u
+PUT q Grape
+GET v
+GET l
+GET k
+GET o
+PUT n Starfruit
+PUT o Tamarind
+GET s
+PUT g Fig
+PUT v Grape
+PUT m Strawberry
+PUT l Cherry
+GET d
+MULTIPUT q Watermelon s Strawberry j Guava k Cherry
+GET n
+MULTIPUT r Starfruit q Kiwi t Dragonfruit g Dragonfruit u Pomegranate h Blackberry s Apple f Orange q Persimmon t Pomegranate b Pineapple c Raspberry
+PUT m Nectarine
+PUT l Pomegranate
+MULTIPUT k Strawberry d Tamarind d Nectarine c Banana w Cherry i Raspberry i Guava
+PUT t Orange
+GET l
+PUT l Orange
+GET g
+MULTIPUT n Papaya r Raspberry e Cashew k Apple
+PUT g Papaya
+GET l
+GET r
+GETWHEN u v Cherry
+GET g
+MULTIGET w c f i n
+GET i
+PUT t Pomegranate
+PUT c Fig
+GET w
+GET w
+MULTIGET v r u e c
+GET g
+PUT v Fig
+GET d
+PUT t Pineapple
+GET l
+GET a
+PUT o Guava
+PUT d Blueberry
+GET v
+MULTIPUT d Starfruit s Kiwi u Cashew
+PUT k Blueberry
+GET t
+GETWHEN v w Cherry
+MULTIPUT t Guava r Cherry b Guava m Papaya w Banana n Strawberry u Raspberry j Papaya l Apple k Blueberry g Starfruit
+MULTIPUT o Pear u Pear p Pear l Persimmon e Blackberry n Lychee i Pineapple
+MULTIPUT c Kiwi r Nectarine h Papaya h Orange k Peach r Watermelon f Pear w Strawberry n Cashew e Peach t Melon
+PUT l Grape
+MULTIPUT q Dragonfruit c Passionfruit a Apple w Peach l Papaya s Papaya k Watermelon t Lemon
+GETWHEN n q Pineapple
+PUT k Blueberry
+PUT o Cherry
+PUT o Lemon
+PUT f Peach
+PUT u Raspberry
+PUT m Kiwi
+GET f
+GET i
+PUT s Cashew
+PUT r Avocado
+GET m
+GETWHEN p n Raspberry
+PUT q Nectarine
+PUT d Fig
+GET f
+MULTIPUT f Cherry q Lychee q Orange b Persimmon l Nectarine
+MULTIPUT r Pineapple v Tamarind f Persimmon b Raspberry k Grape
+MULTIPUT w Banana p Pineapple t Strawberry p Peach
+GET i
+MULTIPUT e Lemon w Melon w Nectarine r Mango
+GET u
+PUT o Fig
+GET h
+MULTIPUT s Guava p Cashew k Papaya r Cherry p Peach v Passionfruit
+PUT i Melon
+MULTIPUT g Grape s Pomegranate w Pear r Avocado c Passionfruit
+PUT g Passionfruit
+PUT b Fig
+MULTIPUT f Lemon f Pineapple p Banana n Lemon h Strawberry q Peach
+MULTIPUT q Cashew b Dragonfruit q Orange d Guava w Blackberry d Starfruit d Apple g Raspberry f Starfruit a Lychee o Kiwi j Strawberry
+PUT k Passionfruit
+GET n
+GET u
+GET r
+GET v
+PUT u Kiwi
+MULTIPUT m Kiwi g Strawberry m Dragonfruit n Lychee v Banana i Lychee b Watermelon t Apple t Pear
+PUT v Lemon
+GET c
+PUT p Pear
+PUT k Cashew
+PUT p Cherry
+MULTIGET m m s
+PUT w Papaya
+GET r
+GET m
+PUT c Fig
+GETWHEN d c Grape
+GET l
+PUT f Pomegranate
+GET c
+PUT k Apple
+PUT r Grape
+MULTIPUT w Orange w Mango e Cashew c Cashew v Peach h Lemon j Passionfruit g Watermelon h Nectarine d Lemon r Kiwi g Papaya
+PUT a Persimmon
+GET h
+PUT j Persimmon
+MULTIGET f f c d m i g l
+GET f
+PUT s Mango
+PUT c Mango
+MULTIGET g c f f d v c e r e
+GET l
+PUT b Peach
+PUT s Fig
+PUT v Lychee
+PUT h Fig
+PUT c Blackberry
+MULTIPUT r Guava e Grape o Cashew v Pomegranate t Blueberry o Raspberry k Tamarind a Pineapple i Avocado
+MULTIPUT b Starfruit e Pineapple k Passionfruit t Banana n Raspberry b Guava d Passionfruit a Melon
+PUT f Watermelon
+GET d
+PUT s Apple
+MULTIPUT r Watermelon o Raspberry c Blackberry i Raspberry d Dragonfruit
+PUT t Lychee
+GET s
+GETWHEN v k Kiwi
+PUT c Guava
+PUT g Persimmon
+GET u
+GET q
+PUT n Raspberry
+GET s
+GET v
+GET q
+PUT t Tamarind
+MULTIPUT d Watermelon f Persimmon i Pineapple j Cashew
+GET k
+GET l
+GET m
+GET v
+GET v
+GET c
+PUT n Avocado
+GET j
+PUT b Orange
+PUT d Grape
+PUT u Orange
+MULTIPUT j Peach s Blueberry j Blueberry c Peach s Melon a Passionfruit a Cherry v Persimmon g Kiwi
+PUT e Guava
+MULTIPUT r Orange p Persimmon i Peach q Passionfruit h Nectarine p Pineapple e Watermelon
+PUT j Nectarine
+GET k
+MULTIPUT v Cherry r Pomegranate q Watermelon w Fig k Lemon e Pomegranate v Apple i Strawberry
+GET d
+PUT l Fig
+MULTIGET j c u m e
+GET g
+PUT a Watermelon
+MULTIPUT w Dragonfruit c Nectarine n Raspberry q Pomegranate k Cashew
+GET a
+MULTIPUT e Lychee v Blueberry a Dragonfruit a Pineapple t Strawberry v Nectarine o Lychee d Persimmon
+PUT a Persimmon
+PUT i Watermelon
+PUT o Cashew
+GET f
+MULTIPUT h Raspberry p Blueberry t Grape u Guava s Watermelon m Nectarine s Avocado e Starfruit
+GET o
+GET g
+GET i
+MULTIPUT o Tamarind t Pineapple h Orange s Blueberry e Papaya j Blackberry p Persimmon t Grape
+GET i
+GET j
+PUT j Cashew
+PUT b Kiwi
+GET g
+GET w
+PUT k Cashew
+GET t
+PUT p Apple
+PUT v Lemon
+MULTIPUT k Starfruit f Starfruit j Lemon
+GET i
+MULTIPUT n Cherry u Orange v Orange e Kiwi l Cashew b Persimmon h Lemon
+PUT e Avocado
+GET p
+MULTIPUT k Avocado t Papaya o Persimmon o Raspberry w Tamarind h Watermelon g Guava h Tamarind i Melon l Persimmon
+MULTIGET p j s f
+MULTIPUT i Guava t Melon s Orange v Cashew k Cherry v Cashew n Kiwi k Persimmon i Pomegranate j Watermelon k Blackberry v Starfruit
+MULTIGET s t q u r h j p l b
+PUT c Strawberry
+PUT f Pear
+PUT j Banana
+PUT g Cashew
+GETWHEN g q Blackberry
+PUT o Lemon
+PUT e Guava
+MULTIPUT c Blueberry t Kiwi e Blueberry b Passionfruit q Pineapple s Papaya g Mango j Papaya e Persimmon q Avocado a Melon n Raspberry
+GET r
+MULTIPUT i Peach p Apple m Banana d Tamarind j Tamarind
+GET h
+MULTIPUT p Pineapple j Tamarind r Kiwi p Passionfruit q Watermelon b Kiwi
+GET j
+GET e
+GET s
+GET k
+PUT r Starfruit
+GET a
+PUT r Fig
+GET f
+GET i
+GET a
+GET g
+PUT d Dragonfruit
+PUT a Kiwi
+PUT i Blackberry
+PUT v Nectarine
+PUT m Raspberry
+MULTIPUT k Cashew g Banana b Strawberry h Fig i Orange n Grape p Blackberry a Raspberry k Kiwi i Grape k Melon a Fig
+GET v
+PUT a Lychee
+MULTIPUT e Orange p Pineapple r Watermelon m Tamarind k Passionfruit
+PUT f Mango
+MULTIPUT o Blackberry q Peach w Kiwi j Pear o Pineapple b Blackberry p Banana f Guava r Nectarine t Dragonfruit
+MULTIPUT r Watermelon w Pear m Cashew s Grape q Peach i Apple u Lychee u Strawberry s Watermelon
+MULTIPUT g Mango u Raspberry m Nectarine i Cashew b Papaya e Tamarind v Peach l Passionfruit s Cherry o Blackberry
+PUT w Persimmon
+GET d
+PUT b Tamarind
+MULTIPUT m Pineapple r Pear a Pineapple v Banana n Pear r Mango d Raspberry
+PUT n Dragonfruit
+PUT g Persimmon
+MULTIGET e w i c e i d c
+MULTIPUT j Cashew h Cherry r Raspberry n Pear p Lychee b Dragonfruit n Avocado c Apple r Papaya
+PUT w Mango
+GET v
+PUT a Grape
+PUT o Strawberry
+MULTIPUT w Cashew c Apple s Orange
+MULTIGET r e v m
+PUT p Strawberry
+GET j
+PUT j Banana
+PUT a Persimmon
+GET s
+PUT m Melon
+GET u
+GET f
+PUT w Watermelon
+MULTIPUT k Pear h Apple o Apple
+GET c
+GET m
+PUT e Pear
+GET j
+GET c
+GET o
+MULTIPUT r Tamarind t Melon e Pineapple b Dragonfruit l Lychee l Fig c Cherry b Passionfruit
+GET h
+PUT n Guava
+PUT g Starfruit
+GET b
+GET l
+GET o
+PUT d Mango
+GET h
+GET e
+PUT j Strawberry
+MULTIPUT c Nectarine v Kiwi g Nectarine h Cherry e Peach r Guava b Lychee
+PUT i Cherry
+GET i
+PUT d Cherry
+PUT g Peach
+GET a
+GET n
+MULTIPUT q Nectarine v Dragonfruit n Papaya j Pomegranate
+GET a
+GET a
+MULTIPUT k Melon l Avocado j Dragonfruit s Pear v Persimmon f Strawberry b Avocado h Pear e Blackberry
+PUT t Guava
+MULTIGET u l t u d u t u c
+PUT h Kiwi
+PUT q Fig
+GET q
+GET t
+MULTIPUT e Lemon f Nectarine v Mango d Lemon l Mango i Orange i Strawberry o Peach
+PUT k Starfruit
+PUT p Nectarine
+PUT w Blackberry
+PUT w Raspberry
+PUT j Guava
+MULTIPUT j Raspberry k Papaya d Dragonfruit h Lychee i Orange q Tamarind p Lemon v Pear m Strawberry h Persimmon
+GET h
+GET j
+PUT o Watermelon
+GETWHEN g j Banana
+MULTIPUT t Melon m Passionfruit r Persimmon l Starfruit w Fig k Avocado j Guava
+PUT e Pineapple
+GET g
+GET f
+GET h
+GET t
+PUT c Avocado
+PUT f Nectarine
+PUT j Blackberry
+GET k
+MULTIPUT w Pomegranate t Raspberry h Apple a Blackberry e Guava j Cherry i Passionfruit l Banana w Lemon
+PUT f Mango
+GET r
+GET a
+GET p
+MULTIPUT b Melon j Pomegranate e Melon s Cashew
+GET s
+GETWHEN f n Lemon
+GET d
+PUT t Peach
+GET i
+GET h
+PUT t Mango
+PUT u Orange
+GET w
+GET s
+MULTIPUT u Starfruit q Nectarine w Lychee t Fig c Grape e Lychee u Melon
+PUT s Peach
+PUT m Lemon
+MULTIGET o o o n r f e f
+GET c
+GET i
+PUT o Apple
+PUT h Dragonfruit
+PUT v Cashew
+PUT r Strawberry
+GET i
+PUT b Grape
+GET v
+PUT m Persimmon
+GET d
+GET s
+GET o
+GET i
+GET o
+GET v
+PUT n Cashew
+PUT f Guava
+GET d
+MULTIPUT h Kiwi r Kiwi c Melon g Cherry c Mango u Peach s Orange
+MULTIGET l p i v e j k i q g h n
+GET o
+GET o
+MULTIGET v w f u n o j m b d u
+MULTIPUT t Passionfruit a Mango e Melon e Watermelon v Grape g Nectarine f Raspberry n Raspberry i Kiwi
+PUT e Pineapple
+PUT v Fig
+GET n
+PUT w Avocado
+GET m
+GET i
+GET l
+GET t
+MULTIPUT h Apple k Pomegranate h Pear i Apple e Cashew i Tamarind
+GET o
+MULTIPUT s Persimmon t Raspberry u Persimmon t Peach k Cashew p Watermelon e Passionfruit a Pineapple a Tamarind c Starfruit p Pomegranate l Lychee
+PUT b Persimmon
+PUT g Cashew
+MULTIPUT b Cherry w Fig k Dragonfruit a Raspberry q Lemon i Papaya f Dragonfruit a Lemon
+PUT t Apple
+GET g
+PUT h Cherry
+GETWHEN k f Blueberry
+GET o
+GET k
+PUT g Blueberry
+PUT a Melon
+PUT a Watermelon
+GET k
+GET c
+MULTIGET h f d f v j d d g
+PUT g Blackberry
+PUT d Passionfruit
+GET m
+GET u
+GET a
+PUT j Peach
+GET k
+MULTIPUT k Grape n Lemon n Raspberry a Dragonfruit m Papaya v Pomegranate d Lychee n Cherry c Guava
+PUT s Lychee
+MULTIPUT u Passionfruit d Pomegranate f Guava s Tamarind t Nectarine l Banana u Persimmon p Cashew f Tamarind d Orange
+PUT i Strawberry
+MULTIGET f p n t g m p f r
+PUT u Avocado
+GET j
+PUT k Orange
+PUT p Dragonfruit
+PUT m Tamarind
+MULTIPUT g Orange f Starfruit r Passionfruit k Strawberry v Mango e Cherry n Nectarine
+PUT v Papaya
+MULTIPUT a Melon d Blackberry l Peach d Melon b Cherry q Persimmon
+GET e
+GET i
+PUT a Mango
+PUT g Avocado
+PUT r Guava
+PUT k Blueberry
+PUT l Papaya
+PUT g Peach
+PUT d Persimmon
+PUT a Melon
+GET t
+PUT j Melon
+GET a
+GET k
+PUT w Orange
+GET f
+GET s
+PUT c Cashew
+GET h
+PUT d Peach
+PUT k Peach
+GET o
+PUT h Watermelon
+MULTIPUT p Fig a Nectarine e Peach v Starfruit h Cashew
+GET q
+GET v
+GET w
+PUT h Starfruit
+GET u
+MULTIGET d l g d r a i s h j
+PUT v Pear
+PUT j Mango
+PUT w Starfruit
+PUT g Passionfruit
+MULTIPUT j Persimmon k Kiwi m Melon a Persimmon b Fig h Guava
+MULTIGET r n e k n t o f s
+PUT j Persimmon
+PUT b Starfruit
+PUT j Orange
+GET s
+GETWHEN q w Cherry
+GET o
+PUT a Pomegranate
+GET w
+MULTIPUT o Blueberry k Cherry s Avocado e Lemon s Apple o Guava s Passionfruit
+PUT r Kiwi
+GET l
+PUT t Grape
+GET u
+GET t
+GET e
+GET t
+MULTIPUT e Starfruit g Avocado c Strawberry m Papaya s Watermelon b Nectarine
+PUT g Blackberry
+PUT c Pineapple
+PUT g Pineapple
+PUT h Starfruit
+PUT a Blueberry
+GET u
+PUT m Lychee
+GET f
+GET p
+GET l
+GET g
+MULTIPUT b Avocado q Cashew h Tamarind a Apple q Avocado w Tamarind o Starfruit w Strawberry v Apple
+GET r
+PUT a Guava
+PUT g Lychee
+MULTIPUT m Cashew o Tamarind k Peach l Passionfruit r Orange a Banana n Melon
+MULTIGET k v i t n g
+MULTIPUT h Peach u Lychee g Kiwi t Strawberry h Blueberry v Tamarind q Apple g Guava g Pear f Blueberry
+GET b
+PUT t Banana
+MULTIPUT f Grape d Passionfruit d Starfruit c Guava s Melon u Blackberry h Pineapple i Dragonfruit
+MULTIGET d a h w h b a a e h s t
+GET s
+PUT u Passionfruit
+PUT f Dragonfruit
+MULTIPUT c Guava p Blueberry f Peach o Mango e Papaya
+PUT v Mango
+MULTIPUT f Cashew c Grape r Blackberry
+PUT k Dragonfruit
+GET u
+GET f
+PUT d Banana
+GET a
+GET b
+PUT h Watermelon
+GET i
+PUT q Apple
+GET j
+PUT w Passionfruit
+GET b
+MULTIPUT m Dragonfruit u Avocado v Kiwi w Mango f Pomegranate t Nectarine s Pineapple o Pear h Raspberry k Raspberry a Persimmon
+PUT t Pomegranate
+PUT j Pear
+PUT j Dragonfruit
+PUT q Blueberry
+MULTIPUT r Passionfruit m Lemon i Fig
+GET m
+PUT j Guava
+GET h
+MULTIPUT h Papaya k Melon t Watermelon g Apple j Watermelon c Apple c Cashew s Banana i Blackberry s Pomegranate
+GETWHEN m h Peach
+GET o
+PUT a Nectarine
+PUT t Peach
+GET e
+GET v
+PUT p Persimmon
+MULTIPUT o Papaya c Passionfruit b Blackberry d Pineapple q Dragonfruit r Nectarine s Grape g Watermelon h Apple w Orange t Papaya e Banana
+PUT o Mango
+PUT i Guava
+MULTIPUT p Persimmon q Orange f Persimmon l Pineapple f Tamarind e Dragonfruit u Blackberry
+GET r
+MULTIPUT b Dragonfruit n Avocado r Raspberry m Orange g Blackberry b Raspberry t Fig q Papaya s Lemon i Orange
+GET e
+PUT v Nectarine
+GET h
+GET b
+MULTIPUT j Blackberry l Pear w Raspberry k Nectarine e Tamarind m Lemon d Cherry k Pineapple k Orange o Grape v Fig
+GET a
+PUT u Raspberry
+MULTIPUT r Mango h Nectarine e Kiwi n Raspberry s Avocado g Fig i Papaya l Guava
+GET v
+GET r
+MULTIPUT k Starfruit c Strawberry t Peach g Persimmon
+GETWHEN b u Nectarine
+PUT d Strawberry
+PUT h Grape
+PUT v Tamarind
+MULTIPUT d Guava q Blueberry f Pomegranate h Pear t Mango r Melon a Avocado h Starfruit v Tamarind u Avocado
+GET g
+GET q
+GET a
+GET b
+GET p
+GET r
+PUT b Watermelon
+PUT o Cashew
+GET p
+PUT t Nectarine
+PUT k Orange
+PUT d Orange
+GET p
+MULTIPUT b Papaya m Nectarine j Peach r Blueberry o Kiwi s Lemon i Strawberry o Kiwi
+PUT b Grape
+PUT f Grape
+PUT p Peach
+PUT a Lychee
+GET l
+GET w
+GET w
+PUT o Pineapple
+PUT k Orange
+PUT i Guava
+MULTIPUT f Raspberry k Blueberry r Kiwi s Guava o Pineapple d Strawberry s Mango
+PUT v Nectarine
+GET t
+PUT p Kiwi
+PUT v Kiwi
+GET j
+PUT a Pineapple
+PUT b Orange
+GET w
+PUT r Banana
+MULTIPUT e Cashew h Persimmon c Melon c Fig r Avocado h Pomegranate r Lemon i Fig g Melon
+GET s
+MULTIGET v t i v
+GETWHEN n j Apple
+MULTIGET u m m w r s c v q u u
+MULTIPUT t Guava h Avocado u Papaya e Fig d Raspberry n Melon l Apple b Persimmon c Starfruit u Pineapple o Cashew g Grape
+GET k
+MULTIPUT t Apple d Passionfruit l Orange u Tamarind u Kiwi w Persimmon j Fig r Kiwi j Cashew
+MULTIGET l k g
+PUT g Pear
+MULTIGET m m b i
+GET q
+GET j
+PUT q Kiwi
+GET w
+GET f
+PUT l Tamarind
+PUT e Papaya
+MULTIPUT c Blackberry q Pomegranate a Fig f Guava p Avocado t Cashew g Lemon p Grape
+MULTIPUT l Persimmon f Watermelon o Persimmon t Apple v Fig i Orange d Lemon c Peach u Papaya
+GET b
+MULTIPUT h Starfruit o Blueberry l Melon o Lychee f Blueberry w Banana w Blackberry
+GET m
+PUT r Raspberry
+GET r
+PUT b Apple
+GET l
+GET r
+GET m
+MULTIPUT n Lychee n Kiwi o Passionfruit m Blueberry d Banana i Nectarine
+GET e
+PUT e Strawberry
+GET o
+PUT n Peach
+PUT e Peach
+GET d
+GET k
+MULTIPUT r Papaya d Grape k Raspberry r Apple
+PUT p Lemon
+GET v
+PUT s Cherry
+PUT a Grape
+PUT s Blackberry
+GET p
+PUT w Persimmon
+MULTIPUT r Blackberry d Nectarine t Orange n Cherry p Persimmon p Blackberry
+MULTIPUT g Blueberry c Cashew a Banana i Watermelon u Fig e Lychee m Avocado b Pineapple o Blackberry k Persimmon r Nectarine g Cherry
+PUT i Cherry
+MULTIGET r b c f c c f r n
+MULTIPUT d Cherry e Starfruit g Apple
+MULTIPUT h Mango e Lemon e Orange k Kiwi m Pear t Fig o Kiwi
+MULTIGET a g q n o d
+PUT p Blueberry
+MULTIPUT f Melon b Mango w Pineapple l Strawberry o Pear f Lychee c Cherry
+PUT p Grape
+GET e
+PUT p Blackberry
+GET l
+MULTIGET j o t n u h r h o
+GET w
+PUT a Orange
+GET m
+GET j
+PUT p Lychee
+MULTIGET m f f d d
+PUT f Raspberry
+PUT n Passionfruit
+GET t
+GET h
+MULTIPUT o Pear j Grape c Guava i Starfruit f Orange p Strawberry v Dragonfruit w Passionfruit e Pear b Guava o Banana
+PUT o Pomegranate
+MULTIPUT m Peach a Guava v Blackberry o Kiwi n Lychee n Cherry a Pear q Blueberry e Fig b Banana a Papaya g Raspberry
+PUT n Grape
+MULTIPUT o Cherry c Apple f Passionfruit t Pineapple w Cashew s Kiwi j Starfruit e Passionfruit p Cashew w Passionfruit q Apple t Cashew
+PUT l Mango
+PUT h Avocado
+GETWHEN w f Dragonfruit
+PUT v Peach
+GET g
+PUT w Cherry
+PUT t Pomegranate
+GET k
+MULTIPUT h Fig k Papaya l Pomegranate f Avocado m Passionfruit b Mango m Apple n Kiwi
+PUT n Avocado
+PUT j Watermelon
+PUT s Lychee
+GET t
+PUT r Grape
+PUT f Banana
+GET c
+GETWHEN n u Lemon
+PUT h Mango
+PUT f Tamarind
+GET f
+PUT q Papaya
+MULTIGET g v m s
+PUT g Peach
+PUT e Lychee
+GETWHEN t w Orange
+GET r
+PUT n Starfruit
+PUT v Papaya
+MULTIPUT a Fig p Pear j Pineapple p Fig j Orange i Starfruit q Kiwi k Cherry s Pomegranate r Kiwi j Pomegranate g Starfruit
+GET u
+MULTIPUT q Fig e Starfruit m Cherry c Banana b Blackberry p Lychee l Cherry
+GET p
+GET o
+PUT t Nectarine
+MULTIPUT o Lemon o Dragonfruit r Lychee q Fig u Tamarind
+MULTIPUT k Pineapple n Starfruit v Grape t Papaya f Pear
+GET u
+GET o
+MULTIPUT n Lemon i Watermelon a Lychee r Blackberry h Guava
+PUT h Raspberry
+PUT p Lychee
+MULTIGET s l g
+GET d
+GET w
+GET d
+GET t
+MULTIGET t o b s d o
+GET g
+GET a
+GET a
+PUT l Pear
+PUT v Tamarind
+PUT a Tamarind
+GET u
+PUT g Pineapple
+MULTIPUT m Blueberry s Pineapple l Passionfruit a Peach v Blackberry j Banana h Orange j Watermelon
+PUT a Raspberry
+GET e
+GET c
+PUT i Cherry
+PUT i Raspberry
+MULTIGET a d h w g
+PUT h Passionfruit
+MULTIPUT d Cashew t Kiwi l Cashew a Avocado u Strawberry
+PUT s Grape
+GET g
+PUT i Papaya
+MULTIGET u n j v r n e k
+PUT n Avocado
+PUT b Apple
+GET j
+GET s
+MULTIGET k h c v o i g c
+GET t
+PUT k Cherry
+GET i
+PUT s Guava
+GET i
+GET q
+MULTIPUT t Banana a Tamarind j Lemon o Raspberry b Passionfruit
+GET h
+PUT l Cherry
+GET w
+PUT u Fig
+GET k
+PUT d Mango
+MULTIPUT n Papaya w Avocado f Nectarine o Raspberry i Tamarind r Starfruit e Pear p Lychee c Lemon
+GET b
+GET v
+PUT r Persimmon
+GET q
+PUT r Raspberry
+MULTIPUT t Raspberry v Persimmon p Fig b Melon
+PUT v Apple
+MULTIGET v l g v s b j
+PUT b Persimmon
+GET d
+PUT b Cashew
+PUT w Blueberry
+MULTIPUT q Banana h Kiwi v Banana g Lychee p Lemon
+PUT n Tamarind
+GET r
+GET f
+GET b
+GET v
+PUT f Guava
+GET o
+GET g
+GET p
+MULTIPUT k Apple h Kiwi l Persimmon
+GET j
+GET u
+MULTIPUT o Raspberry e Pomegranate b Cashew t Dragonfruit o Starfruit u Passionfruit
+GET l
+PUT o Fig
+PUT m Blackberry
+GET n
+PUT g Pear
+PUT o Apple
+PUT o Blueberry
+MULTIPUT v Lemon n Strawberry d Nectarine r Cherry e Cherry k Raspberry d Raspberry u Nectarine
+GET h
+MULTIGET h r i o n e m s k n v u
+GET g
+PUT h Mango
+GET v
+MULTIPUT r Fig t Orange i Starfruit e Orange w Fig d Guava p Orange p Kiwi u Melon u Watermelon t Dragonfruit k Pomegranate
+PUT r Fig
+GET k
+GET k
+GETWHEN m w Avocado
+MULTIPUT r Blueberry u Nectarine v Banana w Persimmon s Kiwi p Blackberry m Peach r Papaya n Pineapple p Apple e Tamarind
+PUT p Guava
+PUT h Cherry
+PUT h Mango
+MULTIPUT h Strawberry i Lychee t Blackberry
+PUT p Lychee
+MULTIGET o j s q
+GET l
+GET e
+GETWHEN i w Fig
+PUT v Pear
+PUT q Pomegranate
+PUT l Grape
+GET o
+GET t
+PUT v Pear
+GET u
+PUT s Guava
+GET c
+PUT n Raspberry
+PUT b Banana
+MULTIPUT j Apple d Pear h Lychee v Blueberry r Kiwi w Blueberry
+PUT b Lemon
+PUT r Pomegranate
+GETWHEN v f Mango
+PUT b Mango
+GET i
+PUT e Pear
+GET a
+GET h
+GET j
+MULTIGET n k a c h j j
+PUT p Nectarine
+GET c
+PUT d Pineapple
+PUT f Cherry
+MULTIGET j t v v h s k p u i s g
+GET v
+GET p
+GET j
+MULTIPUT n Guava d Mango a Apple b Cherry k Peach e Banana t Pineapple
+GETWHEN n s Fig
+GET d
+PUT s Persimmon
+MULTIPUT t Cherry h Fig a Persimmon n Avocado n Blueberry
+MULTIGET k j s
+GET k
+PUT k Passionfruit
+PUT d Banana
+GET a
+PUT f Peach
+PUT o Tamarind
+MULTIPUT b Passionfruit m Avocado p Nectarine k Dragonfruit
+PUT h Dragonfruit
+PUT h Pineapple
+GET c
+GET b
+PUT l Passionfruit
+MULTIPUT w Cashew n Banana m Starfruit
+GET c
+PUT b Raspberry
+PUT m Raspberry
+GET a
+GET j
+PUT g Pomegranate
+GET h
+MULTIPUT v Nectarine k Persimmon b Passionfruit j Avocado b Cashew l Avocado a Banana a Persimmon
+MULTIPUT g Avocado p Nectarine v Avocado g Banana g Persimmon l Fig a Apple n Blackberry t Banana l Kiwi j Persimmon
+GET p
+GET o
+PUT a Persimmon
+PUT e Apple
+GET g
+PUT s Strawberry
+GET k
+MULTIPUT p Banana m Fig w Raspberry g Dragonfruit r Peach o Cashew s Kiwi v Orange q Strawberry
+MULTIGET r o v d f d m w j j r
+PUT m Dragonfruit
+GET w
+GET c
+GET o
+GET n
+GET m
+GET r
+PUT s Lemon
+GET o
+PUT r Starfruit
+PUT g Tamarind
+PUT h Grape
+GET v
+GET d
+MULTIPUT j Kiwi b Pear q Fig
+PUT g Blueberry
+PUT a Pomegranate
+PUT t Avocado
+MULTIGET n b j f j g u
+GET o
+MULTIPUT o Cherry o Guava k Passionfruit
+MULTIPUT i Guava s Passionfruit k Blueberry a Fig u Lychee k Fig e Pear
+PUT e Passionfruit
+MULTIPUT v Tamarind f Peach r Pear
+GET e
+GET s
+PUT f Nectarine
+MULTIPUT i Persimmon w Peach l Strawberry j Fig c Pear t Dragonfruit r Raspberry
+PUT j Lemon
+MULTIPUT r Mango e Pomegranate e Lemon m Cherry e Papaya g Starfruit l Nectarine a Pomegranate u Guava m Orange
+GET d
+MULTIGET k m i j e
+MULTIPUT k Nectarine d Blackberry p Melon j Raspberry
+MULTIGET p t q v m u b e j c e
+PUT l Blueberry
+GET e
+GET n
+MULTIPUT e Raspberry m Cherry i Apple w Apple i Melon i Pomegranate v Lychee p Strawberry o Papaya d Melon
+GET w
+GET e
+MULTIPUT d Cashew j Pineapple d Starfruit m Cashew d Cashew u Blackberry
+PUT u Kiwi
+PUT n Mango
+GET o
+PUT d Pomegranate
+GET i
+PUT e Cherry
+MULTIPUT p Strawberry a Papaya j Blackberry f Blackberry a Orange g Papaya o Pineapple
+GET v
+GET t
+GET s
+PUT w Persimmon
+GET r
+PUT a Lychee
+PUT e Strawberry
+MULTIPUT p Persimmon i Strawberry c Pineapple f Orange o Blueberry c Mango o Fig i Fig k Guava
+MULTIGET g s g h m s a w
+PUT e Blackberry
+MULTIPUT v Orange j Raspberry c Banana v Watermelon w Cherry f Passionfruit m Blueberry
+PUT r Pomegranate
+PUT o Banana
+GET b
+PUT i Grape
+PUT s Strawberry
+PUT d Melon
+GET t
+MULTIGET m o a n q
+GET n
+GET f
+PUT a Lemon
+PUT j Fig
+GET i
+PUT d Banana
+MULTIPUT l Pear e Cherry k Melon b Raspberry k Blackberry r Lychee b Melon d Strawberry n Pineapple s Mango s Pomegranate
+PUT l Cherry
+PUT g Kiwi
+GET b
+GET k
+GETWHEN d e Pear
+PUT i Banana
+MULTIPUT n Avocado v Banana c Cashew k Grape d Pear k Avocado
+PUT w Raspberry
+GET j
+PUT q Blackberry
+MULTIGET n g e
+MULTIGET d m h i n r o i i
+GETWHEN j e Mango
+GET e
+PUT e Banana
+PUT v Lychee
+GET v
+GET i
+MULTIPUT j Pear j Watermelon a Grape n Fig t Dragonfruit g Pineapple h Nectarine
+GET h
+GET r
+PUT e Passionfruit
+PUT p Pineapple
+MULTIGET v i a u e
+PUT r Peach
+PUT b Banana
+PUT d Pear
+GET g
+PUT s Guava
+GET r
+PUT h Cashew
+MULTIPUT m Guava e Blueberry p Lemon
+PUT w Orange
+GETWHEN l e Pineapple
+MULTIGET n p e
+MULTIPUT f Melon i Kiwi i Persimmon d Persimmon a Cashew m Orange k Papaya
+PUT v Papaya
+MULTIGET w i q u o
+GET b
+GET t
+PUT d Blackberry
+PUT f Kiwi
+PUT t Banana
+GET u
+MULTIPUT h Mango e Blueberry m Blackberry g Starfruit w Banana w Lychee e Raspberry l Pineapple
+PUT v Kiwi
+GET g
+GET v
+MULTIPUT b Grape e Avocado r Cashew m Nectarine k Banana q Fig c Banana w Lychee w Avocado
+PUT e Tamarind
+GET o
+GET o
+PUT f Lemon
+MULTIPUT s Cashew t Passionfruit l Strawberry d Cashew f Pear d Strawberry l Guava r Avocado
+PUT p Grape
+GET w
+PUT v Melon
+MULTIPUT m Passionfruit b Strawberry r Avocado q Cashew
+GETWHEN d f Watermelon
+MULTIPUT n Lemon i Cashew r Dragonfruit i Mango l Cashew n Kiwi q Orange i Blackberry t Banana t Peach d Blackberry
+PUT m Fig
+PUT h Blueberry
+MULTIPUT v Blackberry v Melon i Blackberry a Pear s Avocado t Avocado w Pomegranate u Avocado
+PUT e Pear
+GET k
+MULTIPUT u Blackberry a Papaya b Orange b Banana c Pear l Lemon u Pomegranate n Raspberry v Starfruit l Grape i Pomegranate r Blueberry
+PUT w Pineapple
+GET r
+GET e
+PUT h Cherry
+GET u
+MULTIPUT f Papaya e Watermelon k Banana w Lychee q Starfruit t Persimmon i Cashew q Persimmon k Pomegranate
+PUT o Persimmon
+MULTIGET q a k c j f
+MULTIGET v c l l a s j b r
+PUT n Papaya
+PUT j Raspberry
+PUT p Lemon
+MULTIPUT o Apple a Grape w Cherry q Blueberry h Dragonfruit k Nectarine d Dragonfruit t Persimmon i Cherry k Apple g Passionfruit d Avocado
+GET s
+PUT e Lemon
+GET o
+PUT j Mango
+PUT f Lemon
+GET q
+GET o
+PUT p Starfruit
+PUT p Cashew
+GET k
+GET m
+GET a
+GET d
+PUT d Fig
+PUT b Watermelon
+PUT p Fig
+GET d
+GET l
+MULTIPUT r Pear u Starfruit u Tamarind
+GET v
+PUT v Lemon
+GET k
+GET u
+PUT w Tamarind
+PUT s Avocado
+GET q
+GET o
+PUT f Orange
+MULTIGET h e f l r q q w s f
+GET n
+PUT l Mango
+MULTIPUT w Blackberry l Kiwi m Orange d Fig b Grape b Guava e Blackberry s Passionfruit
+GET u
+GET e
+GET n
+PUT g Cherry
+GET o
+MULTIPUT r Melon h Peach n Banana e Blueberry e Watermelon a Grape d Nectarine d Strawberry g Kiwi p Peach e Avocado d Guava
+GET p
+MULTIGET t m i
+GET r
+GET f
+MULTIPUT f Lemon l Blackberry u Cherry j Blackberry u Orange f Mango s Kiwi a Watermelon l Fig r Peach l Dragonfruit
+GET e
+PUT w Blackberry
+PUT m Cherry
+MULTIGET j o j n t f p r w
+GET s
+MULTIPUT r Pear m Avocado u Kiwi j Cherry b Melon j Cherry
+GET c
+GET p
+PUT d Pear
+GET v
+MULTIPUT i Peach k Raspberry f Apple n Persimmon h Grape o Kiwi m Avocado e Banana
+PUT n Pear
+MULTIGET h i p s
+PUT o Strawberry
+PUT b Papaya
+MULTIPUT w Pomegranate t Mango s Watermelon p Pomegranate w Lychee s Blueberry k Pineapple
+PUT m Persimmon
+GET k
+GET q
+PUT n Strawberry
+MULTIPUT c Raspberry e Blueberry u Cherry r Cherry m Papaya
+PUT v Fig
+MULTIPUT l Grape q Nectarine u Peach g Pear m Fig f Pear r Avocado o Pineapple m Nectarine w Papaya n Blackberry
+GET v
+PUT u Kiwi
+GETWHEN l u Peach
+GET o
+GET i
+MULTIGET b j q n d p s n g r c
+PUT q Lychee
+MULTIPUT m Strawberry u Nectarine u Pineapple d Pomegranate k Lychee r Passionfruit i Mango
+PUT w Kiwi
+MULTIPUT k Mango l Lychee d Peach a Nectarine c Papaya r Tamarind i Tamarind b Pineapple a Cashew i Peach l Tamarind u Fig
+GET o
+GET d
+PUT b Guava
+MULTIPUT g Dragonfruit s Kiwi j Lemon i Guava b Banana f Guava
+PUT b Lemon
+GET s
+GET p
+MULTIGET j q h k a
+GET o
+MULTIPUT l Apple e Melon g Passionfruit m Grape n Lemon
+GET f
+GET l
+MULTIPUT s Banana a Cherry v Blackberry d Lemon l Pineapple s Passionfruit
+PUT t Lemon
+GET o
+PUT g Grape
+PUT n Cashew
+GET q
+GET f
+GET d
+MULTIGET j d a g f k t r f f
+PUT f Strawberry
+GET r
+PUT t Fig
+GET a
+PUT r Peach
+PUT s Starfruit
+GET d
+PUT g Lychee
+GET h
+PUT h Passionfruit
+MULTIPUT h Tamarind q Blueberry q Passionfruit c Dragonfruit
+MULTIPUT g Apple d Peach b Blackberry f Mango p Pineapple g Lemon r Passionfruit k Avocado v Avocado
+GET i
+GET q
+GET i
+MULTIPUT n Grape j Cashew d Orange w Melon b Peach
+PUT b Cashew
+PUT p Raspberry
+GET w
+MULTIGET p n q u p r i m e d s
+GET v
+GET r
+PUT c Cherry
+MULTIPUT g Pomegranate e Passionfruit q Lemon n Passionfruit i Mango
+MULTIPUT u Papaya a Mango c Nectarine l Lemon s Starfruit w Orange
+PUT r Apple
+PUT s Pear
+GET v
+GET s
+GET a
+GET i
+PUT f Kiwi
+GET c
+MULTIPUT g Cherry c Avocado d Peach h Dragonfruit s Fig
+PUT b Cherry
+PUT l Watermelon
+MULTIGET i q n a p f p n m p
+MULTIPUT p Starfruit i Pear w Papaya
+MULTIGET a v a e g
+GET u
+GET g
+PUT v Lychee
+PUT s Melon
+PUT k Tamarind
+GETWHEN b u Peach
+GET f
+GET g
+GETWHEN n q Mango
+PUT c Tamarind
+GET c
+GET s
+PUT p Kiwi
+PUT h Apple
+GET a
+PUT s Tamarind
+GET i
+MULTIPUT t Dragonfruit k Tamarind r Pineapple h Orange r Persimmon j Strawberry l Peach a Starfruit d Mango w Banana s Watermelon
+PUT f Dragonfruit
+GET d
+PUT a Melon
+MULTIPUT w Banana t Lychee d Watermelon a Pomegranate k Mango l Starfruit m Dragonfruit n Strawberry
+PUT u Passionfruit
+MULTIPUT g Blackberry g Blueberry j Blueberry s Melon h Guava h Dragonfruit o Cherry j Tamarind b Blueberry
+GET f
+MULTIPUT j Grape s Peach j Fig i Blueberry r Pomegranate w Lychee w Persimmon a Melon
+PUT j Dragonfruit
+GET n
+PUT j Cashew
+GET s
+PUT f Banana
+GETWHEN u p Blackberry
+GET f
+PUT d Cherry
+PUT t Dragonfruit
+PUT l Cherry
+GET p
+GET m
+MULTIPUT r Avocado f Kiwi u Papaya a Cherry
+MULTIPUT j Peach i Avocado u Raspberry h Grape i Orange g Lychee u Kiwi
+MULTIGET i v v b f o j a k v n
+PUT e Starfruit
+GET d
+MULTIPUT w Strawberry d Peach w Cashew o Pomegranate v Nectarine w Starfruit p Lemon r Avocado m Blackberry
+GET o
+MULTIPUT e Nectarine k Lemon d Cashew g Grape g Pineapple n Cherry e Peach i Blackberry d Mango r Lychee
+GET d
+PUT n Tamarind
+GETWHEN s r Orange
+PUT w Melon
+PUT b Guava
+PUT g Apple
+GET g
+GET p
+PUT v Grape
+MULTIPUT v Watermelon r Cherry d Tamarind l Passionfruit i Persimmon i Starfruit e Melon f Mango
+GET p
+GET q
+GET j
+GET q
+PUT l Raspberry
+GET j
+MULTIPUT i Mango i Lemon m Grape b Cherry n Pineapple r Apple j Watermelon a Fig f Fig p Pomegranate
+GET l
+MULTIPUT h Orange i Lemon s Banana f Grape r Passionfruit q Raspberry c Avocado u Pineapple
+PUT e Pear
+PUT n Grape
+PUT f Guava
+GET p
+PUT s Cherry
+GET k
+PUT j Lychee
+PUT a Blueberry
+PUT r Cherry
+MULTIGET j q d n f v w
+PUT d Peach
+PUT e Tamarind
+MULTIPUT w Starfruit w Cashew o Mango t Grape
+PUT w Pear
+PUT l Persimmon
+MULTIGET e p w j g s q m
+GET r
+PUT e Melon
+GET w
+MULTIPUT u Watermelon q Blueberry o Blackberry s Apple i Blackberry k Starfruit e Orange p Blackberry m Pear g Peach b Orange e Avocado
+MULTIGET e w m d b m
+MULTIGET e n h t
+GETWHEN v a Kiwi
+PUT o Blackberry
+PUT e Melon
+PUT g Cashew
+PUT i Orange
+MULTIGET k i q s d o
+PUT p Pear
+MULTIPUT c Persimmon o Grape i Fig u Tamarind s Grape c Cherry g Lychee j Persimmon e Apple p Fig p Melon
+MULTIPUT b Kiwi v Raspberry k Grape v Avocado a Dragonfruit o Apple h Orange
+PUT r Melon
+MULTIPUT g Banana t Blackberry a Orange u Avocado n Cherry c Fig g Banana h Apple w Dragonfruit
+PUT o Lemon
+GET j
+GET i
+MULTIGET b g m l k h t j o g b c
+GETWHEN a l Blueberry
+GET k
+MULTIPUT s Apple c Dragonfruit p Raspberry o Pomegranate k Grape f Lemon r Mango k Papaya m Pomegranate r Banana
+GET i
+MULTIPUT l Lemon c Dragonfruit r Cashew m Fig h Passionfruit b Grape a Pomegranate c Starfruit i Raspberry w Kiwi g Cherry j Mango
+GET c
+GET r
+GET e
+MULTIPUT n Strawberry s Raspberry v Pineapple t Pear h Avocado v Kiwi
+GET h
+GET e
+PUT u Fig
+GET b
+PUT n Banana
+PUT w Cherry
+PUT q Mango
+MULTIPUT q Avocado k Pomegranate i Cherry p Lemon k Lychee d Lychee
+GET i
+PUT f Tamarind
+GETWHEN i u Orange
+GET d
+PUT s Blackberry
+GET n
+GET w
+GET e
+GET b
+PUT w Persimmon
+GET t
+GET s
+GET c
+GET m
+PUT f Blackberry
+MULTIGET c g i i h d i p j g h
+GET s
+MULTIGET u l n s
+MULTIPUT t Persimmon r Passionfruit v Papaya e Strawberry a Mango t Starfruit g Blueberry v Banana
+PUT r Lychee
+GET t
+PUT u Grape
+GET g
+GET e
+GET c
+GET l
+PUT s Melon
+PUT p Papaya
+PUT o Apple
+PUT q Watermelon
+PUT k Starfruit
+PUT h Papaya
+PUT f Persimmon
+PUT r Lemon
+MULTIPUT n Tamarind t Papaya c Dragonfruit k Blueberry t Avocado j Strawberry n Grape s Fig q Pomegranate o Kiwi
+GET p
+GET v
+PUT d Lemon
+GET b
+PUT o Pear
+MULTIPUT s Pear c Banana i Grape m Cherry v Mango g Raspberry a Cashew m Mango
+GET s
+GET t
+GET g
+PUT a Lemon
+PUT v Guava
+PUT b Blueberry
+GET a
+GET a
+GET i
+MULTIPUT s Fig m Strawberry f Guava e Orange
+PUT w Papaya
+GET n
+GET r
+MULTIPUT g Avocado f Nectarine w Passionfruit o Dragonfruit i Lychee c Guava e Apple o Pomegranate
+PUT t Nectarine
+MULTIPUT u Guava t Apple r Guava i Cashew k Tamarind l Melon k Nectarine g Papaya
+GET q
+PUT i Peach
+MULTIPUT l Lychee q Cashew r Guava q Mango i Orange c Avocado t Blueberry
+MULTIPUT q Peach m Dragonfruit f Banana
+GET t
+MULTIPUT b Starfruit r Lychee r Avocado t Tamarind r Cherry h Banana p Avocado k Orange
+GET q
+MULTIGET s a o q d w p b o a d s
+GET u
+GET t
+PUT f Avocado
+MULTIPUT n Lemon u Banana n Fig p Grape j Raspberry k Kiwi
+GET t
+GET n
+GET t
+PUT r Grape
+PUT m Grape
+PUT k Fig
+MULTIPUT m Passionfruit c Strawberry g Lemon b Avocado m Papaya k Blueberry
+MULTIGET r c k k c
+GET o
+PUT v Lychee
+GET d
+GET i
+PUT e Watermelon
+GET c
+GET i
+PUT k Papaya
+PUT g Passionfruit
+PUT c Orange
+PUT j Orange
+MULTIPUT f Grape g Orange f Strawberry r Kiwi a Guava
+PUT a Strawberry
+GET s
+PUT w Orange
+MULTIGET w i b
+GET b
+GET d
+PUT h Dragonfruit
+GET p
+PUT w Blueberry
+GET t
+PUT q Raspberry
+GET c
+PUT b Apple
+PUT i Cherry
+GET b
+PUT l Pineapple
+PUT k Passionfruit
+GET l
+GET o
+MULTIGET d o v m e v n
+PUT l Strawberry
+GET m
+PUT c Pineapple
+PUT n Strawberry
+PUT v Avocado
+MULTIPUT s Pomegranate l Avocado v Lychee h Watermelon u Passionfruit a Kiwi g Raspberry c Mango a Mango
+GET k
+MULTIGET o e c k p l t r o
+PUT q Dragonfruit
+GETWHEN o w Passionfruit
+MULTIPUT b Blackberry p Persimmon o Melon w Mango i Watermelon o Apple
+GET s
+GET o
+GET n
+PUT a Grape
+GET l
+GET d
+GET d
+GET r
+GET k
+GET b
+MULTIGET l h w m v d
+GET i
+PUT s Peach
+MULTIGET o r o k r h k
+GET l
+GET u
+PUT d Nectarine
+MULTIPUT l Tamarind i Guava s Starfruit c Raspberry d Cherry o Avocado
+GETWHEN e j Melon
+GET l
+PUT m Peach
+GET q
+PUT l Blueberry
+PUT s Avocado
+GET b
+GET k
+GET q
+GET w
+PUT f Peach
+GET m
+PUT g Strawberry
+GET p
+GET t
+PUT a Banana
+PUT n Peach
+GET b
+GET u
+PUT t Nectarine
+PUT p Grape
+MULTIPUT q Orange h Peach n Guava r Grape s Melon g Raspberry e Peach
+PUT n Peach
+MULTIGET u i m q p t h s u l j v
+GET v
+PUT t Pomegranate
+PUT m Avocado
+PUT m Kiwi
+PUT a Kiwi
+PUT l Pineapple
+PUT i Blueberry
+PUT t Persimmon
+MULTIPUT p Papaya u Avocado k Banana i Passionfruit e Persimmon a Papaya w Grape o Blueberry s Raspberry i Raspberry
+PUT v Guava
+PUT s Kiwi
+PUT r Starfruit
+GET k
+MULTIGET t t k t o k v p r
+PUT m Pomegranate
+MULTIPUT h Pear p Lemon m Strawberry q Pineapple d Watermelon
+GET c
+MULTIPUT a Papaya b Pear w Papaya n Peach
+PUT t Persimmon
+PUT p Strawberry
+PUT s Fig
+GET j
+MULTIPUT m Nectarine n Cherry o Dragonfruit e Avocado
+GET p
+GET h
+GETWHEN h e Cherry
+GET d
+PUT k Pineapple
+MULTIGET v m r h a u
+PUT v Peach
+MULTIPUT s Persimmon h Apple r Blueberry k Pear a Pear j Banana w Banana s Starfruit h Cherry m Cherry
+GETWHEN o b Peach
+GET q
+PUT t Persimmon
+PUT f Lychee
+GET n
+MULTIPUT b Fig n Mango k Papaya t Pineapple j Watermelon w Melon h Raspberry
+MULTIPUT b Pomegranate f Cherry l Passionfruit s Pineapple
+PUT r Mango
+GET b
+PUT f Dragonfruit
+PUT o Blackberry
+PUT c Fig
+GET l
+PUT r Strawberry
+PUT w Persimmon
+GET w
+GET v
+MULTIGET h k j w o
+PUT o Apple
+PUT r Lemon
+PUT h Fig
+PUT b Orange
+MULTIPUT s Blackberry n Watermelon g Banana d Cherry h Banana c Pomegranate w Watermelon r Watermelon l Starfruit q Orange d Dragonfruit s Peach
+PUT i Persimmon
+GET b
+PUT k Blueberry
+MULTIPUT b Grape d Grape i Fig j Passionfruit p Watermelon r Starfruit w Apple
+PUT q Fig
+MULTIPUT r Pomegranate m Persimmon t Orange f Tamarind u Passionfruit v Watermelon n Grape e Strawberry
+PUT a Watermelon
+PUT u Pineapple
+GET g
+GET i
+GETWHEN t j Watermelon
+PUT q Melon
+GET u
+GET h
+PUT k Blueberry
+PUT e Persimmon
+GET p
+MULTIPUT s Cherry b Orange u Peach t Cashew s Melon v Melon d Persimmon
+GET o
+GET b
+PUT a Strawberry
+PUT l Blueberry
+GET d
+GET w
+PUT v Watermelon
+PUT l Cherry
+GET j
+MULTIPUT v Watermelon c Starfruit t Tamarind i Guava g Banana q Tamarind g Mango m Kiwi
+PUT j Passionfruit
+PUT b Apple
+GET d
+GET w
+PUT e Dragonfruit
+GET f
+GET h
+GET u
+MULTIGET f p w
+GET d
+MULTIGET g t j i v e h f g g t
+MULTIGET p k i
+GET w
+GET q
+PUT d Starfruit
+MULTIPUT r Fig t Papaya q Lemon l Blackberry l Lemon a Cherry f Pineapple f Persimmon h Pear l Melon
+GET a
+PUT a Orange
+PUT c Guava
+GET c
+PUT u Strawberry
+PUT j Blackberry
+PUT o Peach
+GET w
+GET u
+PUT r Passionfruit
+GET e
+GET d
+PUT v Cashew
+GET a
+PUT c Lychee
+PUT p Passionfruit
+GET k
+PUT h Peach
+PUT n Persimmon
+PUT a Banana
+GET f
+PUT d Cashew
+PUT g Pineapple
+PUT s Banana
+PUT a Guava
+MULTIPUT c Kiwi t Banana a Blackberry m Cashew c Lemon s Banana r Kiwi h Blueberry e Pear w Lychee s Pear l Cherry
+PUT d Lychee
+GET d
+MULTIGET o r k j
+PUT i Nectarine
+GET s
+PUT d Lychee
+GET i
+MULTIPUT a Watermelon a Pineapple p Lychee m Watermelon a Watermelon g Tamarind q Pomegranate v Orange
+PUT r Lychee
+GET c
+GET v
+GET i
+PUT a Pineapple
+GET w
+GET e
+GET c
+PUT f Pineapple
+GET t
+MULTIPUT t Peach d Banana w Strawberry h Apple b Orange
+MULTIPUT g Blackberry c Apple r Blackberry t Passionfruit k Guava n Lemon v Tamarind m Blackberry g Strawberry l Avocado n Nectarine
+GET m
+PUT a Apple
+PUT o Starfruit
+MULTIGET q n u k w j e u k w
+PUT i Grape
+GET r
+MULTIPUT b Dragonfruit j Persimmon j Cherry i Kiwi m Blackberry w Pomegranate q Papaya r Melon t Strawberry v Pear p Nectarine
+GET g
+GET k
+MULTIGET g u o b q c g
+GET e
+GET q
+MULTIPUT u Blueberry i Guava v Lychee w Pomegranate e Strawberry r Mango b Fig d Pineapple s Kiwi s Dragonfruit b Apple h Blackberry
+MULTIPUT u Nectarine w Blackberry n Papaya d Banana
+GET v
+GET i
+GET k
+GET a
+GET g
+MULTIPUT c Apple t Guava h Blueberry
+PUT d Kiwi
+GET n
+GET n
+PUT s Avocado
+MULTIPUT w Starfruit k Passionfruit j Melon b Tamarind h Blueberry r Tamarind t Starfruit w Avocado
+PUT g Guava
+PUT s Tamarind
+PUT f Cashew
+PUT i Fig
+GET c
+PUT q Banana
+MULTIPUT k Avocado c Melon p Mango p Lychee d Persimmon p Guava s Fig m Kiwi
+GET c
+GET s
+GET i
+PUT n Kiwi
+GET n
+GET l
+GET d
+GET m
+GET n
+PUT l Lychee
+GET k
+MULTIPUT f Pomegranate h Guava h Pomegranate
+GET b
+MULTIPUT k Starfruit p Persimmon u Cashew j Blueberry i Banana d Peach o Fig
+PUT w Pear
+GET c
+PUT s Cashew
+GET c
+MULTIPUT c Pear m Guava p Kiwi m Grape
+MULTIPUT g Orange q Apple j Guava c Mango h Watermelon o Persimmon d Orange u Tamarind i Banana r Lychee c Grape
+PUT r Avocado
+PUT e Melon
+PUT j Blackberry
+PUT u Passionfruit
+GET r
+GET i
+GET t
+PUT d Watermelon
+PUT c Blackberry
+MULTIPUT l Cashew s Banana s Nectarine
+GET g
+PUT t Papaya
+GET h
+MULTIPUT g Tamarind c Passionfruit j Guava u Strawberry l Blueberry m Pineapple a Blackberry k Guava
+PUT o Fig
+GET i
+PUT e Papaya
+PUT l Grape
+MULTIPUT r Nectarine s Blueberry c Blueberry k Pineapple a Persimmon
+GET i
+GET m
+GET s
+MULTIPUT b Cherry u Banana a Pear j Starfruit f Tamarind r Persimmon v Peach q Starfruit b Banana
+MULTIPUT n Pomegranate j Raspberry p Passionfruit h Avocado v Fig e Kiwi c Orange m Watermelon l Passionfruit k Apple v Tamarind
+GET s
+GET q
+MULTIPUT l Pear c Persimmon k Fig
+GET v
+MULTIPUT k Lychee d Blueberry r Pineapple e Fig w Pomegranate f Strawberry
+MULTIGET n j w k u g u f
+PUT d Lychee
+GET p
+PUT l Raspberry
+MULTIPUT s Guava p Melon s Watermelon j Passionfruit q Lychee i Kiwi
+PUT d Dragonfruit
+GET i
+PUT k Lychee
+GET q
+GET t
+PUT t Apple
+PUT t Banana
+PUT r Pomegranate
+PUT m Fig
+PUT a Mango
+MULTIPUT o Pear i Mango a Peach g Watermelon r Nectarine v Dragonfruit i Pear a Pineapple i Peach f Melon g Lychee n Watermelon
+PUT f Dragonfruit
+GET l
+PUT r Watermelon
+PUT q Kiwi
+MULTIPUT m Pineapple j Papaya b Pear i Lychee e Banana o Mango r Dragonfruit s Peach i Passionfruit i Watermelon c Avocado n Lychee
+PUT l Cashew
+PUT i Tamarind
+GET j
+MULTIPUT j Cashew c Nectarine j Apple l Cashew t Orange d Peach
+GET i
+MULTIPUT f Orange f Melon k Avocado j Fig
+GET u
+MULTIPUT f Strawberry h Raspberry e Pineapple j Papaya f Lychee
+GET v
+GET u
+PUT e Passionfruit
+PUT q Grape
+MULTIGET s u u f v
+MULTIPUT q Pear s Watermelon p Dragonfruit e Watermelon w Pineapple o Blueberry i Strawberry s Pomegranate q Grape
+PUT f Guava
+GET e
+GET n
+GET j
+GET q
+GET p
+PUT m Lemon
+MULTIPUT w Banana p Apple m Passionfruit h Melon a Lychee q Raspberry q Mango w Apple t Peach
+GET p
+GET h
+PUT b Kiwi
+PUT n Orange
+GET s
+GET m
+PUT u Avocado
+GET t
+GET l
+PUT n Cashew
+PUT h Cashew
+MULTIPUT w Dragonfruit k Fig w Papaya d Mango w Raspberry b Peach k Dragonfruit b Papaya m Nectarine t Guava i Banana
+PUT g Tamarind
+GET v
+GET n
+GET e
+PUT a Banana
+GET w
+GET a
+GET h
+PUT b Dragonfruit
+PUT a Raspberry
+GET g
+PUT i Persimmon
+GET v
+PUT d Lemon
+GET a
+MULTIPUT b Passionfruit i Papaya r Lychee f Peach s Watermelon s Kiwi p Guava u Persimmon l Fig s Blackberry w Avocado d Passionfruit
+GET b
+PUT j Persimmon
+MULTIPUT t Banana r Orange g Passionfruit j Blackberry g Persimmon n Starfruit i Watermelon
+GET o
+GETWHEN k j Pineapple
+PUT h Orange
+PUT i Watermelon
+GET b
+PUT h Strawberry
+PUT b Grape
+GET o
+GET w
+PUT t Pear
+GET s
+GET i
+GET m
+PUT h Nectarine
+GET m
+PUT m Cashew
+GET o
+PUT a Mango
+PUT u Banana
+MULTIPUT l Raspberry a Nectarine b Lemon h Pomegranate c Passionfruit p Strawberry r Persimmon
+GET b
+PUT k Pear
+GET c
+PUT d Pear
+GET s
+GET s
+MULTIPUT c Nectarine p Apple u Apple n Mango j Blueberry g Tamarind v Pomegranate b Pomegranate
+GET m
+GET v
+GET q
+MULTIPUT w Persimmon r Nectarine n Dragonfruit t Nectarine a Lemon d Nectarine m Guava d Passionfruit o Grape w Papaya v Grape b Passionfruit
+GET h
+GET a
+GET l
+MULTIPUT d Pear w Blackberry k Mango
+GET h
+MULTIPUT u Grape c Dragonfruit d Raspberry c Pomegranate s Fig
+MULTIPUT e Watermelon f Cashew a Peach b Watermelon j Raspberry d Pear d Blueberry s Guava c Watermelon q Peach n Starfruit
+GET o
+MULTIPUT o Cherry j Melon b Banana c Raspberry m Pear s Mango s Blackberry i Mango e Passionfruit g Melon e Strawberry
+PUT k Pomegranate
+GET w
+PUT t Papaya
+PUT d Nectarine
+PUT q Nectarine
+MULTIPUT p Tamarind b Peach g Pineapple n Pineapple w Papaya h Grape o Banana
+MULTIPUT l Grape h Persimmon l Guava g Fig a Fig n Avocado a Pineapple d Apple b Fig m Dragonfruit s Banana a Guava
+GETWHEN l f Starfruit
+GET o
+GET l
+GET v
+PUT f Fig
+MULTIPUT f Lychee w Dragonfruit l Peach
+PUT k Cashew
+GET v
+PUT l Nectarine
+GET w
+PUT a Passionfruit
+GET v
+GET j
+GET e
+MULTIPUT r Kiwi v Dragonfruit q Dragonfruit d Cherry d Orange a Strawberry j Dragonfruit
+PUT g Avocado
+GET f
+GET v
+GET a
+GET g
+PUT c Raspberry
+MULTIPUT m Lychee u Watermelon c Raspberry k Melon n Pineapple t Cherry
+GET l
+MULTIGET j l r
+MULTIPUT r Strawberry f Avocado g Fig u Blackberry w Pineapple
+PUT n Pomegranate
+PUT j Lemon
+GET f
+GET r
+PUT a Pear
+PUT a Tamarind
+PUT l Peach
+GET b
+PUT p Nectarine
+PUT c Blackberry
+PUT m Papaya
+PUT v Passionfruit
+MULTIPUT d Lemon p Raspberry a Strawberry
+MULTIPUT t Cashew q Nectarine o Banana t Avocado o Nectarine o Raspberry m Dragonfruit
+MULTIPUT p Nectarine b Nectarine v Cashew i Pomegranate h Blueberry b Apple n Fig p Fig r Watermelon
+GET c
+GET u
+PUT a Avocado
+GET w
+PUT a Mango
+MULTIGET m c b j e l c q h
+PUT d Kiwi
+PUT b Banana
+GET w
+PUT a Orange
+MULTIPUT g Peach s Blackberry q Raspberry h Apple w Nectarine d Cashew
+PUT l Melon
+PUT a Guava
+GET b
+PUT k Persimmon
+MULTIPUT l Pomegranate l Starfruit k Strawberry v Peach a Blackberry f Strawberry w Raspberry l Guava i Cashew h Pomegranate m Mango
+MULTIPUT e Tamarind n Pineapple q Cherry k Papaya a Pineapple g Blackberry v Passionfruit g Orange
+PUT o Watermelon
+GET p
+GET t
+PUT m Watermelon
+GET d
+PUT v Nectarine
+PUT c Mango
+GETWHEN g g Blackberry
+MULTIGET f w t
+PUT o Strawberry
+MULTIPUT l Blueberry q Lemon u Watermelon w Passionfruit
+GET h
+PUT c Avocado
+GET c
+MULTIPUT w Lychee p Mango o Nectarine p Banana s Cashew h Lemon b Mango l Watermelon o Tamarind q Blueberry
+MULTIGET i p d
+PUT p Tamarind
+MULTIPUT d Passionfruit n Peach l Persimmon b Melon h Banana v Orange d Pomegranate k Blackberry m Nectarine d Papaya
+GET q
+GET u
+GETWHEN n u Peach
+GET k
+PUT d Lemon
+MULTIPUT n Grape a Tamarind n Blueberry v Melon q Melon j Mango r Dragonfruit
+GET e
+PUT a Orange
+PUT l Lychee
+PUT u Peach
+PUT w Blackberry
+MULTIPUT o Apple g Blueberry p Tamarind j Banana i Dragonfruit f Fig c Apple e Avocado
+GETWHEN v j Pomegranate
+PUT b Cherry
+GET w
+GET g
+GET d
+MULTIGET t p b e u r v n o j d t
+GET g
+PUT o Cherry
+GET b
+PUT e Lemon
+MULTIPUT n Peach o Persimmon n Orange k Peach l Apple c Starfruit j Apple w Kiwi l Raspberry a Guava o Avocado
+PUT e Cashew
+GET w
+MULTIPUT j Grape t Dragonfruit h Guava q Passionfruit p Pomegranate r Cashew r Cherry v Grape b Papaya t Peach
+GET b
+GET q
+GET g
+PUT w Cashew
+PUT e Cherry
+GETWHEN j l Banana
+PUT v Pomegranate
+GET u
+PUT w Dragonfruit
+PUT t Avocado
+MULTIPUT v Strawberry g Lychee j Starfruit
+MULTIGET q u t l r p d v d i
+MULTIPUT m Orange q Fig a Peach d Lemon d Orange t Cherry g Guava v Banana l Watermelon b Cashew d Blackberry n Raspberry
+GET f
+MULTIGET m p l a l u g
+PUT k Strawberry
+PUT u Dragonfruit
+PUT p Lychee
+GET m
+GET m
+MULTIPUT g Kiwi k Cherry j Banana d Pineapple c Watermelon l Papaya f Fig w Grape
+PUT g Apple
+PUT u Watermelon
+GET f
+PUT h Passionfruit
+MULTIPUT o Mango c Fig f Blackberry p Orange d Nectarine c Fig f Blueberry
+PUT r Blackberry
+PUT p Pomegranate
+MULTIPUT m Cherry q Dragonfruit m Papaya u Grape t Blueberry j Guava
+GET d
+PUT d Nectarine
+MULTIPUT j Mango i Guava n Papaya
+GET u
+GET k
+GETWHEN t p Pear
+PUT c Guava
+GET o
+PUT f Blueberry
+GET n
+PUT t Watermelon
+GET l
+MULTIPUT e Nectarine w Nectarine f Mango f Persimmon h Papaya v Passionfruit a Starfruit b Persimmon m Cherry a Blueberry j Pomegranate e Apple
+PUT m Pear
+PUT d Starfruit
+PUT h Papaya
+GET k
+GET u
+PUT m Blueberry
+PUT j Banana
+MULTIPUT d Orange d Melon q Avocado
+MULTIPUT c Blueberry m Starfruit m Papaya h Starfruit k Blueberry v Pear h Cherry h Pear f Persimmon a Blackberry t Apple j Orange
+MULTIGET r f g p l b
+MULTIPUT v Fig s Blackberry e Banana s Orange o Melon r Passionfruit j Dragonfruit w Pomegranate v Strawberry j Dragonfruit c Apple
+PUT v Pear
+PUT i Lychee
+GET s
+PUT k Pineapple
+GET s
+GET r
+GET j
+MULTIPUT q Kiwi l Lychee b Strawberry o Guava m Lychee u Starfruit
+GET b
+GET c
+GET b
+GET c
+GET o
+PUT d Dragonfruit
+GET b
+GET i
+GET f
+GET l
+GET p
+PUT h Mango
+GET h
+PUT n Kiwi
+GETWHEN h g Pomegranate
+PUT p Strawberry
+PUT a Raspberry
+GET n
+GET d
+MULTIPUT k Dragonfruit w Blackberry i Papaya r Lemon q Cherry u Guava
+MULTIGET o a w i v j
+PUT g Pineapple
+PUT b Papaya
+PUT f Cherry
+GET l
+GET b
+GET e
+PUT o Lychee
+MULTIPUT c Peach o Kiwi c Kiwi
+MULTIPUT d Peach r Raspberry q Nectarine f Orange c Strawberry o Persimmon
+GET o
+GET l
+PUT o Pear
+GET a
+PUT o Nectarine
+PUT l Starfruit
+PUT e Persimmon
+GET s
+GET j
+PUT j Pear
+PUT g Kiwi
+GET k
+PUT g Cashew
+MULTIGET k q r t v n n r p o h
+GET p
+MULTIPUT e Strawberry c Cashew v Cherry r Melon p Persimmon e Nectarine b Pineapple u Watermelon d Grape b Strawberry s Melon
+PUT p Persimmon
+MULTIGET g i n s s r w
+MULTIPUT p Raspberry w Grape a Avocado l Peach d Papaya
+PUT w Apple
+GET c
+MULTIPUT d Persimmon w Kiwi p Cashew f Pear
+GET i
+MULTIPUT q Pineapple d Fig f Banana p Pomegranate w Avocado c Dragonfruit j Raspberry p Pear v Blackberry q Passionfruit a Lychee m Papaya
+GET n
+PUT h Avocado
+GET w
+PUT a Guava
+GET n
+GET e
+GET b
+MULTIGET r j w o l j
+PUT c Cashew
+MULTIPUT e Cherry r Papaya i Avocado d Passionfruit v Pineapple d Banana f Mango r Cherry d Kiwi t Fig
+GETWHEN n w Lemon
+GET n
+PUT s Starfruit
+PUT b Pineapple
+GET s
+GET v
+GET s
+GET q
+GET e
+GET v
+PUT h Tamarind
+MULTIGET r r j g d q u u j w d i
+GET c
+PUT f Orange
+PUT i Tamarind
+GET k
+MULTIGET k l f c k g u
+MULTIPUT a Watermelon v Dragonfruit n Tamarind k Persimmon p Peach g Papaya
+PUT c Passionfruit
+GET n
+MULTIPUT i Fig v Cherry u Passionfruit l Peach o Banana j Banana s Papaya u Apple
+GET i
+GET e
+MULTIGET m n v j
+GET t
+PUT m Pear
+GET b
+PUT w Tamarind
+PUT v Strawberry
+GETWHEN j q Banana
+PUT t Raspberry
+GET m
+PUT g Blackberry
+GET f
+GET m
+PUT n Orange
+MULTIGET r o u w a b g b u
+GET e
+PUT i Cherry
+GET v
+PUT f Persimmon
+PUT d Avocado
+PUT s Passionfruit
+PUT s Raspberry
+GET r
+PUT w Kiwi
+PUT u Banana
+MULTIPUT d Pineapple l Blackberry c Apple
+PUT c Orange
+GET j
+PUT p Blueberry
+GET h
+GET w
+GET r
+MULTIPUT b Watermelon w Pear j Peach k Avocado w Watermelon a Blackberry q Watermelon
+PUT t Avocado
+GET k
+PUT a Mango
+MULTIGET u b j o e f v a
+MULTIGET q m u g t v t j w n k
+GET j
+GET n
+PUT f Guava
+GET o
+GET h
+GET g
+MULTIGET l f f b
+MULTIPUT g Peach l Dragonfruit q Blueberry p Melon g Lemon u Passionfruit w Orange g Melon l Dragonfruit
+GET o
+PUT p Mango
+PUT u Starfruit
+GET w
+GET n
+PUT b Blackberry
+PUT k Papaya
+PUT r Starfruit
+GETWHEN e f Guava
+GET c
+PUT g Avocado
+GET c
+PUT c Strawberry
+GET v
+PUT b Guava
+PUT p Pomegranate
+PUT a Lemon
+PUT v Passionfruit
+PUT n Pomegranate
+GET h
+PUT d Tamarind
+GET b
+MULTIPUT a Pomegranate n Lychee a Pear
+PUT l Raspberry
+PUT v Grape
+MULTIGET v i b v t
+GET n
+GET n
+GET r
+GET d
+PUT p Raspberry
+PUT t Lemon
+MULTIPUT m Passionfruit t Raspberry i Watermelon i Peach u Guava a Pomegranate v Orange e Mango u Mango j Lychee a Cherry
+PUT b Banana
+PUT f Watermelon
+MULTIGET p m e e k l c k h
+GET e
+PUT s Watermelon
+MULTIGET p o p k b g k
+GET j
+PUT q Cashew
+PUT c Pineapple
+PUT g Melon
+GET r
+GET p
+GET m
+GET k
+GET p
+MULTIGET f b f a e u d j l c
+GET c
+PUT m Lemon
+MULTIPUT m Raspberry i Dragonfruit i Watermelon m Lychee a Passionfruit c Persimmon i Cashew n Melon r Starfruit h Pineapple n Mango j Blackberry
+GET i
+PUT n Strawberry
+PUT i Banana
+PUT d Strawberry
+GET h
+PUT g Blueberry
+GET u
+GET t
+GET t
+MULTIPUT f Pear h Starfruit d Apple t Grape
+MULTIGET p j j
+PUT w Starfruit
+GET p
+PUT w Fig
+MULTIPUT k Lemon a Dragonfruit a Guava d Fig a Avocado d Dragonfruit n Persimmon q Blueberry v Melon p Lychee j Strawberry r Apple
+MULTIPUT l Melon u Nectarine m Mango o Blackberry d Fig t Melon q Mango l Persimmon k Fig c Avocado g Nectarine j Banana
+PUT e Pear
+PUT k Raspberry
+PUT g Melon
+PUT a Avocado
+PUT t Apple
+PUT q Peach
+PUT g Persimmon
+MULTIPUT i Peach o Starfruit b Melon m Orange l Raspberry r Cherry w Pear
+MULTIPUT d Lychee w Tamarind m Nectarine h Starfruit b Dragonfruit d Nectarine t Cashew d Strawberry d Pear i Lemon q Guava b Passionfruit
+PUT v Pear
+MULTIPUT e Raspberry j Tamarind l Pear s Papaya o Nectarine r Grape f Avocado f Dragonfruit b Nectarine
+GET b
+GET q
+PUT b Raspberry
+GET c
+PUT v Blackberry
+PUT v Guava
+GET r
+MULTIGET f b f h u f t q g g q s
+PUT e Apple
+MULTIPUT d Orange c Nectarine f Peach
+GET m
+PUT c Fig
+GET q
+PUT o Watermelon
+PUT m Persimmon
+GET o
+GET u
+PUT s Watermelon
+MULTIGET v h j e c v i j w g
+GET u
+GET l
+GET q
+GET d
+PUT u Peach
+PUT e Pear
+PUT n Blueberry
+PUT a Persimmon
+GET w
+PUT a Lychee
+MULTIGET u c k n c f w
+GET r
+GET m
+MULTIPUT p Avocado w Blueberry c Kiwi f Blackberry a Persimmon r Papaya w Cashew e Banana p Persimmon m Starfruit j Lychee c Avocado
+GET c
+GET b
+PUT r Cherry
+PUT h Raspberry
+MULTIPUT u Cherry v Orange i Watermelon v Pineapple w Pomegranate m Avocado
+MULTIPUT r Watermelon n Nectarine l Peach k Peach o Raspberry u Raspberry w Tamarind s Lemon
+MULTIPUT i Tamarind r Mango w Persimmon
+MULTIPUT s Melon w Cherry o Pear w Blackberry g Cashew a Starfruit p Apple p Starfruit v Orange j Grape h Pineapple
+MULTIPUT i Nectarine p Lemon e Raspberry p Guava n Tamarind
+GET m
+MULTIPUT f Pomegranate u Dragonfruit c Apple e Papaya
+GET o
+GET j
+PUT q Raspberry
+GET q
+GET n
+PUT j Blueberry
+GET j
+MULTIPUT c Melon p Pear p Fig t Starfruit q Grape v Banana v Lemon j Cherry t Pineapple
+PUT m Tamarind
+GET i
+GET e
+PUT b Mango
+GET d
+PUT b Watermelon
+PUT a Fig
+MULTIPUT o Pear v Passionfruit k Fig m Tamarind u Apple f Grape
+PUT p Grape
+GET i
+GET h
+PUT q Apple
+MULTIPUT p Persimmon h Dragonfruit r Mango u Peach r Passionfruit t Fig u Orange d Strawberry e Papaya v Lychee
+GET f
+MULTIGET t n p k d g m g v k i
+GETWHEN j q Raspberry
+GET g
+MULTIPUT e Fig q Passionfruit s Blueberry p Pomegranate q Starfruit v Starfruit c Strawberry e Lemon j Orange i Dragonfruit p Grape
+GET p
+MULTIPUT t Melon q Starfruit g Mango
+PUT q Melon
+PUT s Raspberry
+PUT i Peach
+GET o
+PUT v Apple
+MULTIPUT l Starfruit t Raspberry g Cherry e Lychee
+MULTIPUT h Lychee h Papaya o Dragonfruit
+MULTIGET c d t h q
+GET b
+MULTIPUT d Apple s Starfruit g Melon
+GET q
+MULTIPUT c Avocado g Peach h Pear u Pear i Pineapple v Guava
+MULTIPUT i Orange b Pear o Blackberry
+PUT l Watermelon
+PUT u Blackberry
+GET p
+GETWHEN l k Melon
+PUT k Blueberry
+PUT i Pear
+GET d
+MULTIPUT k Strawberry a Grape p Kiwi j Tamarind s Passionfruit p Avocado
+GET o
+GET s
+GET h
+GET o
+PUT b Lychee
+GET p
+GET o
+GET h
+GET e
+MULTIPUT t Lychee s Mango o Mango b Blackberry q Cashew q Lychee b Watermelon o Kiwi t Orange q Cashew u Starfruit
+GET d
+PUT u Papaya
+PUT a Melon
+PUT m Starfruit
+GETWHEN g s Pineapple
+GET r
+PUT h Guava
+GET u
+PUT o Pineapple
+GET m
+GET s
+GET c
+PUT b Starfruit
+GET b
+MULTIPUT m Cherry o Peach v Raspberry
+PUT p Persimmon
+GET w
+PUT n Pomegranate
+MULTIPUT b Apple c Cherry o Banana p Mango e Strawberry q Raspberry c Watermelon
+GET c
+GET w
+PUT d Peach
+GET w
+PUT s Pineapple
+GET f
+PUT r Pineapple
+GET v
+GET n
+MULTIGET n v w
+MULTIGET l u u i l r f
+PUT f Pear
+GET v
+PUT a Melon
+PUT n Pomegranate
+MULTIPUT n Pear e Avocado j Nectarine j Banana s Blackberry k Guava l Pear f Pineapple q Nectarine k Guava s Orange
+GET t
+GET r
+GET a
+PUT e Passionfruit
+MULTIGET s d m v u
+GET c
+PUT q Apple
+MULTIPUT a Dragonfruit p Tamarind g Banana h Blackberry
+MULTIGET k v e t
+PUT e Grape
+GET r
+GET d
+PUT b Cashew
+MULTIPUT v Cherry n Cashew w Mango q Grape h Lychee
+PUT v Lychee
+MULTIGET m k f d q
+GET o
+GET a
+PUT q Papaya
+GET n
+GET u
+PUT u Strawberry
+GET v
+GET m
+GET m
+GET h
+GETWHEN d o Banana
+MULTIGET h d h s k d a
+MULTIPUT l Cashew w Mango o Persimmon
+PUT w Tamarind
+PUT g Persimmon
+GETWHEN g u Cherry
+GET j
+GET f
+GET m
+GET u
+GET v
+PUT v Kiwi
+GET e
+GET b
+PUT p Raspberry
+PUT c Strawberry
+MULTIGET v o u n w v v d q
+GET b
+PUT d Fig
+PUT v Nectarine
+PUT i Peach
+PUT b Lychee
+PUT n Guava
+GET p
+PUT n Grape
+MULTIPUT e Peach k Cashew u Starfruit j Cashew e Grape j Melon n Kiwi u Passionfruit
+PUT w Nectarine
+GET r
+MULTIGET g r o i h k h c f
+MULTIPUT c Mango v Cashew g Strawberry g Raspberry q Lychee
+GET b
+GET g
+PUT m Passionfruit
+GET f
+GET r
+PUT v Blueberry
+PUT r Pineapple
+GET v
+PUT v Persimmon
+GET u
+PUT s Grape
+MULTIPUT m Peach w Lychee v Guava e Dragonfruit v Pomegranate e Persimmon k Mango m Watermelon b Banana s Pear t Kiwi
+MULTIGET o k e a r i c v i q h m
+PUT u Papaya
+PUT h Tamarind
+GETWHEN q b Lemon
+MULTIPUT m Mango w Orange n Persimmon d Nectarine k Blueberry r Persimmon
+PUT a Pomegranate
+PUT a Orange
+PUT h Papaya
+MULTIGET a j g
+GET f
+PUT o Blackberry
+GET r
+PUT i Starfruit
+GET c
+MULTIGET e r g o i p d
+GET d
+GET p
+PUT w Papaya
+GET w
+PUT q Papaya
+PUT h Peach
+PUT i Fig
+GET d
+GET e
+PUT r Melon
+PUT f Cashew
+PUT g Tamarind
+GET u
+GET i
+GET n
+GET t
+GET m
+GET r
+GET c
+GET q
+PUT p Grape
+PUT b Passionfruit
+GET a
+MULTIGET q e o j v e l c a n
+MULTIPUT b Blueberry g Persimmon p Passionfruit a Blueberry a Avocado f Mango h Grape d Persimmon q Mango a Strawberry
+PUT d Apple
+GET v
+GET o
+GET b
+GET a
+GET v
+PUT o Orange
+MULTIPUT q Lychee s Guava f Pear o Lychee i Papaya
+PUT m Apple
+PUT a Pomegranate
+MULTIPUT e Tamarind e Lemon h Melon r Watermelon b Watermelon m Apple j Persimmon
+GET r
+GET k
+GET e
+GET e
+PUT a Tamarind
+GET b
+GET m
+GET r
+PUT d Pineapple
+MULTIGET i e n m o
+PUT l Watermelon
+MULTIPUT t Orange l Apple t Blackberry k Strawberry f Passionfruit r Melon v Passionfruit t Blueberry t Watermelon
+MULTIPUT c Nectarine n Mango n Orange h Kiwi
+PUT u Pear
+MULTIPUT f Cashew d Avocado h Orange q Pomegranate
+GET j
+PUT f Apple
+PUT i Papaya
+GET f
+PUT h Lemon
+MULTIPUT d Mango g Grape g Blueberry v Passionfruit f Fig i Lychee k Avocado u Grape f Pear b Pomegranate q Fig
+PUT b Orange
+GET o
+GET m
+PUT t Guava
+MULTIPUT q Passionfruit a Pomegranate a Passionfruit e Starfruit e Cherry q Papaya d Lychee a Avocado t Orange g Passionfruit m Strawberry
+PUT v Strawberry
+GETWHEN c l Pineapple
+PUT j Persimmon
+PUT d Dragonfruit
+GET e
+PUT r Nectarine
+PUT k Cherry
+GET o
+GET b
+GET n
+PUT q Pineapple
+GET t
+PUT f Dragonfruit
+GET u
+MULTIPUT m Dragonfruit d Orange d Peach j Papaya r Cherry o Tamarind w Passionfruit d Lychee c Pomegranate l Passionfruit v Dragonfruit
+PUT j Lychee
+GET j
+PUT e Pomegranate
+MULTIPUT g Apple k Lemon q Persimmon i Orange v Nectarine
+GET p
+PUT h Melon
+GET j
+PUT l Lychee
+PUT r Melon
+GETWHEN i a Peach
+MULTIGET g d v a i g c w r g
+PUT u Raspberry
+GET g
+GET h
+PUT p Strawberry
+PUT a Orange
+PUT s Raspberry
+GET t
+MULTIPUT h Melon s Blackberry u Strawberry e Pineapple r Nectarine
+PUT n Mango
+GET c
+MULTIPUT c Raspberry v Pear d Pineapple p Dragonfruit t Persimmon
+PUT b Tamarind
+GETWHEN a a Apple
+GET v
+MULTIGET n p o l v n c p d
+MULTIPUT u Peach h Grape m Raspberry m Blueberry q Orange f Cherry d Avocado o Cherry c Blackberry k Watermelon
+MULTIPUT n Banana p Lychee a Lemon d Lemon w Lemon j Strawberry u Banana n Peach k Starfruit v Pomegranate r Cashew b Nectarine
+MULTIGET d v e f o
+MULTIPUT e Pomegranate a Starfruit m Blackberry d Tamarind e Fig r Apple c Starfruit
+GET e
+MULTIGET i l b d s n v s w
+MULTIGET a g m h v t
+GET h
+GET r
+PUT m Cashew
+PUT j Lychee
+GET m
+MULTIPUT m Cashew p Dragonfruit f Lychee n Papaya g Cherry v Pineapple t Raspberry q Banana o Strawberry f Tamarind g Pomegranate
+GET d
+MULTIPUT o Mango r Guava k Avocado c Cherry l Grape e Guava c Watermelon j Peach m Blackberry n Passionfruit c Peach u Persimmon
+GET b
+PUT n Apple
+PUT b Nectarine
+PUT n Strawberry
+GET g
+MULTIGET b d l g c
+PUT e Kiwi
+PUT p Orange
+PUT v Raspberry
+GET k
+PUT s Passionfruit
+PUT e Pomegranate
+PUT f Pineapple
+MULTIPUT p Pineapple k Persimmon m Papaya r Fig v Peach j Orange n Fig
+GET i
+GET h
+PUT e Dragonfruit
+GET o
+GET s
+GET b
+GETWHEN l i Blueberry
+PUT i Persimmon
+MULTIPUT g Melon p Avocado v Grape
+PUT k Kiwi
+GET s
+GET j
+PUT c Melon
+GET j
+GET f
+PUT i Kiwi
+PUT q Blueberry
+GET k
+PUT w Watermelon
+GET o
+GET i
+GET q
+PUT b Strawberry
+GET b
+PUT o Passionfruit
+PUT j Strawberry
+GET f
+PUT m Passionfruit
+MULTIGET i k e c t w t l o d u
+PUT a Grape
+PUT c Mango
+GET h
+GET i
+PUT o Fig
+PUT d Strawberry
+GET i
+MULTIPUT l Grape b Starfruit m Peach w Grape s Strawberry b Lychee
+MULTIPUT p Fig m Cashew c Orange u Raspberry v Lemon g Dragonfruit o Pineapple u Nectarine
+MULTIPUT g Mango b Guava d Peach s Lychee e Passionfruit
+PUT r Nectarine
+GET g
+GET b
+PUT o Orange
+GET f
+MULTIPUT n Persimmon i Persimmon v Apple r Lemon v Mango d Kiwi c Blueberry
+GET b
+MULTIPUT h Tamarind b Guava e Guava u Kiwi k Fig q Pineapple q Pomegranate l Cherry s Peach k Tamarind n Nectarine
+GET u
+GET t
+MULTIPUT f Melon b Passionfruit s Passionfruit l Mango c Mango r Kiwi b Peach n Lychee i Grape v Raspberry
+PUT l Dragonfruit
+GET q
+GETWHEN p i Peach
+PUT j Grape
+GET s
+PUT a Watermelon
+PUT i Lychee
+PUT d Tamarind
+GET u
+MULTIGET n n s g
+GET s
+PUT v Kiwi
+MULTIPUT n Avocado n Persimmon q Melon r Cashew g Blueberry c Persimmon f Nectarine p Fig m Cherry
+GET a
+PUT b Blackberry
+MULTIPUT a Pomegranate q Fig g Raspberry q Strawberry b Cherry w Pineapple t Banana d Melon
+PUT l Melon
+MULTIPUT r Watermelon j Blackberry d Peach h Avocado d Strawberry g Persimmon c Melon t Dragonfruit t Passionfruit h Raspberry t Cherry p Pear
+GET m
+GET g
+PUT f Grape
+GET n
+PUT n Blackberry
+PUT f Blackberry
+PUT h Orange
+GET r
+PUT o Fig
+MULTIPUT w Cherry p Melon f Strawberry n Nectarine w Starfruit i Blueberry e Starfruit g Grape l Cherry p Starfruit o Blueberry i Pear
+MULTIPUT h Fig e Avocado n Cherry k Cashew m Cashew
+GET p
+GET g
+PUT v Nectarine
+GET u
+GET w
+GET v
+PUT v Pomegranate
+GET f
+MULTIPUT h Raspberry m Banana p Dragonfruit g Pineapple q Papaya o Kiwi c Grape d Pineapple h Dragonfruit
+MULTIPUT u Starfruit q Kiwi w Dragonfruit n Pear d Persimmon i Raspberry k Persimmon
+GET s
+PUT d Banana
+GET l
+GET b
+PUT r Blackberry
+PUT v Cherry
+GETWHEN u h Nectarine
+PUT c Pomegranate
+GET h
+PUT r Raspberry
+GET e
+PUT h Nectarine
+GET e
+PUT v Kiwi
+PUT w Pineapple
+PUT e Blueberry
+GET n
+GET t
+MULTIPUT c Pear s Banana b Passionfruit t Blueberry i Lemon e Persimmon
+MULTIPUT r Cherry w Grape l Kiwi
+PUT n Lemon
+GET t
+PUT k Cherry
+GET q
+PUT g Papaya
+GET p
+MULTIGET g k s a l p j k
+PUT n Avocado
+MULTIPUT w Strawberry c Pomegranate j Cherry l Blueberry i Blackberry b Lychee n Avocado
+PUT l Lychee
+GET j
+GETWHEN m j Guava
+PUT f Pomegranate
+PUT j Starfruit
+PUT p Blueberry
+MULTIPUT n Banana e Guava l Pear f Passionfruit l Papaya b Grape
+PUT p Apple
+MULTIPUT q Persimmon k Cherry t Guava t Banana t Pear
+PUT s Orange
+MULTIGET c p s v e g m s
+MULTIGET p e l o f s
+MULTIPUT t Mango s Avocado s Passionfruit d Persimmon e Fig e Peach f Mango k Dragonfruit t Passionfruit j Kiwi
+PUT r Tamarind
+MULTIPUT a Apple q Strawberry w Dragonfruit a Pomegranate c Guava k Blackberry s Pomegranate k Nectarine s Raspberry v Pomegranate c Nectarine
+PUT e Watermelon
+PUT h Blackberry
+GET d
+PUT k Peach
+GET j
+GET e
+PUT c Peach
+PUT l Avocado
+GET d
+PUT d Strawberry
+GET j
+PUT k Tamarind
+MULTIPUT o Blueberry r Orange n Tamarind s Peach l Banana
+MULTIGET j m u q u r e u b o e e
+PUT h Mango
+MULTIPUT c Passionfruit a Cherry o Apple d Guava f Kiwi e Blackberry e Mango
+MULTIPUT q Kiwi k Nectarine t Lemon r Kiwi
+PUT c Cherry
+PUT k Pear
+GET k
+MULTIPUT j Pineapple p Blueberry h Persimmon e Lemon
+GET w
+PUT b Mango
+PUT w Melon
+PUT e Pineapple
+PUT b Apple
+MULTIGET w g f q i e g a w d k v
+MULTIGET q a s k a h
+MULTIPUT g Grape n Passionfruit w Mango m Orange u Cherry c Grape l Pineapple i Papaya j Lemon h Nectarine i Kiwi g Fig
+GET m
+PUT l Watermelon
+GET j
+MULTIPUT c Papaya u Watermelon c Starfruit o Pomegranate h Blackberry o Banana i Melon j Melon p Kiwi s Watermelon h Melon
+PUT b Blackberry
+MULTIPUT h Fig o Lemon o Lemon k Guava
+PUT r Persimmon
+MULTIPUT b Cherry c Papaya v Kiwi w Kiwi a Kiwi e Grape k Passionfruit k Fig d Blackberry k Kiwi a Melon
+GET q
+GET t
+GET v
+GET w
+MULTIGET t r e d o m j p
+GET d
+GET p
+GET s
+PUT c Strawberry
+PUT q Passionfruit
+PUT c Papaya
+GET u
+GET w
+GET t
+GET p
+GET q
+MULTIPUT t Orange q Pomegranate i Nectarine r Guava
+PUT u Starfruit
+MULTIGET b c g t
+MULTIGET a e j l s f i d
+GET n
+PUT v Banana
+GET r
+MULTIPUT i Lychee d Kiwi a Grape j Apple l Fig a Lemon o Pomegranate q Cherry b Starfruit
+PUT q Dragonfruit
+GET o
+PUT t Fig
+PUT v Cashew
+PUT r Cashew
+MULTIPUT o Kiwi f Raspberry b Guava f Pomegranate i Strawberry i Passionfruit
+GET s
+GET s
+GET o
+GET m
+PUT h Dragonfruit
+GET e
+PUT g Pomegranate
+GET b
+GET g
+GET a
+MULTIPUT c Kiwi a Passionfruit o Lemon w Guava r Cherry a Banana a Papaya l Pomegranate d Nectarine
+MULTIGET v f v s m m l k b e m s
+GET p
+PUT l Lychee
+GET p
+PUT t Avocado
+PUT c Blueberry
+MULTIGET o g g
+GET s
+GET j
+MULTIPUT w Cashew o Orange d Passionfruit s Lemon w Peach m Tamarind j Avocado f Papaya o Cashew
+GET d
+MULTIPUT i Apple q Starfruit q Nectarine d Pomegranate h Lychee
+PUT a Apple
+GET m
+GET i
+GET b
+PUT c Fig
+PUT h Pomegranate
+GET i
+GET q
+MULTIPUT e Guava d Melon o Lychee r Mango v Raspberry n Watermelon w Persimmon q Lychee
+GET q
+GET h
+GET o
+PUT b Tamarind
+MULTIGET w m q p t q
+PUT h Pear
+PUT b Lemon
+GET t
+GET n
+PUT u Mango
+GET a
+GET p
+PUT g Avocado
+MULTIPUT c Dragonfruit h Watermelon j Passionfruit w Raspberry n Avocado m Pear e Orange v Cashew o Watermelon a Pomegranate
+GET u
+GET w
+PUT r Passionfruit
+PUT e Strawberry
+PUT k Mango
+GET e
+GET s
+GET p
+MULTIPUT g Peach k Melon l Guava e Pineapple o Papaya e Grape o Raspberry e Peach k Passionfruit
+PUT w Starfruit
+MULTIPUT h Pear q Fig v Watermelon i Mango i Avocado f Lychee v Persimmon i Grape h Melon m Fig
+GET e
+GET t
+PUT l Grape
+PUT n Grape
+GET c
+PUT h Passionfruit
+PUT w Peach
+PUT c Blackberry
+MULTIPUT v Passionfruit o Raspberry l Melon a Blackberry v Dragonfruit g Persimmon v Blueberry p Lemon c Blackberry u Grape
+GET w
+GET i
+PUT d Guava
+GET r
+GET h
+GET w
+GET e
+GET w
+MULTIPUT b Pineapple f Cashew l Pear f Pineapple b Raspberry d Papaya
+GET p
+GET e
+GET c
+MULTIPUT w Nectarine u Tamarind h Banana l Tamarind w Papaya q Persimmon k Cashew q Blueberry i Pear v Lychee
+GET g
+GET w
+PUT w Cashew
+MULTIPUT p Kiwi l Raspberry n Banana v Raspberry o Kiwi i Tamarind k Pear i Pomegranate
+GET e
+MULTIPUT i Papaya u Nectarine n Lychee s Papaya i Pomegranate q Pineapple v Persimmon a Banana i Blueberry
+MULTIGET u p t q b k g u c
+MULTIPUT v Lychee l Persimmon h Orange h Starfruit
+GET e
+GET f
+MULTIPUT p Kiwi b Guava k Grape f Apple f Blueberry o Lemon v Blueberry i Tamarind
+GET q
+MULTIGET d c o w
+PUT m Grape
+GET m
+PUT b Cherry
+PUT h Guava
+PUT o Papaya
+PUT d Pomegranate
+GET p
+MULTIPUT b Nectarine j Pineapple p Avocado r Cashew s Cherry s Dragonfruit f Kiwi i Banana f Apple
+PUT a Lychee
+PUT j Cashew
+PUT c Apple
+PUT a Melon
+PUT j Grape
+MULTIGET a w g
+GET r
+GET o
+GET b
+PUT g Cashew
+PUT k Fig
+PUT k Guava
+GET w
+PUT r Lemon
+PUT d Kiwi
+MULTIPUT f Melon b Pomegranate s Guava j Kiwi s Mango c Avocado o Dragonfruit o Grape n Pomegranate p Orange
+PUT l Guava
+PUT k Apple
+PUT w Cherry
+GET v
+MULTIPUT b Starfruit e Cherry s Nectarine k Lemon j Orange e Passionfruit e Dragonfruit l Watermelon h Mango
+GET b
+PUT g Dragonfruit
+GET t
+PUT s Watermelon
+PUT f Watermelon
+MULTIPUT i Guava p Pear c Mango c Starfruit p Grape l Lychee v Peach d Peach c Lychee
+GET f
+GET w
+GET p
+MULTIPUT w Pear f Grape h Grape m Apple w Lychee p Lychee w Persimmon n Papaya k Mango b Dragonfruit h Melon f Tamarind
+MULTIPUT g Pear u Blackberry e Guava l Grape h Raspberry
+MULTIPUT d Orange t Pear b Cherry m Tamarind
+PUT h Lemon
+PUT v Nectarine
+GET w
+MULTIPUT q Cashew v Peach b Tamarind h Lemon l Guava
+PUT a Melon
+GET r
+MULTIPUT r Guava p Mango e Passionfruit e Mango l Pineapple u Cherry
+PUT m Blueberry
+GET m
+MULTIPUT u Tamarind s Apple i Starfruit m Strawberry w Mango l Lemon i Mango a Passionfruit g Banana n Raspberry p Cherry
