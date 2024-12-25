@@ -193,16 +193,25 @@ public class Client {
 
                         FileWriter f = new FileWriter(sb.toString(),false);
 
-                        f.write("[\n");
+                        f.write("[");
                         boolean flag = false;
 
                         cliente.l.readLock().lock();
+                        List<Dados> lista = new ArrayList<>();
                         
                         for (Dados d : cliente.dados.values()) {
 
                             d.l.readLock().lock();
+                            lista.add(d);
+
+                        }
+
+                        cliente.l.readLock().unlock();
+
+                        for (Dados d : lista) {
 
                             if (flag == false) {
+                                f.write("\n");
                                 f.write(d.toString());
                                 flag = true;
                             }
@@ -215,9 +224,10 @@ public class Client {
 
                         }
                         
-                        cliente.l.readLock().unlock();
+                        if (flag == true)
+                            f.write("\n");
 
-                        f.write("\n]");
+                        f.write("]");
 
                         f.close();
                             
