@@ -55,27 +55,29 @@ public class TaskHandler extends Thread{
     private Resposta processaMensagem(Mensagem mensagem){
         Resposta resposta = null;
         
+        int id = mensagem.getID();
+
         try{
             switch(mensagem.getTipo()){
             case 3: //tipo = put
                 server.armazem.put(mensagem.getKey(), mensagem.getValue());
-                resposta = Resposta.put(true);
+                resposta = Resposta.put(id,true);
             break;
             case 4: //tipo = get
                 byte[] answerGet = server.armazem.get(mensagem.getKey());
-                resposta = Resposta.get(answerGet);
+                resposta = Resposta.get(id,answerGet);
             break;
             case 5: //tipo = multiPut
                 server.armazem.multiPut(mensagem.getValues());
-                resposta = Resposta.multiPut(true);
+                resposta = Resposta.multiPut(id,true);
             break;
             case 6: //tipo = multiGet
                 Map<String, byte[]> answerMultiGet = server.armazem.multiGet(mensagem.getKeys());
-                resposta = Resposta.multiGet(answerMultiGet);
+                resposta = Resposta.multiGet(id,answerMultiGet);
             break;
             case 7: //tipo = getWhen
                 byte[] answerGetWhen = server.armazem.getWhen(mensagem.getKey(), mensagem.getKeyCond(), mensagem.getValueCond());
-                resposta = Resposta.getWhen(answerGetWhen);
+                resposta = Resposta.getWhen(id,answerGetWhen);
             break;
             default:
                 throw new RuntimeException("Tipo de mensagem inválida.");

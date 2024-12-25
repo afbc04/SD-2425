@@ -5,14 +5,15 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.stream.Stream;
 
 public class Armazem {
     
     public ReentrantReadWriteLock l = new ReentrantReadWriteLock();
-    private Map<String,Entry> armazem;
+    public Map<String,Entry> armazem;
     
     //Classe da Entry
-    private class Entry {
+    public class Entry {
     
         protected ReentrantReadWriteLock l = new ReentrantReadWriteLock();
         protected Condition cond = l.writeLock().newCondition(); //ReadLock porque é getWhen, e não putWhen
@@ -23,7 +24,10 @@ public class Armazem {
         //Construtor
         private Entry(byte[] arg) {
 
-            this.dados = arg.clone();
+            if (arg != null)
+                this.dados = arg.clone();
+            else
+                this.dados = null;
             //this.ultima_modificacao = LocalDateTime.now();
 
         }
@@ -131,7 +135,8 @@ public class Armazem {
 
             e.l.readLock().lock();
             this.l.readLock().unlock();
-            res = e.get().clone();
+            if (e.get() != null)
+                res = e.get().clone();
             e.l.readLock().unlock();
         }
         //Entry não existe
@@ -193,55 +198,77 @@ public class Armazem {
 
         byte[] res = null;
 
-        this.l.readLock().lock();
+        this.l.writeLock().lock();
 
-        //Obtem a entry
+        //Obtem as entries
         Entry eCond = this.armazem.get(keyCond);
+        Entry e = this.armazem.get(key);
 
-        //Se entry existe, obtem dado
-        if (eCond != null) {
+        //Entry condicional não existe
+        if (eCond == null) {
+            eCond = new Entry(null);
+            this.armazem.put(keyCond,eCond);
+        } 
 
-            eCond.l.readLock().lock();
-            this.l.readLock().unlock();
+        //Entry da key não existe
+        if (e == null) {
+            e = new Entry(null);
+            this.armazem.put(key,e);                
+        }
 
-            byte[] vCond = null;
+        Stream.of(key,keyCond).sorted().forEach(n -> this.armazem.get(n).l.writeLock().lock());
 
-            while(true) {
+        res = eCond.get();
+        if (Armazem.equals(res,valueCond) == true) {
 
-                vCond = eCond.get();
-                
-                //São diferentes
-                if (vCond.equals(valueCond) == false) {
+            res = e.get();
 
-                    eCond.cond.await();
+            this.l.writeLock().unlock();
+            Stream.of(key,keyCond).sorted().forEach(n -> this.armazem.get(n).l.writeLock().unlock());
 
-                }
-                //São iguais
-                else {
-
-                    break;
-
-                }
-
-            }
-
-            Entry e = this.armazem.get(key);
-            if (e != null)
-                res = e.get();
-            this.l.readLock().unlock();
+            return res;
 
         }
-        //Entry não existe
         else {
 
-            Entry e = this.armazem.get(key);
-            if (e != null)
-                res = e.get();
-            this.l.readLock().unlock();
+            e.l.writeLock().unlock();
+            this.l.writeLock().unlock();
+
+            while(Armazem.equals(eCond.get(),valueCond) == false)
+                eCond.cond.await();
+
+            e.l.writeLock().lock();
+            eCond.l.writeLock().unlock();
+
+            res = e.get();
+            e.l.writeLock().unlock();
+        
 
         }
 
         return res;
+
+    }
+
+    private static boolean equals(byte[] a, byte[] b) {
+        
+        if (a == null && b == null)
+        return true;
+        
+        if (a == null || b == null)
+        return false;
+                
+        if (a.length != b.length)
+            return false;
+
+        for (int i = 0 ; i < a.length ; i++) {
+
+            if (a[i] != b[i])
+                return false;
+
+        }
+
+        return true;
 
     }
 

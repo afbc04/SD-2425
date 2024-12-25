@@ -18,10 +18,12 @@ public class Resposta {
 
     private boolean[] camposValidos;
     private int tipo;
+    private final int id;
     private static String[] tipoString = {"sessao","put","get","multiPut","multiGet","getWhen"};
 
     //Construtor básico
-    private Resposta(int tipo) {
+    private Resposta(int tipo, int id) {
+        this.id = id;
         this.tipo = tipo;
         
         int N = 6;
@@ -35,6 +37,10 @@ public class Resposta {
     // #########################
     //         GETTERS
     // #########################
+
+    public int getID() {
+        return this.id;
+    }
 
     public int getTipo() {
         return this.tipo;
@@ -137,9 +143,9 @@ public class Resposta {
     // #########################
 
     //Método que cria uma resposta de inicio de sessão
-    public static Resposta sessaoValida(boolean sessao) {
+    public static Resposta sessaoValida(int ID, boolean sessao) {
 
-        Resposta r = new Resposta(1);
+        Resposta r = new Resposta(1,ID);
         r.setSessao(sessao);
 
         return r;
@@ -147,9 +153,9 @@ public class Resposta {
     }
 
     //Método que cria uma resposta de put
-    public static Resposta put(boolean sucesso) {
+    public static Resposta put(int ID, boolean sucesso) {
 
-        Resposta r = new Resposta(2);
+        Resposta r = new Resposta(2,ID);
         r.setPut(sucesso);
 
         return r;
@@ -157,9 +163,9 @@ public class Resposta {
     }
 
     //Método que cria uma resposta de get
-    public static Resposta get(byte[] objeto) {
+    public static Resposta get(int ID, byte[] objeto) {
 
-        Resposta r = new Resposta(3);
+        Resposta r = new Resposta(3,ID);
         r.setGet(objeto);
 
         return r;
@@ -167,9 +173,9 @@ public class Resposta {
     }
 
     //Método que cria uma resposta de multi put
-    public static Resposta multiPut(boolean sucesso) {
+    public static Resposta multiPut(int ID, boolean sucesso) {
 
-        Resposta r = new Resposta(4);
+        Resposta r = new Resposta(4,ID);
         r.setMultiPut(sucesso);
 
         return r;
@@ -177,9 +183,9 @@ public class Resposta {
     }
 
     //Método que cria uma resposta de multi get
-    public static Resposta multiGet(Map<String,byte[]> pairs) {
+    public static Resposta multiGet(int ID, Map<String,byte[]> pairs) {
 
-        Resposta r = new Resposta(5);
+        Resposta r = new Resposta(5,ID);
 
         Map<String,byte[]> copia = new HashMap<>();
 
@@ -201,9 +207,9 @@ public class Resposta {
     }
 
     //Método que cria uma resposta de get when
-    public static Resposta getWhen(byte[] objeto) {
+    public static Resposta getWhen(int ID, byte[] objeto) {
 
-        Resposta r = new Resposta(6);
+        Resposta r = new Resposta(6,ID);
         r.setGetWhen(objeto);
 
         return r;
@@ -218,6 +224,7 @@ public class Resposta {
     public void serializar(DataOutputStream out) throws IOException {
 
         boolean sucess = true;
+        out.writeInt(this.id);
         out.writeInt(this.tipo);
 
         switch (this.tipo) {
@@ -303,8 +310,9 @@ public class Resposta {
     //Método que deserializa uma resposta
     public static Resposta deserializar(DataInputStream in) throws IOException {
 
+        int id = in.readInt();
         int tipo = in.readInt();
-        Resposta r = new Resposta(tipo);
+        Resposta r = new Resposta(tipo,id);
         boolean sucess = true;
 
         switch (tipo) {

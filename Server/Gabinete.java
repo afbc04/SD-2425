@@ -31,6 +31,7 @@ public class Gabinete extends Thread {
                     server.condGab.await(); // Aguardar até que haja um cliente na fila
                 }
                 s = server.clientesWaiting.poll(); // Retira um socket da fila
+                System.out.println("Sockets: " + server.clientesWaiting.size());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
@@ -49,9 +50,10 @@ public class Gabinete extends Thread {
                     
                     //1º Fase -> Autenticação/Registo do Cliente
                     Mensagem authCliente = Mensagem.deserializar(entrada);
-
+                    System.out.println("Z : " + authCliente.getTipo());
                     //Autenticação
                     if (authCliente.getTipo() == 2) {
+                        System.out.println("X");
                         try{
                             String nome = authCliente.getNome();
                             String passe = authCliente.getPassword();
@@ -74,11 +76,16 @@ public class Gabinete extends Thread {
 
                     //Registo
                     if (authCliente.getTipo() == 1) {
+                        System.out.println("Y");
                         try{
                             String nome = authCliente.getNome();
                             String passe = authCliente.getPassword();
                                 
+                            System.out.println("A");
+
                             Cliente cli = server.clientes.adicionarCliente(nome, passe);
+
+                            System.out.println("B");
 
                             if (cli != null) {
                                 cliente = cli;
@@ -96,8 +103,11 @@ public class Gabinete extends Thread {
 
                     //Verifica se a autenticação é válida
 
-                    Resposta sessaoValida = Resposta.sessaoValida(this.cliente != null);
+                    
+                    Resposta sessaoValida = Resposta.sessaoValida(authCliente.getID(),this.cliente != null);
+                    System.out.println("T");
                     sessaoValida.serializar(saida);
+                    System.out.println("W");
 
                     //Autenticação é válida
                     if (this.cliente != null) {

@@ -25,10 +25,12 @@ public class Mensagem {
 
     private boolean[] camposValidos;
     private int tipo;
+    private final int id;
     private static String[] tipoString = {"register","login","put","get","multiPut","multiGet","getWhen"};
 
     //Construtor básico
-    private Mensagem(int tipo) {
+    private Mensagem(int tipo, int id) {
+        this.id = id;
         this.tipo = tipo;
         
         int N = 8;
@@ -42,6 +44,10 @@ public class Mensagem {
     // #########################
     //         GETTERS
     // #########################
+
+    public int getID() {
+        return this.id;
+    }
 
     public int getTipo() {
         return this.tipo;
@@ -172,9 +178,9 @@ public class Mensagem {
     // #########################
 
     //Método que cria uma mensagem de registo
-    public static Mensagem registo(String nome, String password) {
+    public static Mensagem registo(int ID, String nome, String password) {
 
-        Mensagem s = new Mensagem(1);
+        Mensagem s = new Mensagem(1,ID);
         s.setNome(nome);
         s.setPassword(password);
 
@@ -183,9 +189,9 @@ public class Mensagem {
     }
 
     //Método que cria uma mensagem de registo
-    public static Mensagem autenticacao(String nome, String password) {
+    public static Mensagem autenticacao(int ID, String nome, String password) {
 
-        Mensagem s = new Mensagem(2);
+        Mensagem s = new Mensagem(2,ID);
         s.setNome(nome);
         s.setPassword(password);
 
@@ -194,9 +200,9 @@ public class Mensagem {
     }
 
     //Método que cria uma mensagem de put
-    public static Mensagem put(String key, byte[] value) {
+    public static Mensagem put(int ID, String key, byte[] value) {
 
-        Mensagem s = new Mensagem(3);
+        Mensagem s = new Mensagem(3,ID);
         s.setKey(key);
         s.setValue(value);
 
@@ -205,9 +211,9 @@ public class Mensagem {
     }
 
     //Método que cria uma mensagem de get
-    public static Mensagem get(String key) {
+    public static Mensagem get(int ID, String key) {
 
-        Mensagem s = new Mensagem(4);
+        Mensagem s = new Mensagem(4,ID);
         s.setKey(key);
 
         return s;
@@ -215,9 +221,9 @@ public class Mensagem {
     }
 
     //Método que cria uma mensagem de multi put
-    public static Mensagem multiPut(Map<String,byte[]> pairs) {
+    public static Mensagem multiPut(int ID, Map<String,byte[]> pairs) {
 
-        Mensagem s = new Mensagem(5);
+        Mensagem s = new Mensagem(5,ID);
 
         Map<String,byte[]> copia = new HashMap<>();
 
@@ -239,9 +245,9 @@ public class Mensagem {
     }
 
     //Método que cria uma mensagem de multi get
-    public static Mensagem multiGet(Set<String> keys) {
+    public static Mensagem multiGet(int ID, Set<String> keys) {
 
-        Mensagem s = new Mensagem(6);
+        Mensagem s = new Mensagem(6,ID);
         s.setKeys(new HashSet<String>(keys));
 
         return s;
@@ -249,10 +255,10 @@ public class Mensagem {
     }
 
     //Método que cria uma mensagem de get when
-    public static Mensagem getWhen(String key, String keyCond, byte[] valueCond) {
+    public static Mensagem getWhen(int ID, String key, String keyCond, byte[] valueCond) {
 
-        Mensagem s = new Mensagem(7);
-        s.setKey(keyCond);
+        Mensagem s = new Mensagem(7,ID);
+        s.setKey(key);
         s.setKeyCond(keyCond);
         s.setValueCond(valueCond);
 
@@ -268,6 +274,7 @@ public class Mensagem {
     public void serializar(DataOutputStream out) throws IOException {
 
         boolean sucess = true;
+        out.writeInt(this.id);
         out.writeInt(this.tipo);
 
         switch (this.tipo) {
@@ -367,8 +374,9 @@ public class Mensagem {
     //Método que deserializa uma mensagem
     public static Mensagem deserializar(DataInputStream in) throws IOException {
 
+        int id = in.readInt();
         int tipo = in.readInt();
-        Mensagem m = new Mensagem(tipo);
+        Mensagem m = new Mensagem(tipo,id);
         boolean sucess = true;
 
         switch (tipo) {

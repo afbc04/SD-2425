@@ -1,0 +1,16 @@
+GET a
+PUT a Banana
+GET a
+PUT b Maca
+PUT c Pera
+MULTIGET a b c d
+PUT b MacaVerde
+PUT d Manga
+MULTIPUT e Coco a Baanna f Diospiro
+GET z
+Get y
+GETWHEN a y Melancia
+GET y
+PUT y Melao
+PUT z Roma
+GETWHEN c b MacaVerde
