@@ -101,7 +101,7 @@ public class Gabinete extends Thread {
                     if (this.cliente != null) {
 
                         // Criar uma thread para enviar mensagens ao cliente
-                        Thread enviarMensagens = new Thread(() -> {
+                        Thread enviarResposta = new Thread(() -> {
 
                             try {
                                 while (true) {
@@ -124,7 +124,7 @@ public class Gabinete extends Thread {
                             }
                             
                         });
-                        enviarMensagens.start();
+                        enviarResposta.start();
 
                         //Ler as mensagens recebidas
                         Mensagem mRecebida = null;
@@ -141,7 +141,7 @@ public class Gabinete extends Thread {
                         }
 
     
-                        enviarMensagens.interrupt();
+                        enviarResposta.interrupt();
 
                     }
 
