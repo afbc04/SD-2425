@@ -9,8 +9,8 @@ import java.util.stream.Stream;
 
 public class Armazem {
     
-    public ReentrantReadWriteLock l = new ReentrantReadWriteLock();
-    public Map<String,Entry> armazem;
+    private ReentrantReadWriteLock l = new ReentrantReadWriteLock();
+    private Map<String,Entry> armazem;
     
     //Classe da Entry
     private class Entry {
