@@ -13,7 +13,7 @@ public class Armazem {
     public Map<String,Entry> armazem;
     
     //Classe da Entry
-    public class Entry {
+    private class Entry {
     
         protected ReentrantReadWriteLock l = new ReentrantReadWriteLock();
         protected Condition cond = l.writeLock().newCondition(); //ReadLock porque é getWhen, e não putWhen
