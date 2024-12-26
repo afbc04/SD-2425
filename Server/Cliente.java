@@ -13,11 +13,13 @@ public class Cliente {
     public Condition cond;
     private String password;
     private Queue<Resposta> respostas;
+    public boolean active;
 
 
     public Cliente(String password){
         //if(credenciais == null) throw new IllegalArgumentException("As credenciais do cliente não podem ser nulas");
 
+        this.active = false;
         this.password = password;
         this.l = new ReentrantLock();
         this.cond = l.newCondition();

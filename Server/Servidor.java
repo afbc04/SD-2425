@@ -9,8 +9,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Servidor {
     
-    public final int S = 3;
-    public final int N = 25;
+    public final int S;
+    public final int N;
 
     public Queue<Socket> clientesWaiting = new LinkedList<>();
     public Queue<Task> mensagens = new LinkedList<>();
@@ -21,7 +21,10 @@ public class Servidor {
     public Armazem armazem = new Armazem();
     public GestorClientes clientes = new GestorClientes();
 
-    public Servidor() {
+    public Servidor(int S, int N) {
+
+        this.S = S;
+        this.N = N;
 
     }
 

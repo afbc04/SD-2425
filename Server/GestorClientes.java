@@ -22,6 +22,7 @@ public class GestorClientes {
             //Cliente não existe
             if (c == null) {
                 c = new Cliente(password);
+                c.active = true;
                 this.clientes.put(nome,c);
                 return c;
             }
@@ -55,12 +56,13 @@ public class GestorClientes {
             if (c != null) {
 
                 c.l.lock();
-                if (c.samePassword(password) == false) {
+                if (c.samePassword(password) == false || c.active == true) {
                     c.l.unlock();
                     c = null;
                 }
                 else {
 
+                    c.active = true;
                     c.l.unlock();
                 }
                 

@@ -43,8 +43,6 @@ public class Gabinete extends Thread {
 
             if (s != null) {
 
-                int teste = 0;
-
                 try (
                     DataInputStream entrada = new DataInputStream(s.getInputStream());
                     DataOutputStream saida = new DataOutputStream(s.getOutputStream())) {
@@ -141,7 +139,6 @@ public class Gabinete extends Thread {
                         Mensagem mRecebida = null;
                         while (s.isConnected()) {
                             mRecebida = Mensagem.deserializar(entrada);
-                            teste++;
                             System.out.println("Cliente: " + mRecebida);
                             server.l.lock();
                             try {
@@ -155,7 +152,6 @@ public class Gabinete extends Thread {
                             break;
                         } */
                         }
-                        System.out.println("C");
 
     
                         enviarMensagens.interrupt();
@@ -170,6 +166,12 @@ public class Gabinete extends Thread {
                         s.close(); // Fechar o socket após a comunicação
                     } catch (IOException e) {
                         System.err.println("Erro ao fechar socket: " + e.getMessage());
+                    }
+
+                    if (this.cliente != null) {
+                        this.cliente.l.lock();
+                        this.cliente.active = false;
+                        this.cliente.l.unlock();
                     }
 
                 }
