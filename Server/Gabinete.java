@@ -46,7 +46,7 @@ public class Gabinete extends Thread {
                 try (
                     DataInputStream entrada = new DataInputStream(s.getInputStream());
                     DataOutputStream saida = new DataOutputStream(s.getOutputStream())) {
-                   // Scanner obj = new Scanner(System.in);
+                   
                     
                     //Resetar o cliente
                     this.cliente = null;
@@ -101,9 +101,6 @@ public class Gabinete extends Thread {
                     if (this.cliente != null) {
 
                         // Criar uma thread para enviar mensagens ao cliente
-                        /*
-                        Substituir pelo objeto resposta e depos serializar
-                        */
                         Thread enviarMensagens = new Thread(() -> {
 
                             try {
@@ -115,12 +112,6 @@ public class Gabinete extends Thread {
                                     }
                                     Resposta resposta = cliente.remove_Resposta();
                                     resposta.serializar(saida);
-                                /*
-                                    if (resposta.equalsIgnoreCase("sair")) {
-                                    System.out.println("Encerrando servidor...");
-                                    obj.close();
-                                    break;
-                                } */
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 } finally {
@@ -147,10 +138,6 @@ public class Gabinete extends Thread {
                             } finally {
                                 server.l.unlock();
                             }
-                      /* if (mRecebida.equalsIgnoreCase("sair")) {
-                            System.out.println("A encerrar conexão...");
-                            break;
-                        } */
                         }
 
     
